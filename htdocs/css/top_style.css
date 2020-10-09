@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+section{
+	width:100vw;
+}
+
+#Top{
+	background-image:url(../img/acoustic_guitar.jpg);
+	background-size: cover;
+	background-position: center;
+	height:calc(100vw * 0.33);
+	padding-bottom:43px;
+
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#Top p{
+	text-align: center;
+	color:#ffffff;
+}
+
+#Search{
+	height:219px;
+}
+
+#Count{
+	height:219px;
+	background-color:#ECAB48;
+}
+
+
+.Content_List{
+	width:100vw;
+	padding:0px 10%;
+}
+
+.Content{
+	width:100%;
+	padding:70px 0px;
+}
+
+.Content_Box{
+	width:80%;
+	height:100%;
+	margin:0 auto;
+	color:#F1C076;
+	font-size:15px;
+}
+
+#History{
+	min-height:386px;
+	background-color:#FFF7CB;
+
+}
+
+#Topics{
+	min-height:475px;
+	background-color:#fcc;
+
+}
+
+#Course{
+	min-height:475px;
+	background-color:#FFF7CB;
+}
+
+#Popular{
+	min-height:475px;
+	background-color:#fcc;
+
+}
+
+#Teacher{
+	min-height:475px;
+	background-color:#FFF7CB;
+	text-align:center;
+}
+
+#Review{
+	min-height:1200px;
+	text-align:center;
+	color:#FFD698;
+
+}
+.border{
+	margin:16px auto;
+	border:solid 1px #FFD698;
+	filter:drop-shadow(1px 2px 1px #707070);
+	background-color:#FFD698;
+}
+.Long{
+	width:20%;
+}
+.Middle{
+	width:10%;
+}
+.Short{
+	width:5%;
+}
+
+#Area{
+/*	min-height:1205px;*/
+	background:linear-gradient(to top,#C97D06,#FBBB5B);
+	color:#ffffff;
+	padding-top:72px;
+	padding-bottom:144px;
+
+}
+
+.Area_list{
+	width:50%;
+	margin:0 auto;
+}
+
+.Area_box{
+	padding:33px 0px;
+}
+.Area_box a{
+	color:#ffffff;
+}
+
+#Ticket{
+	background-color:#2D2D2D;
+	color:#FFFFFF;
+}
+
+.Ticket_list{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.reset{
+	display:flex;
+	justify-content: flex-start;
+	flex-direction:column
+}
