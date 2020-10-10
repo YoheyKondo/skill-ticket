@@ -4,6 +4,12 @@ section{
 	width:100vw;
 }
 
+h2{
+	margin-bottom:25px;
+}
+/* ================
+       Top画像
+ ================ */
 #Top{
 	background-image:url(../img/acoustic_guitar.jpg);
 	background-size: cover;
@@ -21,56 +27,251 @@ section{
 	color:#ffffff;
 }
 
+/* ================
+       検索Box
+ ================ */
 #Search{
 	height:219px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#ECAB48;
 }
 
-#Count{
-	height:219px;
+input::placeholder,#Search a{
+	color: #ECAB48;
+	font-weight:bold;
+}
+
+.Search_Box{
+	width:1378px;
+	height:155px;
+	border:solid 4px #F1C076;
+}
+
+.frame{
+	border:solid 0.5px #ECAB48;
+
+}
+
+/* 上側 */
+.Box_Up{
+	height:70%;
+	display:flex;
+}
+
+.freeWord{
+	width:90%;
+	height:100%;
+}
+.searchLogo{
+	width:10%;
+	height:100%;
 	background-color:#ECAB48;
 }
 
+form{
+	display:flex;
+	align-items:center;
+}
+input{
+	border:none;
+	outline: none;
+	font-size:30px;
+	padding-left:15px;
+}
 
+.searchLogo a{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+/* 下側 */
+.Box_Down{
+	height:30%;
+	display:flex;
+	align-items: center;
+	padding:0px 15px;
+}
+
+.Box_Down p{
+	width:20%;
+	font-size: 20px;
+}
+
+.keyWord{
+	width:80%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.keyWord a{
+	border:solid 0.5px #ECAB48;
+	border-radius:100px;
+	padding:5px 10px;
+}
+
+
+/* ================
+      人数カウント
+ ================ */
+#Count{
+	height:auto;
+	background-color:#ECAB48;
+	padding:0% 15%;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	font-size:25px;
+	color:#ffffff;
+	font-weight: bold;
+}
+#Count p{
+	padding:10px 0px;
+}
+
+#Count a{
+	border:solid 0px #ffffff;
+	background-color:#ffffff;
+	padding:15px 11px;
+	color:#ECAB48;
+}
+
+/* ================
+      コンテンツ一覧
+ ================ */
 .Content_List{
 	width:100vw;
 	padding:0px 10%;
 }
-
 .Content{
 	width:100%;
-	padding:70px 0px;
+	margin-top:70px;
 }
 
 .Content_Box{
 	width:80%;
-	height:100%;
 	margin:0 auto;
 	color:#F1C076;
 	font-size:15px;
 }
 
+/* ================
+      閲覧履歴
+ ================ */
+
 #History{
-	min-height:386px;
-	background-color:#FFF7CB;
-
+	min-height:auto;
+}
+.h_people{
+	display:flex;
+	justify-content: space-between;
 }
 
+#History a{
+	color:#F1C076;
+	font-size:15px;
+}
+
+/* ================
+      slider
+ ================ */
+.slider{
+	max-width: 100%;
+    margin: 0 auto;
+    color:#F1C076;
+}
+.slick-slide {
+    margin: 0 5px;
+}
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-prev{
+	left:-75px;
+}
+.slick-next{
+	right:-75px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #F1C076;
+    font-size:40px;
+    opacity:1;
+}
+
+/* ドット*/
+.slick-dots li button:before{
+    color: #F1C076;
+    opacity:1;
+    content:'◯';
+    font-size:13px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C076;
+    content:'●';
+    font-size:13px;
+    opacity:1;
+}
+
+.slick-dots li button:before{
+	line-height: 60px;
+}
+
+/* ================
+      TOPICS
+ ================ */
 #Topics{
-	min-height:475px;
-	background-color:#fcc;
-
+	height:auto;
 }
 
+/* ================
+      講座を探す
+ ================ */
 #Course{
-	min-height:475px;
-	background-color:#FFF7CB;
+	min-height:auto;
 }
 
+.c_slider{
+	padding:50px 80px;
+	background-color:#F1C076;
+}
+
+.c_list{
+	display:flex;
+	justify-content: space-between;
+	font-size: 16px;
+	margin-top:80px;
+}
+
+.c_title{
+	font-size:20px;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+
+/* ================
+      人気の講座
+ ================ */
 #Popular{
 	min-height:475px;
 	background-color:#fcc;
 
 }
+
+
+
+/* ================
+      人気の講座
+ ================ */
 
 #Teacher{
 	min-height:475px;

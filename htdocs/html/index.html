@@ -4,10 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
+	
+	<!--JQuery-->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css">
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/slick.js"></script>
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/top_style.css">
+
 
 </head>
 <body>
@@ -20,10 +32,48 @@
 			<p>セールスポイント</p>
 		</section>
 		<section id="Search">
+			<div class="Search_Box">
+				<div class="Box_Up">
+					<form action="" method="post" autocomplete="off" class="freeWord frame">
+							<input type="text" name="freeword" placeholder="フリーワード" required>
+					</form>
+					<div class="searchLogo frame">
+						<a href="#">
+							<img src="../img/searchLogo.png">
+						</a>
+					</div>
+				</div>
+				<div class="Box_Down frame">
+					<p>人気のキーワード</p>
+					<div class="keyWord">
+						<a href="#">WordPress</a>
+						<a href="#">ロゴ</a>
+						<a href="#">Webデザイン</a>
+						<a href="#">コーディング</a>
+						<a href="#">作曲</a>
+						<a href="#">写真</a>				
+					</div>
+				</div>
+
+			</div>
 			
 		</section>
 		<section id="Count">
-
+			<div class="countBox">
+				<p>登録生徒数</p>
+				<p>10,000人</p>
+			</div>
+			<div class="countBox">
+				<p>講座掲載数</p>
+				<p>4,000人</p>
+			</div>
+			<div class="countBox">
+				<p>登録先生数</p>
+				<p>2,000人</p>
+			</div>
+			<div class="countBox">
+				<a href="#">ロゴとは</a>
+			</div>
 		</section>
 
 		<div class="Content_List">
@@ -31,25 +81,110 @@
 			<section id="History" class="Content">
 				<div class="Content_Box">
 					<h2>最近の閲覧履歴</h2>
+					<div class="h_people">
+						<a href="#"><img src="../img/people.png"></a>
+						<a href="#"><img src="../img/people.png"></a>
+						<a href="#"><img src="../img/people.png"></a>
+						<a href="#"><img src="../img/people.png"></a>
+						<a href="#"><img src="../img/people.png"></a>
+					</div>
+					<div style="text-align:right">
+						<a href="#">さらに表示する</a>
+					</div>
 				</div>
 				
 			</section>
 
 			<section id="Topics" class="Content">
 				<div class="Content_Box">
-					<h2>TOPICS</h2>				
+					<h2>TOPICS</h2>
+					<ul class="slider t_slider">
+						<li><img src="../img/cooking_bread.JPG"></li>
+						<li><img src="../img/acoustic_guitar.JPG"></li>
+						<li><img src="../img/dancing.JPG"></li>
+					</ul>
 				</div>
 			</section>
 
 			<section id="Course" class="Content">
 				<div class="Content_Box">
-					<h2>講座を探す</h2>				
+					<h2>講座を探す</h2>
+					<ul class="slider c_slider">
+						<li><img src="../img/cooking_bread.JPG"></li>
+						<li><img src="../img/acoustic_guitar.JPG"></li>
+						<li><img src="../img/dancing.JPG"></li>
+					</ul>
+
+					<div class="c_list">
+						<div class="c_category">
+							<div class="c_title">
+								<a>ビジネススキル</a>
+							</div>
+							<div class="c_name">
+								<a>Excel</a></br>
+								<a>Word</a></br>
+								<a>PowerPoint</a></br>
+								<a>VBA</a></br>
+								<a>UiPath</a></br>
+							</div>
+						</div>
+						<div class="c_category">
+							<div class="c_title">
+								<a>IT・プログラミング</a>
+							</div>
+							<div class="c_name">
+								<a>JavaScript</a></br>
+								<a>Java</a></br>
+								<a>PHP</a></br>
+								<a>C++/C</a></br>
+								<a>Vue.js</a></br>
+							</div>
+						</div>
+						<div class="c_category">
+							<div class="c_title">
+								<a>Web/デザイン</a>
+							</div>
+							<div class="c_name">
+								<a>HTML/CSS</a></br>
+								<a>Photoshop</a></br>
+								<a>Illustrator</a></br>
+								<a>XD</a></br>
+								<a>Maya</a></br>
+							</div>
+						</div>
+						<div class="c_category">
+							<div class="c_title">
+								<a>フィットネス</a>
+							</div>
+							<div class="c_name">
+								<a>ヨガ</a></br>
+								<a>ピラティス</a></br>
+								<a>ストレッチ</a></br>
+								<a>筋力トレーニング</a></br>
+								<a>ダイエット</a></br>
+							</div>
+						</div>
+						<div class="c_category">
+							<div class="c_title">
+								<a>ものづくり/DIY</a>
+							</div>
+							<div class="c_name">
+								<a>木工DIY</a></br>
+								<a>伝統工芸</a></br>
+								<a>電子機器</a></br>
+								<a>金属加工</a></br>
+								<a>ものづくり加工講座</a></br>
+							</div>
+						</div>
+
+					</div>
 				</div>
+
 			</section>
 
 			<section id="Popular" class="Content">
 				<div class="Content_Box">
-					<h2>人気の講座</h2>				
+					<h2>人気の講座</h2>
 				</div>
 			</section>
 			
