@@ -13,4 +13,11 @@ function slick(){
     	slidesToScroll: 1
 	});
 
+	$('.r_slider').slick({
+		dots: true,
+	    infinite: true,
+    	slidesToShow: 1,
+    	slidesToScroll: 1
+	});
+
 }

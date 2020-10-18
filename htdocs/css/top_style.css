@@ -194,6 +194,7 @@ input{
     height: auto;
 }
 
+/* 矢印 */
 .slick-prev{
 	left:-75px;
 }
@@ -205,6 +206,12 @@ input{
     color: #F1C076;
     font-size:40px;
     opacity:1;
+}
+
+#Review .slick-prev:before, #Review .slick-next:before{
+	color:#ffffff;
+    font-size:75px;
+
 }
 
 /* ドット*/
@@ -225,6 +232,9 @@ input{
 .slick-dots li button:before{
 	line-height: 60px;
 }
+
+
+
 
 /* ================
       TOPICS
@@ -263,8 +273,6 @@ input{
  ================ */
 #Popular{
 	min-height:475px;
-	background-color:#fcc;
-
 }
 
 
@@ -275,15 +283,113 @@ input{
 
 #Teacher{
 	min-height:475px;
-	background-color:#FFF7CB;
 	text-align:center;
 }
+.t_teacher{
+	width:350px;
+	height:614px;
+	border:3px solid #ECAD4E;
+	position:relative;
+}
 
+.t_first{
+	background-image:url("../img/teacher2.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+.t_second{
+	background-image:url("../img/teacher2.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+.t_third{
+	background-image:url("../img/teacher2.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+.t_name{
+	background-color:#ECAD4E;
+	width:80%;
+	height:52px;
+	color:#ffffff;
+	position:absolute;
+	top:222px;
+	padding-left:10px;
+	font-size:30px;
+	display:flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.t_text{
+	position:absolute;
+	top:60%;
+	height:40%;
+	background-color:#ffffff;
+	margin:0 auto;
+}
+
+.t_text::before{
+	content:"";
+	position:absolute;
+	top:-60px;
+	right:0px;
+	width:0;
+	height:0;
+	border-bottom:30px solid #ffffff;
+	border-right:175px solid #ffffff;
+	border-left:175px solid transparent;
+	border-top:30px solid transparent;
+}
+
+.t_intro{
+	padding:4px;
+	font-size:25px;
+	color:#F1C076;
+}
+
+.t_desc{
+	font-size:20px;
+	color:#F1C076;
+	margin:0px 24px;
+	text-align:left;
+}
+
+.t_link{
+	position:absolute;
+	top:80%;
+	width:100%;
+	height:20%;
+	background-color:#ECAD4E;
+}
+
+.t_link a{
+	width:100%;
+	height:100%;
+	color:#ffffff;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.t_list{
+	display:flex;
+	justify-content: space-between;
+
+}
+
+/* ================
+      レビュー
+ ================ */
 #Review{
 	min-height:1200px;
 	text-align:center;
 	color:#FFD698;
-
+	background-image:url(../img/Review.jpg);
 }
 .border{
 	margin:16px auto;
@@ -300,6 +406,65 @@ input{
 .Short{
 	width:5%;
 }
+.r_box{
+	width:1090px;
+	height:516px;
+	border-radius:5px;
+	border:solid 5px #F1C076;
+
+	color:white;
+	margin:0 auto;
+}
+.r_box1{
+/*	width:100%;*/
+	background-color:#F1C076;
+	height:60%;
+	text-align:left;
+	padding-left:80px;
+}
+
+.r_title{
+	padding-top:60px;
+	font-size:50px;
+}
+.r_text{
+	font-size:28px;
+	padding:40px 0px;
+}
+
+.r_box2{
+/*	width:100%;*/
+	background-color:#ffffff;
+	height:40%;
+	color:#F1C076;
+
+	display:flex;
+	align-items: center;
+}
+.r_kouza{
+	width:60%;
+	flex-direction:column;
+	font-size:30px;
+}
+.r_link{
+	width:40%;
+	font-size:30px;
+}
+
+.r_link a{
+	width:80%;
+	height:60%;
+	background-color:#F1C076;
+	padding:35px 115px;
+	border-radius:15px;
+	color:#ffffff;
+}
+
+
+
+/* ================
+      地域・エリア
+ ================ */
 
 #Area{
 /*	min-height:1205px;*/
@@ -320,21 +485,4 @@ input{
 }
 .Area_box a{
 	color:#ffffff;
-}
-
-#Ticket{
-	background-color:#2D2D2D;
-	color:#FFFFFF;
-}
-
-.Ticket_list{
-	display:flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-.reset{
-	display:flex;
-	justify-content: flex-start;
-	flex-direction:column
 }

@@ -25,13 +25,24 @@
 </head>
 <body>
 	<header>
-		
+		<a href="#" class="h_logo"><img src="../img/logo.png"></a>
+		<p>学びを、知識を、共有しよう！</p>
+		<div class="h_icon">
+			<div><a href="#"><img src="../img/bell.png"></a></div>
+			<div><a href="#"><img src="../img/chat.png"></a></div>
+			<div><a href="#"><img src="../img/person.png"></a></div>			
+		</div>
+
 	</header>
 
 	<main>
 		<section id="Top">
 			<p>セールスポイント</p>
 		</section>
+
+		<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　検索BOX
+		　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 		<section id="Search">
 			<div class="Search_Box">
 				<div class="Box_Up">
@@ -59,6 +70,10 @@
 			</div>
 			
 		</section>
+
+		<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　登録人数
+		　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 		<section id="Count">
 			<div class="countBox">
 				<p>登録生徒数</p>
@@ -79,6 +94,9 @@
 
 		<div class="Content_List">
 
+			<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　　　閲覧履歴
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 			<section id="History" class="Content">
 				<div class="Content_Box">
 					<h2>最近の閲覧履歴</h2>
@@ -96,6 +114,9 @@
 				
 			</section>
 
+			<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　　　TOPICS
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 			<section id="Topics" class="Content">
 				<div class="Content_Box">
 					<h2>TOPICS</h2>
@@ -107,6 +128,9 @@
 				</div>
 			</section>
 
+			<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　　　講座を探す
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 			<section id="Course" class="Content">
 				<div class="Content_Box">
 					<h2>講座を探す</h2>
@@ -183,25 +207,147 @@
 
 			</section>
 
+			<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　　　人気の講座
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 			<section id="Popular" class="Content">
 				<div class="Content_Box">
 					<h2>人気の講座</h2>
+					<ul class="slider c_slider">
+						<li><img src="../img/cooking_bread.JPG"></li>
+						<li><img src="../img/acoustic_guitar.JPG"></li>
+						<li><img src="../img/dancing.JPG"></li>
+					</ul>
+
 				</div>
 			</section>
 			
+			<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　　　先生紹介
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 			<section id="Teacher" class="Content">
-				<h2>先生紹介</h2>				
+				<!-- タイトル -->
+				<div class="Content_Box">
+					<h2>先生紹介</h2>
+					<div class="border Long"></div>	
+				</div>
+				<!-- 先生リスト -->
+				<div class="t_list">
+					<!-- 先生　No.1 -->
+					<div class="t_teacher t_first">
+						<div class="t_name">
+							<p>JaneBeck</p>
+						</div>
+						<div class="t_text">
+							<div class="t_intro">
+								<p>Introduction</p>
+							</div>
+							<div class="t_desc">
+								<p>
+									I'm Programming School Teacher for Eighteen Years.</br>
+									Java / Python and more...
+								</p>
+							</div>
+							<div class="t_link">
+								<a href="#">講師詳細</a>
+							</div>
+						</div>
+					</div>
+					<!-- 先生　No.2 -->
+					<div class="t_teacher t_second">
+						<div class="t_name">
+							<p>JaneBeck</p>
+						</div>
+						<div class="t_text">
+							<div class="t_intro">
+								<p>Introduction</p>
+							</div>
+							<div class="t_desc">
+								<p>
+									I'm Programming School Teacher for Eighteen Years.</br>
+									Java / Python and more...
+								</p>
+							</div>
+							<div class="t_link">
+								<a href="#">講師詳細</a>
+							</div>
+						</div>
+					</div>
+					<!-- 先生　No.3 -->
+					<div class="t_teacher t_third">
+						<div class="t_name">
+							<p>JaneBeck</p>
+						</div>
+						<div class="t_text">
+							<div class="t_intro">
+								<p>Introduction</p>
+							</div>
+							<div class="t_desc">
+								<p>
+									I'm Programming School Teacher for Eighteen Years.</br>
+									Java / Python and more...
+								</p>
+							</div>
+							<div class="t_link">
+								<a href="#">講師詳細</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</section>
 
 		</div>
 
 
 		<section id="Review">
-			<h2>レビュー</h2>
-			<div class="border Long"></div>	
-			<div class="border Middle"></div>	
-			<div class="border Short"></div>	
+			<div class="Content_Box">
+				<h2>レビュー</h2>
+				<div class="border Long"></div>	
+				<div class="border Middle"></div>	
+				<div class="border Short"></div>	
 
+				<ul class="slider r_slider">
+					<!-- レビュー1 -->
+					<li>
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+					<!-- レビュー2 -->
+					<li>
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<section id="Area">
@@ -291,75 +437,112 @@
 						<a href="#">沖縄</a>
 					</p>
 				</div>
-
-
 			</div>
-
 		</section>
-
-		<section id="Ticket">
-			<div class="Content_List">
-				<h2>Skill-Ticket(スキルチケット)</h2>
-				<div class="Ticket_list">
-					<!-- チケットを見つける -->
-					<div class="Ticket_locate reset">
-						<p>チケットを見つける</p>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-					</div>
-					<div class="Ticket_box reset">
-						<!-- チケットを出品する -->
-						<div class="Ticket_listing reset">
-							<p>チケットを出品する</p>								
-							<a href="#">出品方法</a>
-							<a href="#">出品のコツ</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-
-						</div>
-						<!-- サイト情報 -->
-						<div class="Ticket_site reset">
-							<p>サイト情報</p>
-							<a href="#">ご利用ガイド</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-							<a href="#">ジャンル</a>
-						</div>					
-					</div>
-					<!-- スキルチケットをもっと知る -->
-					<div class="Ticket_know reset">
-						<p>スキルチケットをもっと知る</p>						
-						<a href="#">ご利用ガイド</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-						<a href="#">ジャンル</a>
-					</div>
-					<!-- お問い合わせ -->
-					<div class="Ticket_contact reset">
-						<p>サポートへの問い合わせはこちら</p>
-					</div>
-				</div>				
-			</div>
-
-
-		</section>
-
-
-
 	</main>
 
 	<footer>
-		
+		<div class="Content_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div reset border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_list">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div reset border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing reset">
+						<p>チケットを出品する</p>
+						<div class="Ticket_list">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site reset">
+						<p>サイト情報</p>
+						<div class="Ticket_list">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div reset border_dash">
+					<p>スキルチケットを</br>もっと知る</p>	
+					<div class="Ticket_list">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea>サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。</textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="../img/sns_twitter.png">
+							<img src="../img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>				
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>	
 	</footer>
 
 </body>

@@ -15,3 +15,162 @@ a{
 ul, ol, li{
 	list-style: none;
 }
+
+/* ============== 
+      header
+   ============== */
+header{
+	background-color:#787982;
+	height:109px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+
+	color:#ffffff;
+	font-size:50px;
+}
+
+
+.h_logo{
+	height:80px;
+	margin-left:30px;
+}
+.h_logo img{
+	height:100%;
+}
+
+
+
+.h_icon{
+	display:flex;
+	height:100%;
+}
+.h_icon div{
+	width:109px;
+	background-color:#ffffff;
+	border:solid 1px #F9DEB4;
+
+}
+
+.h_icon a{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+/* ============== 
+      footer
+   ============== */
+footer{
+	background-color:#2D2D2D;
+}
+
+footer h2{
+	padding:48px 0px 96px;
+	color:#ffffff;
+}
+
+.Ticket_box{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom:65px;
+}
+
+
+.t_div{
+	color:#FFBA43;
+	height:100%;
+}
+
+.Ticket_list{
+	color:#ffffff;
+	padding-top:34px;
+
+}
+.Ticket_list p{
+	padding-bottom:8px;
+}
+
+.reset{
+	display:flex;
+	justify-content: flex-start;
+	flex-direction:column
+}
+
+.border_solid{
+	border-right:solid 1px rgba(255,255,255,0.6);
+}
+
+.border_dash{
+	border-right:dashed 1px rgba(255,255,255,0.6);
+}
+
+.Ticket_contact{
+	color:#ffffff;
+	text-align:center;
+}
+
+.contact_btn{
+	background:linear-gradient(to top,#C97D06,#FBBB5B);
+	height:40px;
+	margin:54px 0px;
+}
+
+.contact_btn a{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	width:100%;
+	height:100%;
+	color:#ffffff;
+}
+
+form{
+	padding-top:24px;
+}
+textarea{
+	resize:none;
+	width:240px;
+	height:170px;
+
+	font-size:10px;
+	color:#BCAF9A;
+	background-color:#FBECD6;
+	padding:9px 12px;
+}
+
+.sns{
+	color:#FFBA43;
+	font-size:25px;
+	padding-top:52px;
+}
+
+.sns_icon{
+	display:flex;
+	justify-content:center;
+	padding-top:20px;
+}
+
+.sns_icon img{
+	width:40px;
+	margin:0px 10px;
+}
+
+.copyright{
+	height:120px;
+	background-color:#ffffff;
+	color:#979797;
+	font-size:30px;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
