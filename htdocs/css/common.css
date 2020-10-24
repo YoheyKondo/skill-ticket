@@ -30,16 +30,18 @@ header{
 	font-size:34px;
 }
 
-
 .h_logo{
-	height:60px;
+	width:146px;
 	margin-left:30px;
+	position:relative;
 }
 .h_logo img{
-	width:146px;
+	width:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
 }
-
-
 
 .h_iconList{
 	display:flex;
@@ -105,7 +107,6 @@ footer h2{
 .Ticket_link{
 	color:#ffffff;
 	padding-top:34px;
-
 }
 .Ticket_link p{
 	padding-top:0px;
@@ -182,13 +183,98 @@ textarea{
 }
 
 .copyright{
-	height:120px;
+	height:72px;
 	background-color:#ffffff;
 	color:#979797;
-	font-size:30px;
+	font-size:16px;
 
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
 
+/* =================
+     レスポンシブ対応
+   ================= */
+
+/* タブレット*/
+@media screen and (max-width: 1023px){
+	.tablet_none{
+		display:none;
+	}
+
+	/*heder*/
+	header{
+		height:64px;
+		font-size:24px;
+	}
+
+	.h_logo{
+		width:80px;
+		margin-left:15px;
+		position:relative;
+	}
+	.h_logo img{
+		width:100%;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+
+
+	/*Footer*/
+	footer h2{
+		padding:32px 0px 40px;
+		color:#ffffff;
+	}
+	.Ticket_box{
+		display:block;
+	}
+	.Ticket_link{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.Ticket_link p{
+		padding-bottom:8px;
+		padding-right:16px;
+		font-size:16px;
+	}
+
+	.border_solid{
+		border-right:none;
+	}
+
+	.border_dash{
+		border-right:none;
+		border-bottom:dashed 1px rgba(255,255,255,0.6);
+
+	}
+
+	/*サイト情報*/
+	.Ticket_site p{
+		padding-top:0px;
+	}
+	.Ticket_link{
+		padding:16px 8px;
+	}
+
+	.Ticket_contact{
+		padding-top:32px;
+	}
+
+	.contact_btn{
+		width:50%;
+		margin:24px auto;
+	}
+	textarea{
+		resize:none;
+		width:50%;
+		height:170px;
+	}
+}
+
+
+/* スマホ*/
+@media screen and (max-width: 749px){
+}

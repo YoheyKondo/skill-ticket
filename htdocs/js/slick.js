@@ -6,20 +6,37 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	centerMode:true,
-    	centerPadding:'0px'
+    	centerPadding:'0px',
+    	responsive:[{
+    		breakpoint:1023,
+    		settings:{
+    			slidesToShow: 1,
+    		}
+    	}]
     });
 
 	$('.c_slider').slick({
 		dots: false,
     	slidesToShow: 2,
     	slidesToScroll: 1,
-
+    	responsive:[{
+    		breakpoint:1023,
+    		settings:{
+    			slidesToShow: 1,
+    		}
+    	}]
 	});
 
 	$('.p_slider').slick({
 		dots: false,
     	slidesToShow: 2,
     	slidesToScroll: 1,
+    	responsive:[{
+    		breakpoint:1023,
+    		settings:{
+    			slidesToShow: 1,
+    		}
+    	}]
 
 	});
 
