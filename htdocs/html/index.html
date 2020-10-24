@@ -27,17 +27,20 @@
 	<header>
 		<a href="#" class="h_logo"><img src="../img/logo.png"></a>
 		<p>学びを、知識を、共有しよう！</p>
-		<div class="h_icon">
-			<div><a href="#"><img src="../img/bell.png"></a></div>
-			<div><a href="#"><img src="../img/chat.png"></a></div>
-			<div><a href="#"><img src="../img/person.png"></a></div>			
+		<div class="h_iconList">
+			<div class="h_icon"><a href="#"><img src="../img/bell.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
 		</div>
 
 	</header>
 
 	<main>
 		<section id="Top">
-			<p>セールスポイント</p>
+			<div>
+				<img src="../img/logo.png">
+				<p>セールスポイント</p>				
+			</div>
 		</section>
 
 		<!--　＝＝＝＝＝＝＝＝＝＝
@@ -45,25 +48,30 @@
 		　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 		<section id="Search">
 			<div class="Search_Box">
+				<!-- 上段 -->
 				<div class="Box_Up">
-					<form action="" method="post" autocomplete="off" class="freeWord frame">
-							<input type="text" name="freeword" placeholder="フリーワード" required>
+					<!-- フリーワード -->
+					<form action="" method="post" autocomplete="off" class="freeWord">
+						<input type="text" name="freeword" placeholder="フリーワード" required>
 					</form>
-					<div class="searchLogo frame">
+					<!-- 虫眼鏡 -->
+					<div class="searchLogo">
 						<a href="#">
 							<img src="../img/searchLogo.png">
 						</a>
 					</div>
 				</div>
+				<!-- 下段 -->
 				<div class="Box_Down frame">
 					<p>人気のキーワード</p>
 					<div class="keyWord">
 						<a href="#">WordPress</a>
-						<a href="#">ロゴ</a>
-						<a href="#">Webデザイン</a>
-						<a href="#">コーディング</a>
+						<a href="#">ロゴデザイン</a>
+						<a href="#">ヨガ</a>
+						<a href="#">ギター初心者</a>
 						<a href="#">作曲</a>
-						<a href="#">写真</a>				
+						<a href="#">写真</a>	
+						<a href="#">Web</a>	
 					</div>
 				</div>
 
@@ -72,7 +80,7 @@
 		</section>
 
 		<!--　＝＝＝＝＝＝＝＝＝＝
-			　　　　登録人数
+			　　　　登録件数
 		　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 		<section id="Count">
 			<div class="countBox">
@@ -92,6 +100,7 @@
 			</div>
 		</section>
 
+		<!-- コンテンツ一覧 -->
 		<div class="Content_List">
 
 			<!--　＝＝＝＝＝＝＝＝＝＝
@@ -100,14 +109,14 @@
 			<section id="History" class="Content">
 				<div class="Content_Box">
 					<h2>最近の閲覧履歴</h2>
-					<div class="h_people">
+					<div class="h_list">
 						<a href="#"><img src="../img/people.png"></a>
 						<a href="#"><img src="../img/people.png"></a>
 						<a href="#"><img src="../img/people.png"></a>
 						<a href="#"><img src="../img/people.png"></a>
 						<a href="#"><img src="../img/people.png"></a>
 					</div>
-					<div style="text-align:right">
+					<div class="h_more" style="">
 						<a href="#">さらに表示する</a>
 					</div>
 				</div>
@@ -213,7 +222,7 @@
 			<section id="Popular" class="Content">
 				<div class="Content_Box">
 					<h2>人気の講座</h2>
-					<ul class="slider c_slider">
+					<ul class="slider p_slider">
 						<li><img src="../img/cooking_bread.JPG"></li>
 						<li><img src="../img/acoustic_guitar.JPG"></li>
 						<li><img src="../img/dancing.JPG"></li>
@@ -299,7 +308,9 @@
 
 		</div>
 
-
+		<!--　＝＝＝＝＝＝＝＝＝＝
+			　　　　レビュー
+		　　　 ＝＝＝＝＝＝＝＝＝＝ -->
 		<section id="Review">
 			<div class="Content_Box">
 				<h2>レビュー</h2>
@@ -309,6 +320,27 @@
 
 				<ul class="slider r_slider">
 					<!-- レビュー1 -->
+					<li>
+						<!-- 上段（感想） -->
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<!-- 下段（詳細） -->
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+					<!-- レビュー2 -->
 					<li>
 						<div class="r_box">
 							<div class="r_box1">
@@ -327,7 +359,65 @@
 							</div>						
 						</div>
 					</li>
-					<!-- レビュー2 -->
+					<!-- レビュー3 -->
+					<li>
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+
+					<!-- レビュー4 -->
+					<li>
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+					<!-- レビュー5 -->
+					<li>
+						<div class="r_box">
+							<div class="r_box1">
+								<p class="r_title">考え方の効率化ができました！</p>
+								<p class="r_text">WEBオンライン講座を受講して、考え方について１から学ぶことができました！
+	○○先生の別途ある講座も受講したいと思っています！</p>
+							</div>
+							<div class="r_box2">
+								<div class="r_kouza">
+									<p>オンラインWEB講座　HTML/CSS編</p>
+									<p>講師 YK</p>
+								</div>
+								<div class="r_link">
+									<a href="#">講座詳細へ</a>
+								</div>
+							</div>						
+						</div>
+					</li>
+					<!-- レビュー6 -->
 					<li>
 						<div class="r_box">
 							<div class="r_box1">
@@ -442,13 +532,13 @@
 	</main>
 
 	<footer>
-		<div class="Content_List">
+		<div class="Footer_List">
 			<h2>Skill-Ticket(スキルチケット)</h2>
 			<div class="Ticket_box">
 				<!-- チケットを見つける -->
-				<div class="t_div reset border_solid">
+				<div class="t_div border_solid">
 					<p>チケットを見つける</p>
-					<div class="Ticket_list">
+					<div class="Ticket_link">
 						<p class="t_dots">・<a href="#">ジャンル</a></p>
 						<p class="t_dots">・<a href="#">ジャンル</a></p>
 						<p class="t_dots">・<a href="#">ジャンル</a></p>
@@ -470,11 +560,11 @@
 						<p class="t_dots">・<a href="#">ジャンル</a></p>
 					</div>
 				</div>
-				<div class="t_div reset border_solid">
+				<div class="t_div border_solid">
 					<!-- チケットを出品する -->
-					<div class="Ticket_listing reset">
+					<div class="Ticket_listing">
 						<p>チケットを出品する</p>
-						<div class="Ticket_list">
+						<div class="Ticket_link">
 							<p class="t_dots">・<a href="#">出品方法</a></p>
 							<p class="t_dots">・<a href="#">出品のコツ</a></p>
 							<p class="t_dots">・<a href="#">ジャンル</a></p>
@@ -488,9 +578,9 @@
 						</div>
 					</div>
 					<!-- サイト情報 -->
-					<div class="Ticket_site reset">
+					<div class="Ticket_site">
 						<p>サイト情報</p>
-						<div class="Ticket_list">
+						<div class="Ticket_link">
 							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
 							<p class="t_dots">・<a href="#">ジャンル</a></p>
 							<p class="t_dots">・<a href="#">ジャンル</a></p>
@@ -500,9 +590,9 @@
 					</div>
 				</div>
 				<!-- スキルチケットをもっと知る -->
-				<div class="t_div reset border_dash">
+				<div class="t_div border_dash">
 					<p>スキルチケットを</br>もっと知る</p>	
-					<div class="Ticket_list">
+					<div class="Ticket_link">
 						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
 						<p class="t_dots">・<a href="#">ジャンル</a></p>
 						<p class="t_dots">・<a href="#">ジャンル</a></p>

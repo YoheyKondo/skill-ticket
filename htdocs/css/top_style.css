@@ -5,8 +5,9 @@ section{
 }
 
 h2{
-	margin-bottom:25px;
+	padding-top:30px;
 }
+
 /* ================
        Top画像
  ================ */
@@ -15,23 +16,26 @@ h2{
 	background-size: cover;
 	background-position: center;
 	height:calc(100vw * 0.33);
-	padding-bottom:43px;
-
-	display:flex;
-	justify-content: center;
-	align-items: flex-end;
+	position:relative;
 }
 
-#Top p{
-	text-align: center;
+#Top div{
 	color:#ffffff;
+	position:absolute;
+	bottom:0%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+#Top img{
+	width:146px;
 }
 
 /* ================
        検索Box
  ================ */
 #Search{
-	height:219px;
+	height:146px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -44,95 +48,109 @@ input::placeholder,#Search a{
 }
 
 .Search_Box{
-	width:1378px;
-	height:155px;
+	width:80%;
+	max-width:960px;
+	height:90%;
 	border:solid 4px #F1C076;
 }
-
-.frame{
-	border:solid 0.5px #ECAB48;
-
+.Box_Up,.Box_Down{
+	border:solid 1px #ECAB48;
 }
 
-/* 上側 */
+/* ===上段=== */
 .Box_Up{
-	height:70%;
+	height:60%;
 	display:flex;
+	justify-content:space-between;
 }
 
-.freeWord{
+/* フリーワード*/
+.freeWord{ /* form */
 	width:90%;
 	height:100%;
+	position:relative;
 }
+input{
+	/* 位置設定 */
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	padding-left:15px;
+	/* フォント */
+	border:none;
+	outline: none;
+	font-size:20px;
+}
+
+/* 虫眼鏡 */
 .searchLogo{
-	width:10%;
+	width:60px;
 	height:100%;
 	background-color:#ECAB48;
 }
-
-form{
-	display:flex;
-	align-items:center;
-}
-input{
-	border:none;
-	outline: none;
-	font-size:30px;
-	padding-left:15px;
-}
-
 .searchLogo a{
 	width:100%;
 	height:100%;
-	display:flex;
-	justify-content: center;
-	align-items: center;
 
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+.searchLogo img{
+	width:60%;
 }
 
-/* 下側 */
+/* ===下段=== */
 .Box_Down{
-	height:30%;
+	height:40%;
 	display:flex;
 	align-items: center;
 	padding:0px 15px;
 }
-
+/* 人気のキーワード */
 .Box_Down p{
 	width:20%;
-	font-size: 20px;
+	font-size: 16px;
 }
-
+/* キーワードリスト */
 .keyWord{
 	width:80%;
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .keyWord a{
+	font-size:11px;
 	border:solid 0.5px #ECAB48;
 	border-radius:100px;
 	padding:5px 10px;
 }
+.frame{
+	border:solid 0.5px #ECAB48;
+}
 
 
 /* ================
-      人数カウント
+      登録件数
  ================ */
 #Count{
 	height:auto;
+	padding:24px 0px;
+
 	background-color:#ECAB48;
-	padding:0% 15%;
 	display:flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items:center;
 	font-size:25px;
 	color:#ffffff;
 	font-weight: bold;
 }
+#Count div{
+	margin:0px 25px;
+}
 #Count p{
-	padding:10px 0px;
+	padding:5px 0px;
 }
 
 #Count a{
@@ -147,13 +165,12 @@ input{
  ================ */
 .Content_List{
 	width:100vw;
-	padding:0px 10%;
 }
 .Content{
-	width:100%;
-	margin-top:70px;
+	max-width:960px;
+	width:80%;
+	margin:70px auto;
 }
-
 .Content_Box{
 	width:80%;
 	margin:0 auto;
@@ -164,19 +181,24 @@ input{
 /* ================
       閲覧履歴
  ================ */
-
 #History{
-	min-height:auto;
+	height:auto;
 }
-.h_people{
+/* 閲覧リスト*/
+.h_list{
 	display:flex;
 	justify-content: space-between;
 }
-
-#History a{
-	color:#F1C076;
+/*さらに表示*/
+.h_more{
+	text-align:right;
+	padding-top:16px;
 	font-size:15px;
 }
+.h_more a{
+	color:#F1C076;
+}
+
 
 /* ================
       slider
@@ -186,32 +208,38 @@ input{
     margin: 0 auto;
     color:#F1C076;
 }
-.slick-slide {
-    margin: 0 5px;
+.slick-slide{
+    margin:0px 5px;
 }
-.slick-slide img {
+.slick-slide img{
     width: 100%;
     height: auto;
 }
 
-/* 矢印 */
+/* 矢印（レビュー以外） */
 .slick-prev{
 	left:-75px;
 }
 .slick-next{
 	right:-75px;
 }
-
 .slick-prev:before, .slick-next:before {
     color: #F1C076;
     font-size:40px;
     opacity:1;
 }
 
+/* 矢印（レビュー）*/
+#Review .slick-prev{
+	left:100px;
+}
+#Review .slick-next{
+	right:150px;
+}
+
 #Review .slick-prev:before, #Review .slick-next:before{
 	color:#ffffff;
     font-size:75px;
-
 }
 
 /* ドット*/
@@ -233,7 +261,9 @@ input{
 	line-height: 60px;
 }
 
-
+#Review .slick-dots{
+	bottom:30px;
+}
 
 
 /* ================
@@ -247,7 +277,7 @@ input{
       講座を探す
  ================ */
 #Course{
-	min-height:auto;
+	height:auto;
 }
 
 .c_slider{
@@ -262,6 +292,12 @@ input{
 	margin-top:80px;
 }
 
+.c_slider img{
+	width:240px;
+	height:240px;
+	object-fit:cover;
+	border-radius:15px;
+}
 .c_title{
 	font-size:20px;
 	font-weight: bold;
@@ -272,10 +308,20 @@ input{
       人気の講座
  ================ */
 #Popular{
-	min-height:475px;
+	height:auto;
+}
+.p_slider{
+	padding:50px 80px;
+	background-color:#F1C076;
+	border-radius:15px;
 }
 
-
+.p_slider img{
+	width:240px;
+	height:240px;
+	object-fit:cover;
+	border-radius:15px;
+}
 
 /* ================
       人気の講座
@@ -285,27 +331,32 @@ input{
 	min-height:475px;
 	text-align:center;
 }
+
+/*　先生 */
 .t_teacher{
-	width:350px;
-	height:614px;
+	width:233px;
+	height:400px;
 	border:3px solid #ECAD4E;
 	position:relative;
 }
 
+/* 先生No.1 */
 .t_first{
-	background-image:url("../img/teacher2.jpg");
+	background-image:url("../img/teacher1.jpg");
 	background-size:cover;
 	background-position:center -50px;
 }
 
+/* 先生No.2 */
 .t_second{
 	background-image:url("../img/teacher2.jpg");
 	background-size:cover;
 	background-position:center -50px;
 }
 
+/* 先生No.3 */
 .t_third{
-	background-image:url("../img/teacher2.jpg");
+	background-image:url("../img/teacher3.jpg");
 	background-size:cover;
 	background-position:center -50px;
 }
@@ -313,12 +364,12 @@ input{
 .t_name{
 	background-color:#ECAD4E;
 	width:80%;
-	height:52px;
+	height:35px;
 	color:#ffffff;
 	position:absolute;
-	top:222px;
+	top:140px;
 	padding-left:10px;
-	font-size:30px;
+	font-size:24px;
 	display:flex;
 	justify-content: left;
 	align-items: center;
@@ -335,24 +386,24 @@ input{
 .t_text::before{
 	content:"";
 	position:absolute;
-	top:-60px;
+	top:-50px;
 	right:0px;
 	width:0;
 	height:0;
-	border-bottom:30px solid #ffffff;
-	border-right:175px solid #ffffff;
-	border-left:175px solid transparent;
-	border-top:30px solid transparent;
+	border-bottom:25px solid #ffffff;
+	border-right:114px solid #ffffff;
+	border-left:114px solid transparent;
+	border-top:25px solid transparent;
 }
 
 .t_intro{
 	padding:4px;
-	font-size:25px;
+	font-size:16px;
 	color:#F1C076;
 }
 
 .t_desc{
-	font-size:20px;
+	font-size:10px;
 	color:#F1C076;
 	margin:0px 24px;
 	text-align:left;
@@ -364,6 +415,32 @@ input{
 	width:100%;
 	height:20%;
 	background-color:#ECAD4E;
+}
+
+
+.t_link::before{
+	content:'';
+	width: 40px;
+  	height: 0px;
+  	border-top: solid 1px #ffffff;
+	position:absolute;
+	top:50%;
+	right:10%;
+}
+.t_link::after{
+	content:'';
+	width: 8px;
+  	height: 8px;
+  	border: 0px;
+	border-top: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	position:absolute;
+	top:35%;
+	right:10%;
 }
 
 .t_link a{
@@ -379,20 +456,27 @@ input{
 .t_list{
 	display:flex;
 	justify-content: space-between;
-
 }
 
 /* ================
       レビュー
  ================ */
 #Review{
-	min-height:1200px;
+	min-height:800px;
 	text-align:center;
 	color:#FFD698;
 	background-image:url(../img/Review.jpg);
+	position:relative;
 }
+
+#Review h2{
+	text-shadow:1px 2px 1px #707070;
+}
+
+/* 下線　*/
 .border{
-	margin:16px auto;
+	margin:0 auto;
+	margin-bottom:16px;
 	border:solid 1px #FFD698;
 	filter:drop-shadow(1px 2px 1px #707070);
 	background-color:#FFD698;
@@ -406,56 +490,67 @@ input{
 .Short{
 	width:5%;
 }
+
+.r_slider{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+
+}
 .r_box{
-	width:1090px;
-	height:516px;
-	border-radius:5px;
+	width:80%;
+	max-width:650px;
+	height:330px;
+	border-radius:15px;
 	border:solid 5px #F1C076;
 
 	color:white;
 	margin:0 auto;
 }
 .r_box1{
-/*	width:100%;*/
 	background-color:#F1C076;
 	height:60%;
 	text-align:left;
-	padding-left:80px;
+	padding:0 5%;
 }
 
 .r_title{
-	padding-top:60px;
-	font-size:50px;
+	padding-top:5%;
+	font-size:24px;
 }
 .r_text{
-	font-size:28px;
+	font-size:16px;
 	padding:40px 0px;
 }
 
 .r_box2{
-/*	width:100%;*/
 	background-color:#ffffff;
 	height:40%;
 	color:#F1C076;
+	padding:0 5%;
+	border-radius:0px 0px 15px 15px;
 
 	display:flex;
 	align-items: center;
 }
 .r_kouza{
-	width:60%;
+	width:65%;
 	flex-direction:column;
-	font-size:30px;
+	font-size:16px;
+	text-align:left;
 }
 .r_link{
-	width:40%;
-	font-size:30px;
+	width:35%;
+	font-size:16px;
+	text-align:right;
 }
 
 .r_link a{
 	width:80%;
 	height:60%;
 	background-color:#F1C076;
-	padding:35px 115px;
+	padding:16px 48px;
 	border-radius:15px;
 	color:#ffffff;
 }
@@ -467,11 +562,10 @@ input{
  ================ */
 
 #Area{
-/*	min-height:1205px;*/
 	background:linear-gradient(to top,#C97D06,#FBBB5B);
 	color:#ffffff;
-	padding-top:72px;
-	padding-bottom:144px;
+	padding-top:64px;
+	padding-bottom:72px;
 
 }
 
@@ -481,7 +575,7 @@ input{
 }
 
 .Area_box{
-	padding:33px 0px;
+	padding:24px 0px;
 }
 .Area_box a{
 	color:#ffffff;
