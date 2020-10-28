@@ -8,7 +8,9 @@ h2{
 	padding-top:32px;
 	padding-bottom:24px;
 }
-
+*:focus{
+	outline: none!important;
+}
 /* ================
        Top画像
  ================ */
@@ -215,8 +217,9 @@ input{
     margin:0px 5px;
 }
 .slick-slide img{
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
 }
 
 /* 矢印（レビュー以外） */
@@ -230,6 +233,10 @@ input{
     color: #F1C076;
     font-size:40px;
     opacity:1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 矢印（レビュー）*/
@@ -274,8 +281,17 @@ input{
  ================ */
 #Topics{
 	height:auto;
+	width: 120%;
 }
-
+#Topics > div.Content_Box{
+	width: 90%;
+}
+#Topics .slick-next{
+	right: -27.5px;
+}
+#Topics .slick-prev{
+	left: -27.5px;
+}
 /* ================
       講座を探す
  ================ */
