@@ -1,16 +1,18 @@
 @charset "UTF-8";
 
 section{
-	width:100vw;
+	width:100%;
 }
 
 h2{
 	padding-top:32px;
 	padding-bottom:24px;
 }
+
 *:focus{
 	outline: none!important;
 }
+
 /* ================
        Top画像
  ================ */
@@ -151,7 +153,7 @@ input{
 	color:#ffffff;
 	font-weight: bold;
 }
-#Count div{
+.countBox{
 	margin:0px 25px;
 }
 #Count p{
@@ -166,29 +168,22 @@ input{
 }
 
 /* ================
-      コンテンツ一覧
+      閲覧履歴
  ================ */
-.Content_List{
-	width:100vw;
-}
-.Content{
+#History{
 	max-width:960px;
-	width:80%;
+	width:100%;
+	height:auto;
 	margin:70px auto;
 }
-.Content_Box{
+
+.h_box{
 	width:80%;
 	margin:0 auto;
 	color:#F1C076;
 	font-size:15px;
 }
 
-/* ================
-      閲覧履歴
- ================ */
-#History{
-	height:auto;
-}
 /* 閲覧リスト*/
 .h_list{
 	display:flex;
@@ -217,40 +212,23 @@ input{
     margin:0px 5px;
 }
 .slick-slide img{
-    width: 80%;
+    width:80%;
     height: auto;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
-/* 矢印（レビュー以外） */
-.slick-prev{
-	left:-75px;
-}
-.slick-next{
-	right:-75px;
-}
+
 .slick-prev:before, .slick-next:before {
     color: #F1C076;
     font-size:40px;
     opacity:1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
-/* 矢印（レビュー）*/
-#Review .slick-prev{
-	left:100px;
-}
-#Review .slick-next{
-	right:150px;
-}
-
-#Review .slick-prev:before, #Review .slick-next:before{
-	color:#ffffff;
-    font-size:75px;
-}
 
 /* ドット*/
 .slick-dots li button:before{
@@ -280,31 +258,69 @@ input{
       TOPICS
  ================ */
 #Topics{
+	max-width:960px;
 	height:auto;
-	width: 120%;
+
+	margin:70px auto;	
 }
-#Topics > div.Content_Box{
-	width: 90%;
+
+.tp_box{
+	width:90%;
+	margin:0 auto;
+	color:#F1C076;
+	font-size:15px;
 }
-#Topics .slick-next{
-	right: -27.5px;
+
+.tp_box > h2{
+	padding-left:47px;
 }
-#Topics .slick-prev{
-	left: -27.5px;
+
+/* 矢印 */
+#Top .slick-prev{
+	left:-27.5px;
 }
+#Top .slick-next{
+	right:-27.5px;
+}
+
 /* ================
       講座を探す
  ================ */
 #Course{
+	color:#F1C076;
+	max-width:960px;
 	height:auto;
+	margin:70px auto;	
+}
+.c_box{
+	width:80%;
+	margin:0 auto;
+	font-size:15px;
 }
 
+/*スライド*/
 .c_slider{
-	padding:50px 80px;
-	background-color:#F1C076;
+	padding:50px 0px;
+	background-color:#F1C076;	
+}
+.c_slider img{
+	width:75%;
+	height:190px;
+	object-fit:cover;
+	border-radius:15px;
 }
 
+#Course .slick-prev{
+	left:-75px;
+}
+#Course .slick-next{
+	right:-75px;
+}
+
+/*カテゴリ別*/
 .c_list{
+	width:90%;
+	margin:0 auto;
 	display:flex;
 	justify-content: space-between;
 	font-size: 16px;
@@ -314,12 +330,6 @@ input{
 	margin:40px 0px 20px;
 }
 
-.c_slider img{
-	width:240px;
-	height:240px;
-	object-fit:cover;
-	border-radius:15px;
-}
 .c_title{
 	font-size:20px;
 	font-weight: bold;
@@ -330,19 +340,37 @@ input{
       人気の講座
  ================ */
 #Popular{
+	max-width:960px;
+	width:100%;
 	height:auto;
+	color:#F1C076;
+
+	margin:70px auto;
 }
+
+.p_box{
+	width:80%;
+	margin:0 auto;
+	font-size:15px;
+}
+/*スライド*/
 .p_slider{
-	padding:50px 80px;
-	background-color:#F1C076;
+	padding:50px 0px;
+	background-color:#F1C076;	
+	border-radius:15px;
+}
+.p_slider img{
+	width:75%;
+	height:190px;
+	object-fit:cover;
 	border-radius:15px;
 }
 
-.p_slider img{
-	width:240px;
-	height:240px;
-	object-fit:cover;
-	border-radius:15px;
+#Popular .slick-prev{
+	left:-75px;
+}
+#Popular .slick-next{
+	right:-75px;
 }
 
 /* ================
@@ -350,11 +378,20 @@ input{
  ================ */
 
 #Teacher{
+	max-width:960px;
+	width:100%;
 	min-height:475px;
 	text-align:center;
-	margin-bottom:140px;
+/*	margin-bottom:140px;
+*/
+	margin:70px auto 140px;
 }
-
+.tc_box{
+	width:80%;
+	margin:0 auto;
+	color:#F1C076;
+	font-size:15px;
+}
 /* 下線　*/
 .t_border{
 	margin:0 auto;
@@ -504,6 +541,12 @@ input{
 	text-shadow:1px 2px 1px #707070;
 }
 
+.rv_box{
+	width:80%;
+	margin:0 auto;
+	color:#F1C076;
+	font-size:15px;
+}
 /* 下線　*/
 .r_border{
 	margin:0 auto;
@@ -514,22 +557,18 @@ input{
 }
 
 .Long{
-	width:300px;
+	max-width:300px;
+	width:80%;
 }
 .Middle{
-	width:150px;
+	max-width:150px;
+	width:40%;
 }
 .Short{
-	width:75px;
+	max-width:75px;
+	width:25%;
 }
 
-.r_slider{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-
-}
 .r_box{
 	width:80%;
 	max-width:650px;
@@ -587,6 +626,19 @@ input{
 	color:#ffffff;
 }
 
+/* 矢印 */
+#Review .slick-prev{
+	left:100px;
+}
+
+#Review .slick-next{
+	right:100px;
+}
+
+#Review .slick-prev:before, #Review .slick-next:before{
+	color:#ffffff;
+    font-size:56px;
+}
 
 
 /* ================
@@ -685,5 +737,108 @@ input{
 
 /* スマホ*/
 @media screen and (max-width: 749px){
+
+	.phone_none{
+		display:none;
+	}
+
+
+	#Search{
+		height:auto;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		color:#ECAB48;
+	}
+	.Search_Box{
+		margin:16px 0px;
+	}
+
+	/* ===上段=== */
+	.Box_Up{
+		height:0px;
+	}
+	.freeWord input{
+		width:80%;
+	}
+	/* 虫眼鏡 */
+	.searchLogo{
+		width:20%;
+	}
+	/* ===下段=== */
+	.Box_Down{
+		height:auto;
+		display:block;
+		padding:8px 16px;
+	}
+	/* 人気のキーワード */
+	.Box_Down p{
+		width:100%;
+		font-size: 16px;
+		padding-bottom:8px;
+	}
+	/* キーワードリスト */
+	.keyWord{
+		width:100%;
+		flex-wrap:wrap;
+	}
+
+	.keyWord a{
+		margin:4px 0px;
+	}
+
+
+	/* ================
+	      登録件数
+	 ================ */
+
+	#Count{
+		display:block;
+		text-align:center;
+	}
+	.countBox{
+		margin:16px 20%;
+	}
+	#Count p{
+		padding:5px 0px;
+	}
+
+	/* ================
+	      閲覧履歴
+	 ================ */
+	/* 閲覧リスト*/
+	.h_list{
+		flex-direction:column;
+		align-items:center;
+	}
+
+
+	/* ================
+	      先生紹介
+	 ================ */
+
+	.t_list{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	/*　先生 */
+	.t_teacher{
+		margin:16px 0px;
+	}
+
+	.t_link::before{
+		width: 30px;
+	}
+
+
+
+
+
+
+
+
+
+
 
 }
