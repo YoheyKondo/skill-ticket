@@ -51,15 +51,16 @@
 				<!-- 上段 -->
 				<div class="Box_Up">
 					<!-- フリーワード -->
-					<form action="" method="post" autocomplete="off" class="freeWord">
-						<input type="text" name="freeword" placeholder="フリーワード" required>
+					<form action="" method="get" autocomplete="off" class="s_search">
+						<input type="text" name="freeword" placeholder="フリーワード" class="s_freeWord" required>
+						<!-- 虫眼鏡 -->
+						<input type="image" name="searchLogo" class="s_searchLogo" src="../img/searchLogo.png">
+<!-- 						<div class="searchLogo">
+							<a href="#">
+								<img src="../img/searchLogo.png">
+							</a>
+						</div> -->
 					</form>
-					<!-- 虫眼鏡 -->
-					<div class="searchLogo">
-						<a href="#">
-							<img src="../img/searchLogo.png">
-						</a>
-					</div>
 				</div>
 				<!-- 下段 -->
 				<div class="Box_Down frame">
@@ -609,8 +610,8 @@
 					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
 
 					<form action="" method="get" autocomplete="off">
-						<textarea>サービスへのご意見・ご要望をお聞かせください。
-ご意見・ご要望に返信できないことをあらかじめご了承ください。</textarea>
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
 					</form>
 
 					<div class="sns">

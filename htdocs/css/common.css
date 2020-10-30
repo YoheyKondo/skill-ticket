@@ -160,9 +160,12 @@ textarea{
 	height:170px;
 
 	font-size:10px;
-	color:#BCAF9A;
 	background-color:#FBECD6;
 	padding:9px 12px;
+}
+
+textarea::placeholder{
+	color:#BCAF9A;	
 }
 
 .sns{
