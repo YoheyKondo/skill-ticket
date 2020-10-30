@@ -8,7 +8,7 @@ function slick(){
     	centerMode:true,
     	centerPadding:'0px',
     	responsive:[{
-    		breakpoint:1023,
+    		breakpoint:1024,
     		settings:{
     			slidesToShow: 1,
     		}
@@ -20,7 +20,7 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	responsive:[{
-    		breakpoint:1023,
+    		breakpoint:1024,
     		settings:{
     			slidesToShow: 1,
     		}
@@ -32,7 +32,7 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	responsive:[{
-    		breakpoint:1023,
+    		breakpoint:1024,
     		settings:{
     			slidesToShow: 1,
     		}

@@ -110,11 +110,11 @@ h2{
 	font-size: 16px;
 	padding-left:16px;
 	padding-right:8px;
-
 }
 /* キーワードリスト */
 .keyWord{
 	width:80%;
+	padding-right:16px;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
@@ -182,6 +182,12 @@ h2{
 	display:flex;
 	justify-content: space-between;
 }
+.h_list a{
+	width:18%;
+}
+.h_list img{
+	width:100%;
+}
 /*さらに表示*/
 .h_more{
 	text-align:right;
@@ -204,12 +210,11 @@ h2{
 .slick-slide{
     margin:0px 5px;
 }
-.slick-slide img{
-    width:80%;
+
+.slider img{
     height: auto;
     margin:0 auto;
 }
-
 
 .slick-prev:before, .slick-next:before {
     color: #F1C076;
@@ -252,8 +257,7 @@ h2{
  ================ */
 #Topics{
 	height:auto;
-
-	margin:70px auto;	
+	margin:0px auto;	
 }
 
 .tp_box{
@@ -264,15 +268,19 @@ h2{
 	font-size:15px;
 }
 
+
 .tp_box > h2{
-	padding-left:47px;
+	padding-left:10%;
 }
 
-/* 矢印 */
-#Top .slick-prev{
+.t_slider img{
+    width:80%;
+}
+
+.t_slider .slick-prev{
 	left:-27.5px;
 }
-#Top .slick-next{
+.t_slider .slick-next{
 	right:-27.5px;
 }
 
@@ -304,10 +312,10 @@ h2{
 }
 
 #Course .slick-prev{
-	left:-75px;
+	left:-60px;
 }
 #Course .slick-next{
-	right:-75px;
+	right:-60px;
 }
 
 /*カテゴリ別*/
@@ -359,10 +367,10 @@ h2{
 }
 
 #Popular .slick-prev{
-	left:-75px;
+	left:-60px;
 }
 #Popular .slick-next{
-	right:-75px;
+	right:-60px;
 }
 
 /* ================
@@ -669,7 +677,6 @@ h2{
 		width:120px;
 	}
 
-
 	/* ================
 	       検索Box
 	 ================ */
@@ -719,22 +726,39 @@ h2{
 		font-size:15px;
 	}
 
-/* 閲覧リスト*/
-.h_list{
-	display:flex;
-	justify-content: space-between;
-}
-/*さらに表示*/
-.h_more{
-	text-align:right;
-	padding-top:16px;
-	font-size:15px;
-}
-.h_more a{
-	color:#F1C076;
-}
 
+	/* ================
+	      slider共通
+	 ================ */
+	.slick-slide img{
+	    width:100%;
 
+	}
+	/* ================
+	      TOPICS
+	 ================ */
+
+	.tp_box{
+/*		width:90%;
+		margin:0 auto;
+		color:#F1C076;
+		font-size:15px;*/
+	}
+/*
+	.tp_box > h2{
+		padding-left:97px;
+	}*/
+/*
+	.t_slider img{
+	    width:80%;
+	}
+
+	.t_slider .slick-prev{
+		left:40px;
+	}
+	.t_slider .slick-next{
+		right:40px;
+	}*/
 /*
 	.c_list{
 		flex-wrap:wrap;
