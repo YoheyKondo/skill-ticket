@@ -1,5 +1,8 @@
+$(function(){
+    slick();
+});
+
 function slick(){
-	console.log("Slick")
 	$('.t_slider').slick({
 		dots: true,
 	    infinite: true,

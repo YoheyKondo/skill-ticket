@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+#Login{
+	max-width:960px;
+	width:80%;
+	height:960px;
+	margin:0 auto;
+}
+
+/* ==========================
+     パンくずリスト
+   ========================== */
+.lg_path{
+	margin:32px 0px 50px;
+	font-size:16px;
+}
+.lg_path p{ /* 横並び */
+	display:inline-block;
+}
+.lg_path p,.lg_path a{ /* 文字色 */
+	color:#ECAB48;
+}
+
+/* ==========================
+     ログイン
+   ========================== */
+.lg_title{
+	text-align:center;
+	color:#5B5B5B;
+}
+.lg_title h2{
+	font-size:40px;
+}
+.lg_border{ /* 下線　*/
+	width:100%;
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+}
+
+
+/* ====== 入力欄 ====== */
+#Login form{
+	width:60%;
+	margin:0 auto;
+}
+.lg_text{ /* 横並び */
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top:30px;
+	font-size:16px;
+}
+.lg_sub{ /* 入力項目　タイトル*/
+	color:#5B5B5B;
+	font-size:16px;
+}
+.lg_red{ /* 入力項目　エラー文*/
+	color:#C70303;
+	font-size:12px;
+}
+.lg_mail,.lg_pass{
+	width:100%;
+	height:40px;
+	border:solid 2px #F0BF75;
+	margin-top:8px;
+	font-size:24px;
+	padding-left:8px;
+}
+
+.lg_btn{
+	margin:40px;
+	padding:16px;
+	width:50%;
+	font-size:16px;
+	background-color:#F0BF75;
+	color:#ffffff;
+	border:none;
+}
+
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	#Login{
+		height:720px;
+	}
+	.lg_title h2{
+		font-size:24px;
+		padding-top:24px;
+		padding-bottom:16px;
+	}
+
+	.lg_text{ /* 横並び */
+		display:block;
+		text-align: left;
+	}
+	#Login form{
+		width:80%;
+		margin:0 auto;
+	}
+}

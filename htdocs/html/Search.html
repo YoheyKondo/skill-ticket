@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
+	
+	<!--JQuery-->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/search_style.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="h_logo"><img src="../img/logo.png"></a>
+		<p>学びを、知識を、共有しよう！</p>
+		<div class="h_iconList">
+			<div class="h_icon"><a href="#"><img src="../img/bell.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
+		</div>
+
+	</header>
+
+	<main>
+
+		<!--　＝＝＝＝＝＝＝＝＝＝＝＝＝
+			　　　　ピックアップ画像
+		　　　 ＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+		<section id="Top">
+			<div class="tp_logo">
+				<img src="../img/logo.png">
+				<p>セールスポイント</p>	
+			</div>
+
+			<!--　＝＝＝＝＝＝＝＝＝＝
+				　　　　検索BOX
+			　　　 ＝＝＝＝＝＝＝＝＝＝ -->
+			<div class="Search_Box">
+				<!-- 上段 -->
+				<div class="Box_Up">
+					<!-- フリーワード -->
+					<form action="" method="get" autocomplete="off" class="s_search">
+						<input type="text" name="freeword" placeholder="フリーワード" class="s_freeWord" required>
+						<!-- 虫眼鏡 -->
+						<input type="image" name="searchLogo" class="s_searchLogo" src="../img/searchLogo.png">
+					</form>
+				</div>
+				<!-- 下段 -->
+				<div class="Box_Down frame">
+					<p>ジャンル</p>
+					<div class="keyWord">
+						<div>
+							<a href="#">WordPress</a>
+							<a href="#">ロゴデザイン</a>
+							<a href="#">ヨガ</a>
+							<a href="#">ギター初心者</a>
+						</div>
+						<div>
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>
+						</div>
+						<div>
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>
+						</div>
+						<div>
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>
+						</div>
+						<div>
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>	
+							<a href="#">Web</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="Footer_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing">
+						<p>チケットを出品する</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site">
+						<p>サイト情報</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div border_dash">
+					<p>スキルチケットを<br class="tablet_none">もっと知る</p>	
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="../img/sns_twitter.png">
+							<img src="../img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>				
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>	
+	</footer>
+
+</body>
+</html>
