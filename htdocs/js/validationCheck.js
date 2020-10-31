@@ -4,6 +4,7 @@ $(function(){
         var val  =$(this).val(); //値を取得
         var name =$(this).attr('name'); //nameを取得
         var id   ='#' + name;//idを作成
+
         //1.NullCheck 値がNullだったら
         if(nullChk(val)){ //Nullチェック関数
             //エラーメッセージを空欄に上書き
@@ -49,7 +50,7 @@ function nullChk(val){
 
 //Output Error Message
 function errMsg(id, msg){
-    $(id + ' .lg_red').text(msg);
+    $(id + ' .errMsg').text(msg);
 }
 
 // E-mail Check
@@ -65,7 +66,7 @@ function hlfChk(val){
 //エラーメッセージチェック
 function errorAllChek(){
     var cnt = 0;
-    $('.lg_red').each(function(i,e){
+    $('.errMsg').each(function(i,e){
         var txt = $(this).text(); //カッコの中身が記載されてない場合、その中身が取り出される
         console.log(txt);
         if(txt !=''){

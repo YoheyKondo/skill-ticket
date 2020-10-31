@@ -9,12 +9,12 @@
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="https://unpkg.com/http-vue-loader"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
-
 	<script type="text/javascript" src="../js/validationCheck.js"></script>
+
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/login_style.css">
+	<link rel="stylesheet" type="text/css" href="../css/signup_style.css">
 
 </head>
 <body>
@@ -26,49 +26,49 @@
 			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
 			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
 		</div>
-
 	</header>
 
 	<main>
-		<section id="Login">
+		<section id="SignUP">
 			<!-- パンくずリスト -->
 			<div class="path">
 				<a href="#">Top</a>
 				<p> > </p>
-				<a href="#">ログイン</a>	
+				<a href="#">会員登録</a>	
 			</div>
 
+			<!-- ステータスリスト -->
+			<div class="status">
+				<div class="step">
+					<p class="circle">1</p>
+					<p>仮登録手続き</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step active">
+					<p class="circle">2</p>
+					<p>メールアドレスの確認</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step">
+					<p class="circle">3</p>
+					<p>本登録</p>
+				</div>						
+			</div>
+
+
 			<div class="title">
-				<h2>ログイン</h2>
+				<h2>仮登録完了</h2>
 				<div class="border"></div>
+				<p>仮登録が完了しました。</br>
+					本登録を行ってください。</p>
 
 				<!-- 入力 -->
 				<form action="" method="get" autocomplete="off">
-					<!-- メールアドレス -->
-					<div id="email">
-						<div class="text">
-							<p class="sub">メールアドレス</p>
-							<p class="errMsg">入力必須です。</p>
-						</div>
-						<input type="email" name="email" max-length="50" class="mail">
-					</div>
-
-					<!-- パスワード -->
-					<div id="password">
-						<div class="text">
-							<p class="sub">パスワード</p>
-							<p class="errMsg">入力必須です。</p>
-						</div>
-						<input type="password" name="password" maxlength="50" class="pass">
-					</div>
-
 					<!-- ログインボタン -->
-					<input type="submit" name="submit"value="ログイン" class="btn" disabled>
-					
+					<input type="submit" name="submit"value="本登録へ" class="btn">
 				</form>
 			</div>
-
-		</section>
+	
 
 	</main>
 

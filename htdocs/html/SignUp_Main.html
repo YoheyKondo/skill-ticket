@@ -9,12 +9,12 @@
 	<script src="../js/jquery-3.4.1.min.js"></script>
 	<script src="https://unpkg.com/http-vue-loader"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
-
 	<script type="text/javascript" src="../js/validationCheck.js"></script>
+
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
-	<link rel="stylesheet" type="text/css" href="../css/login_style.css">
+	<link rel="stylesheet" type="text/css" href="../css/signup_style.css">
 
 </head>
 <body>
@@ -26,20 +26,38 @@
 			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
 			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
 		</div>
-
 	</header>
 
 	<main>
-		<section id="Login">
+		<section id="SignUP">
 			<!-- パンくずリスト -->
 			<div class="path">
 				<a href="#">Top</a>
 				<p> > </p>
-				<a href="#">ログイン</a>	
+				<a href="#">会員登録</a>	
 			</div>
 
+			<!-- ステータスリスト -->
+			<div class="status">
+				<div class="step">
+					<p class="circle">1</p>
+					<p>仮登録手続き</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step">
+					<p class="circle">2</p>
+					<p>メールアドレスの確認</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step active">
+					<p class="circle">3</p>
+					<p>本登録</p>
+				</div>						
+			</div>
+
+
 			<div class="title">
-				<h2>ログイン</h2>
+				<h2>本登録画面</h2>
 				<div class="border"></div>
 
 				<!-- 入力 -->
@@ -48,27 +66,75 @@
 					<div id="email">
 						<div class="text">
 							<p class="sub">メールアドレス</p>
-							<p class="errMsg">入力必須です。</p>
 						</div>
-						<input type="email" name="email" max-length="50" class="mail">
+						<input type="email" name="email" max-length="50" class="mail" disabled>
 					</div>
 
 					<!-- パスワード -->
 					<div id="password">
 						<div class="text">
 							<p class="sub">パスワード</p>
-							<p class="errMsg">入力必須です。</p>
 						</div>
-						<input type="password" name="password" maxlength="50" class="pass">
+						<input type="password" name="password" maxlength="50" class="pass" disabled>
 					</div>
 
+					<!-- 氏名 -->
+					<div id="name">
+						<div class="text">
+							<p class="sub">氏名</p>
+							<p class="errMsg">入力必須です。</p>
+						</div>
+						<input type="text" name="name" maxlength="50" class="name">
+					</div>
+
+					<!-- ふりがな -->
+					<div id="furigana">
+						<div class="text">
+							<p class="sub">ふりがな</p>
+							<p class="errMsg">入力必須です。</p>
+						</div>
+						<input type="text" name="furigana" maxlength="50" class="furigana">
+					</div>
+
+					<!-- プロフィール写真 -->
+					<div id="photo">
+						<div class="text">
+							<p class="sub">プロフィール写真</p>
+						</div>
+						<div class="photo_box">
+							<input type="submit" name="submit"value="画像選択" class="btn">
+							<p>写真をアップロードしてください</p>
+						</div>
+					</div>
+
+					<!-- 性別 -->
+					<div id="gender">
+						<div class="text">
+							<p class="sub">性別</p>
+							<p class="errMsg">入力必須です。</p>
+						</div>
+						<div class="gender_box">
+							<input type="radio" name="gender" class="gender" id="man"><label for="man">男性</label>
+							<input type="radio" name="gender" class="gender" id="woman"><label for="woman">女性</label>
+							<input type="radio" name="gender" class="gender" value="その他" id="other"><label for="other">その他</label>
+						</div>
+					</div>
+
+					<!-- 自己紹介 -->
+					<div id="gender">
+						<div class="text">
+							<p class="sub">自己紹介</p>
+						</div>
+						<div class="gender_box">
+							<textarea></textarea>
+						</div>
+					</div>
 					<!-- ログインボタン -->
-					<input type="submit" name="submit"value="ログイン" class="btn" disabled>
+					<input type="submit" name="submit"value="仮登録へ" class="btn" disabled>
 					
 				</form>
 			</div>
-
-		</section>
+	
 
 	</main>
 

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+#SignUP{
+	max-width:960px;
+	width:80%;
+	min-height:960px;
+	margin:0 auto;
+}
+
+/* ==========================
+     パンくずリスト
+   ========================== */
+.path{
+	margin:32px 0px 50px;
+	font-size:16px;
+}
+.path p{ /* 横並び */
+	display:inline-block;
+}
+.path p,.path a{ /* 文字色 */
+	color:#ECAB48;
+}
+
+/* ==========================
+     ステータスリスト
+   ========================== */
+.status{
+	display:flex;
+	align-items: flex-end;
+	font-size:14px;
+}
+.step{
+	display:flex;
+	align-items: center;
+	font-size:14px;
+}
+
+.circle{
+/*	display: inline-block;*/
+  width: 30px;
+  height: 30px;
+  border:solid 2px #5B5B5B;
+  border-radius: 50%;
+  background: #ffffff;
+  text-align:center;
+  line-height: 26px;
+  color:#5B5B5B;
+  font-weight: bold;
+  margin-right:4px;
+}
+
+/* Active */
+.active{
+  color:#ECAB48;
+}
+.active > .circle{
+  color:#ECAB48;
+  border:solid 2px #ECAB48;
+}
+
+.st_border{
+	margin:0px 8px;
+	width:32px;
+	height:15px;
+	border-top:solid 1px #5B5B5B;
+}
+
+/* ==========================
+     会員登録
+   ========================== */
+.title{
+	text-align:center;
+	color:#5B5B5B;
+}
+.title h2{
+	font-size:40px;
+}
+.border{ /* 下線　*/
+	width:100%;
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+}
+
+.title > p{
+	padding:16px 0px;
+	font-size:16px;
+}
+/* ====== 入力欄 ====== */
+#SignUP form{
+	width:60%;
+	margin:0 auto;
+}
+.text{ /* 横並び */
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top:30px;
+	font-size:16px;
+}
+.sub{ /* 入力項目　タイトル*/
+	color:#5B5B5B;
+	font-size:16px;
+}
+.errMsg{ /* 入力項目　エラー文*/
+	color:#C70303;
+	font-size:12px;
+}
+.mail,.pass,.name,.furigana{
+	width:100%;
+	height:40px;
+	border:solid 2px #F0BF75;
+	margin-top:8px;
+	font-size:24px;
+	padding-left:8px;
+}
+
+/* プロフィール写真 */
+.photo_box{
+	display:flex;
+	align-items:center;
+}
+.photo_box > .btn{
+	margin:0px;
+	width:20%;
+}
+.photo_box > p{
+	color:#5B5B5B;
+	padding-left:16px;
+}
+
+/* 性別 */
+#gender{
+	color:#5B5B5B;
+}
+.gender_box{
+	display:flex;
+	align-items:center;
+}
+.gender_box > label{
+	margin-left:4px;
+	margin-right:16px;
+}
+
+#gender > .text{ /* 横並び */
+	justify-content: flex-start;
+}
+#gender .errMsg { /* 横並び */
+	padding-left:24px;
+}
+
+#gender input{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+#gender input:before{
+	content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 3px;
+    border: solid 2px #F0BF75;
+}
+#gender input:checked:before{
+	content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color:#F0BF75;
+}
+
+/* 自己紹介*/
+#gender textarea{
+	resize:none;
+	width:100%;
+	height:160px;
+
+	font-size:10px;
+	background-color:#ffffff;
+	border:solid 2px #F0BF75;
+	padding:9px 12px;
+
+	font-size:16px;
+}
+
+/* ボタン*/
+.btn{
+	margin:40px;
+	padding:16px;
+	width:50%;
+	font-size:16px;
+	background-color:#F0BF75;
+	color:#ffffff;
+	border:none;
+}
+
+.btn:disabled{
+	background-color:#8D8D8D;
+}
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	.st_border{
+		display:none;
+	}
+	#SignUP{
+		height:720px;
+	}
+
+	.status{
+		align-items:stretch;
+		flex-direction: column;
+		font-size:12px;
+	}
+	.step{
+		margin:2px 0px;
+	}
+
+	.circle{
+	  width: 25px;
+	  height: 25px;
+	  line-height: 21px;
+	}
+	.title h2{
+		font-size:24px;
+		padding-top:24px;
+		padding-bottom:16px;
+	}
+	.text{ /* 横並び */
+		display:block;
+		text-align: left;
+	}
+	#SignUP form{
+		width:80%;
+		margin:0 auto;
+	}
+}
