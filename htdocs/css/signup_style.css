@@ -153,10 +153,10 @@ h2{
 	display:flex;
 	align-items:center;
 }
-.gender_box > label{
+/*.gender_box > label{
 	margin-left:4px;
 	margin-right:16px;
-}
+}*/
 
 #gender > .text{ /* 横並び */
 	justify-content: flex-start;
@@ -166,22 +166,28 @@ h2{
 }
 
 #gender input{
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
+	display:none;
 }
 
-#gender input:before{
-	content: "";
-    display: block;
+#gender label{
+	display:block;
+	padding-left:16px;
+	position:relative;
+}
+#gender label:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:5px;
+	transform:translateY(-50%);
+
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    margin: 3px;
     border: solid 2px #F0BF75;
 }
+
+
 #gender input:checked:before{
 	content: "";
     display: block;
