@@ -130,17 +130,19 @@ h2{
 }
 
 /* プロフィール写真 */
-.photo_box{
-	display:flex;
-	align-items:center;
+#photo input{
+	display: none;
 }
-.photo_box > .btn{
-	margin:0px;
-	width:20%;
-}
-.photo_box > p{
-	color:#5B5B5B;
-	padding-left:16px;
+
+.profile_upload{
+	display: inline-block; /* テキストに応じて幅を可変させるため */
+	margin: 8px 0; /* 前後の隙間 */
+	padding: 8px 16px; /* 塗りの余白 */
+	font-size: 16px; /* フォントサイズ */
+	background-color: #F0BF75; /* 背景色 */
+	color: #FFF; /* テキストカラー */
+	border: 0; /* 枠線を消す */
+	font-weight: bold;
 }
 
 /* 性別 */

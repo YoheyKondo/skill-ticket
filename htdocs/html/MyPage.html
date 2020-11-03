@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
+	
+	<!--JQuery-->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/validationCheck.js"></script>
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/mypage_style.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="h_logo"><img src="../img/logo.png"></a>
+		<p>学びを、知識を、共有しよう！</p>
+		<div class="h_iconList">
+			<div class="h_icon"><a href="#"><img src="../img/bell.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
+		</div>
+	</header>
+
+	<main>
+		<section id="MyPage">
+			<!-- パンくずリスト -->
+			<div class="path">
+				<a href="#">Top</a>
+				<p> > </p>
+				<a href="#">ログイン</a>	
+			</div>
+
+			<div class="tabs">
+				<!-- マイページ -->
+			    <input id="mypage" type="radio" name="tab_item" checked>
+			    <label class="tab_item" for="mypage">マイページ</label>
+			    <!-- 購入チケット履歴 -->
+			    <input id="history" type="radio" name="tab_item">
+			    <label class="tab_item" for="history">購入チケット履歴</label>
+			    <!-- チケット登録 -->
+			    <input id="entry" type="radio" name="tab_item">
+			    <label class="tab_item" for="entry">チケット登録</label>
+			    <!-- マイチケット -->
+			    <input id="myticket" type="radio" name="tab_item">
+			    <label class="tab_item" for="myticket">マイチケット一覧</label>
+			    <!-- チャット-->
+			    <input id="chat" type="radio" name="tab_item">
+			    <label class="tab_item" for="chat">チャット</label>
+
+			    <!-- ===============
+			    	  マイページ　内容　
+			    	 =============== -->
+			    <div class="tab_content" id="mypage_content">
+			    	<h2>マイページ</h2>
+			    	<div class="mypage_box">
+			    		<div class="mypage_img">
+				    		<img src="../img/teacher2.jpg">
+							<form action="" method="get" autocomplete="off">
+								<!-- プロフィール写真 -->
+								<div id="photo">
+									<div class="text">
+										<p class="sub">プロフィール写真</p>
+									</div>
+									<label class="profile_upload" for="photoFile">画像選択</label>
+									<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
+									<label class="file_upload" for="photoFile">写真をアップロードしてください</label>
+								</div>
+				    			
+				    		</form>		
+			    		</div>
+
+			    		<!-- プロフィール詳細 -->
+			    		<div class="mypage_profile">
+							<!-- 入力 -->
+							<form action="" method="get" autocomplete="off">
+								<!-- メールアドレス -->
+								<div id="email">
+									<div class="text">
+										<p class="sub">メールアドレス</p>
+									</div>
+									<input type="email" name="email" max-length="50" class="mail">
+								</div>
+
+								<!-- パスワード -->
+								<div id="password">
+									<div class="text">
+										<p class="sub">パスワード</p>
+									</div>
+									<input type="password" name="password" maxlength="50" class="pass">
+								</div>
+
+								<!-- 氏名 -->
+								<div id="name">
+									<div class="text">
+										<p class="sub">氏名</p>
+									</div>
+									<input type="text" name="name" maxlength="50" class="name">
+								</div>
+
+								<!-- ふりがな -->
+								<div id="furigana">
+									<div class="text">
+										<p class="sub">ふりがな</p>
+									</div>
+									<input type="text" name="furigana" maxlength="50" class="furigana">
+								</div>
+
+
+
+								<!-- 性別 -->
+								<div id="gender">
+									<div class="text">
+										<p class="sub">性別</p>
+									</div>
+									<div class="gender_box">
+										<input type="radio" name="gender" class="gender" id="man"><label for="man">男性</label>
+										<input type="radio" name="gender" class="gender" id="woman"><label for="woman">女性</label>
+										<input type="radio" name="gender" class="gender" value="その他" id="other"><label for="other">その他</label>
+									</div>
+								</div>
+
+								<!-- 自己紹介 -->
+								<div id="gender">
+									<div class="text">
+										<p class="sub">自己紹介</p>
+									</div>
+									<div class="gender_box">
+										<textarea></textarea>
+									</div>
+								</div>
+								<!-- ログインボタン -->
+								<input type="submit" name="submit"value="登録・更新する" class="btn">
+								
+							</form>
+			    		</div>
+			    	</div>
+			    </div>
+
+
+			    <!-- ===============
+			    	 　購入履歴　内容　
+			    	 =============== -->
+			    <div class="tab_content" id="history_content">
+			    	<h2>購入チケット履歴</h2>
+			    	<div class="his_box border_title">
+			    		<p class="h_day">日付</p>
+			    		<p class="h_name">チケット名</p>
+			    		<div class="h_btn">
+				    		<p class="h_price">料金</p>
+			    		</div>
+			    	</div>
+			    	<!-- チケット履歴　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="h_day">2020/7/1（水）</p>
+			    		<p class="h_name">タイトル</p>
+			    		<div class="h_btn">
+				    		<p class="h_price">¥2,000</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+			    	<!-- チケット履歴　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="h_day">2020/7/1（水）</p>
+			    		<p class="h_name">タイトル</p>
+			    		<div class="h_btn">
+				    		<p class="h_price">¥2,000</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+			    				    	<!-- チケット履歴　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="h_day">2020/7/1（水）</p>
+			    		<p class="h_name">タイトル</p>
+			    		<div class="h_btn">
+				    		<p class="h_price">¥2,000</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+			    	<!-- チケット履歴　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="h_day">2020/7/1（水）</p>
+			    		<p class="h_name">タイトル</p>
+			    		<div class="h_btn">
+				    		<p class="h_price">¥2,000</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+				</div>
+
+
+			    <!-- ===============
+			    	 　登録　内容　
+			    	 =============== -->
+			    <div class="tab_content" id="entry_content">
+			        チケット登録の内容がここに入ります
+				</div>
+
+			    <!-- =================
+			    	 　マイチケット　内容　
+			    	 ================= -->
+			    <div class="tab_content" id="myticket_content">
+			    	<h2>マイチケット一覧</h2>
+			    	<div class="t_box border_title">
+			    		<p class="t_name">チケット名</p>
+			    		<p class="t_price">料金</p>
+			    		<p class="t_day">日付</p>
+			    		<div class="t_btn">
+				    		<p class="t_time">時間</p>
+			    		</div>
+			    	</div>
+			    	<!-- マイチケット一覧　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="t_name">タイトル</p>
+			    		<p class="t_price">¥2,000</p>
+			    		<p class="t_day">2020/7/1</p>
+			    		<div class="t_btn">
+				    		<p class="t_time">13:00 - 15:00</br>
+				    		16:00 - 18:00</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+			    	<!-- マイチケット一覧　詳細　-->
+			    	<div class="his_box border_ticket">
+			    		<p class="t_name">タイトル</p>
+			    		<p class="t_price">¥2,000</p>
+			    		<p class="t_day">2020/7/1</p>
+			    		<div class="t_btn">
+				    		<p class="t_time">13:00 - 15:00</p>
+				    		<a href="#">チケット詳細</a>
+			    		</div>
+			    	</div>
+
+				</div>
+
+			    <!-- ===============
+			    	 　チャット　内容　
+			    	 =============== -->
+			    <div class="tab_content" id="chat_content">
+			        チャットの内容がここに入ります
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="Footer_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing">
+						<p>チケットを出品する</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site">
+						<p>サイト情報</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div border_dash">
+					<p>スキルチケットを<br class="tablet_none">もっと知る</p>	
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="../img/sns_twitter.png">
+							<img src="../img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>				
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>	
+	</footer>
+
+</body>
+</html>
