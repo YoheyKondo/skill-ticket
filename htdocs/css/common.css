@@ -5,8 +5,7 @@
 	box-sizing: border-box;
 }
 html, body{
-	width: 100vw;
-	height:auto;
+	width: 100%;
 	/*font-family: "";*/
 }
 a{
