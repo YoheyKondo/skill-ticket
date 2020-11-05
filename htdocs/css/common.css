@@ -91,10 +91,13 @@ footer h2{
 	justify-content: space-between;
 	align-items: stretch; /*上下余白なし*/
 }
-
+.Ticket_box > div{
+	padding-left: 30px;
+	width: 100%;
+}
 .t_div{
 	color:#FFBA43;
-	font-size:24px;
+	font-size:18px;
 }
 
 /*サイト情報*/
@@ -135,9 +138,10 @@ footer h2{
 .contact_btn{
 	background:linear-gradient(to top,#C97D06,#FBBB5B);
 	height:48px;
-	margin:54px 0px;
+	margin:54px auto;
 	border-radius: 5px;
 	font-size:24px;
+	max-width: 240px;
 }
 
 .contact_btn a{
@@ -164,7 +168,15 @@ textarea{
 }
 
 textarea::placeholder{
-	color:#BCAF9A;	
+	font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif
+	color:#ece6dc;
+	font-size: 12px;
+}
+textarea::-webkit-input-placeholder{
+    font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif
+}
+textarea:-moz-placeholder{
+    font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif
 }
 
 .sns{
