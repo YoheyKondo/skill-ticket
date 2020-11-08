@@ -10,6 +10,9 @@
 	<script src="https://unpkg.com/http-vue-loader"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 
+	<!-- Font Awesome-->
+	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/search_style.css">
@@ -87,6 +90,84 @@
 						</div>
 					</div>
 				</div>
+			</div>			
+		</section>
+
+		<section class="SearchList">
+						<!-- パンくずリスト -->
+			<div class="path">
+				<a href="#">Top</a>
+				<p> > </p>
+				<a href="#">会員登録</a>
+			</div>
+			<div class="Sort">
+				<p>並び順</p>
+					<form action="" method="get" autocomplete="off">
+						<select name="search_sort">
+							<option>オススメ順</option>
+							<option>料金</option>
+							<option>レビュー</option>
+							<option>日付</option>
+						</select>
+					</form>
+					
+				</form>
+			</div>
+
+			<div class="Search_result">
+				<div class="result_box">
+					<div class="result_img">
+						<img src="../img/pc_technique.jpg">
+					</div>
+					<div class="result_text">
+						<p class="result_title">タイトル</p>
+						<p class="result_content">説明文：ル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル.</p>
+						<div class="result_detail">
+							<p class="charge">
+								¥10,000 ~
+							</p>
+							<div class="day">
+								<p>2020/07/10 16:00 - 17:00</p>
+								<img src="../img/day_icon.png">
+							</div>
+						</div>
+						<div class="r_review">
+							<div class="review">
+								<p>レビュー</p>
+								<p class="star">☆☆☆☆☆</p>
+							</div>
+							<div class="place">
+								<i class="fas fa-map-marker-alt place_icon"></i>
+								<p>新宿</p>
+							</div>	
+						</div>
+						<div class="r_name">
+							名前
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+			<!-- ＝＝＝＝＝＝＝＝＝＝＝＝
+				　　ページネーション
+				　＝＝＝＝＝＝＝＝＝＝＝＝　-->
+			<div class="pageNav">
+
+			  <a class="prev page-numbers" href="#">前の20件</a>
+			  <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">1</a>
+			  <!-- 現在閲覧してるページ -->
+			  <span class="page-numbers current">2</span>
+			  <a class="page-numbers" href="#">3</a>
+			  <span class="page-numbers dots">・</span>
+			  <span class="page-numbers dots">・</span>
+			  <span class="page-numbers dots">・</span>
+			  <a class="page-numbers" href="#">31</a>
+			  <a class="page-numbers" href="#">32</a>
+			  <a class="page-numbers" href="#">33</a>
+			  <a class="next page-numbers" href="#">次の20件</a><!-- 現在の次のページへのリンク -->
 			</div>
 		</section>
 

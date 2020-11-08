@@ -138,13 +138,192 @@ h2{
 	border:solid 0.5px #ECAB48;
 }
 
+/* ==========================
+     検索結果リスト
+   ========================== */
+.SearchList{
+	max-width: 960px;
+	width:80%;
+	margin:0 auto;
+}
 
+/* ==========================
+     パンくずリスト
+   ========================== */
+.path{
+	margin:32px 0px 50px;
+	font-size:16px;
+}
+.path p{ /* 横並び */
+	display:inline-block;
+}
+.path p,.path a{ /* 文字色 */
+	color:#ECAB48;
+}
+
+/* ==========================
+     並び順(ソート) 
+   ========================== */
+.Sort{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	color:#ECAB48;
+}
+
+.Sort p{
+	padding-right:16px;
+	font-size:16px;
+	font-weight: bold;
+}
+select{
+	border:solid 1px #ECAB48;
+	background-color:#ffffff;
+	color:#ECAB48;
+	font-size:16px;
+	font-weight: bold;
+	padding:1px 12px 1px 1px;
+}
+
+/* ==========================
+     検索結果 
+   ========================== */
+.Search_result{
+	padding:40px 0px;
+}
+
+/*　画像　*/
+.result_box{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+
+}
+
+.result_img{
+	margin-right:16px;
+}
+.result_img img{
+	width:350px;
+	height: 300px;
+	object-fit: cover;
+}
+
+/*　テキスト　*/
+.result_text{
+
+}
+.result_title{
+	color:#ECAB48;
+	font-size:32px;
+	border:solid 1px #ECAB48;
+	border-radius:30px;
+	padding-left:30px;
+}
+
+.result_title::before{
+}
+
+.result_content{
+	font-size:16px;
+}
+
+.result_detail{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.charge{
+	font-size:32px;
+	color:#ECAB48;
+}
+.day{
+	display: flex;
+	align-items: center;
+	font-size:16px;
+	color:#5B5B5B;
+}
+.day img{
+	padding-left:16px;
+}
+
+.r_review{
+	display:flex;
+	align-items: center;
+	font-size:24px;
+}
+
+.review,.place{
+	width:50%;
+	display:flex;
+	align-items: center;
+}
+.place_icon,.star{
+	color:#ECAB48;
+}
+
+/* 名前　*/
+.r_name{
+	height:70px;
+	color:#ECAB48;
+	font-size:24px;
+	border:solid 1px #ECAB48;
+	border-radius:50px;
+}
+
+.r_name:before{
+	content:"";
+	background-image: url(../img/teacher1.jpg);
+	width:64px;
+	height:64px;
+	display: inline-block;
+	background-size: cover;
+	border:solid 3px #ECAB48;
+	border-radius:50%;
+	vertical-align: middle;
+}
+
+/* ==========================
+     ページネーション
+   ========================== */
+
+.pageNav{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.page-numbers{
+	width:48px;
+	height:48px;
+	margin:2px;
+	line-height:48px;
+	text-align:center;
+
+	font-size:24px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.page-numbers{
+	color:#ECAB48;
+}
+
+.current{
+	border:solid 2px #707070;
+	border-radius:5px;
+	color:#707070;
+}
+
+.prev,.next{
+	width:100px;
+	font-size:16px;	
+}
 
 /* ==========================
      レスポンシブ対応(タブレット)
    ========================== */
 @media screen and (max-width: 1023px){
-
 
 }
 
