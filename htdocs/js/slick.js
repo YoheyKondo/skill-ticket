@@ -50,4 +50,16 @@ function slick(){
     	slidesToScroll: 1
 	});
 
+    /* About */
+    $('.i_slider').slick({
+        arrows:false,
+        asNavFor:'.thumb',
+    });
+
+    $('.thumb').slick({
+        asNavFor:'.slider',
+        focusOnSelect: true,
+        slidesToShow:3,
+        slidesToScroll:1
+    }); 
 }

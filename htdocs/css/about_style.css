@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+
+#About{
+	max-width: 960px;
+	width:80%;
+	margin:0 auto;
+}
+
+/* ==========================
+     案件情報
+   ========================== */
+.Info{
+	width:50%;
+}
+
+.Info > p{
+	padding-top:24px;
+}
+
+.Info > .icon{
+	display:inline-block;
+	color:#ECAB48;
+	font-size:16px;
+	border:solid 1px #ECAB48;
+	border-radius:30px;
+	padding:2px 4px;
+}
+
+.Info > .text{
+	font-size:16px;
+	font-weight: bold;
+}
+
+.review{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size:24px;
+}
+
+.review span{
+	color:#ECAB48;
+	font-weight: bold;
+}
+
+/* ================
+      slider
+ ================ */
+.slider{
+	max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider img{
+    height: auto;
+    margin:0 auto;
+}
+
+/* ================
+      Information
+ ================ */
+.i_slider img,.thumb img{
+    width:100%;
+}
+
+.thumb{
+	margin-top:8px;
+}
+
+/* ================
+    詳細説明文
+ ================ */
+ .details{
+ 	position:relative;
+ }
+
+/* ボーダー */
+.border{
+	width:120%;
+	border-top:solid 1px #707070;
+	position:absolute;
+	left:-100px;
+}
+
+.d_box{
+	width:60%;
+}
+
+.d_title{
+	padding-top:56px;
+	font-size:24px;
+	color:#5B5B5B;
+}
+.d_text{
+	padding-top:24px;
+	font-size:16px;
+	color:#5B5B5B;	
+}
+
+.d_list{
+	display:flex;
+	justify-content: space-between;
+}
+/* 日付・場所 */
+.d_listBox{
+	width:50%;
+}
+.d_day,.d_member{
+	display:flex;
+}
+/
+/* 料金 */
+.d_charge{
+	width:20%;
+}
+
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+
+}

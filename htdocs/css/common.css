@@ -207,6 +207,21 @@ textarea:-moz-placeholder{
 	align-items:center;
 }
 
+/* ==========================
+     パンくずリスト
+   ========================== */
+.path{
+	margin:32px 0px 50px;
+	font-size:16px;
+}
+.path p{ /* 横並び */
+	display:inline-block;
+}
+.path p,.path a{ /* 文字色 */
+	color:#ECAB48;
+}
+
+
 /* =================
      レスポンシブ対応
    ================= */

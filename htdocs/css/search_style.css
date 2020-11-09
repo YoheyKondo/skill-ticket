@@ -198,6 +198,11 @@ select{
 	justify-content:center;
 	align-items: center;
 
+	border:solid 1px #ECAB48;
+	border-radius:5px;
+	padding:24px;
+	margin:32px;
+
 }
 
 .result_img{
@@ -218,10 +223,28 @@ select{
 	font-size:32px;
 	border:solid 1px #ECAB48;
 	border-radius:30px;
-	padding-left:30px;
+
+	position:relative;
+	padding-left:50px;
 }
 
 .result_title::before{
+	content:"";
+	font-size:16px;
+	width:47px;
+	height:47px;
+	border:solid 1px #ECAB48;
+	border-radius:50%;
+	background-color:#ECAB48;
+
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+	position:absolute;
+	top:-0.5px;
+	left:-1px;
+/*	transform:translate(-50%,-50%);*/
 }
 
 .result_content{
