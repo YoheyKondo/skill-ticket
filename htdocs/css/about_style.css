@@ -60,7 +60,7 @@ h2{
 /* ================
       slider
  ================ */
-.slider{
+.i_slider{
 	max-width: 100%;
     margin: 0 auto;
 }
@@ -81,10 +81,17 @@ h2{
 	margin-top:8px;
 }
 
+.title{
+	padding-top:56px;
+	font-size:24px;
+	color:#5B5B5B;
+}
+
 /* ================
     詳細説明文
  ================ */
  .details{
+ 	width:50%;
  	position:relative;
  }
 
@@ -97,14 +104,9 @@ h2{
 }
 
 .d_box{
-	width:60%;
+	width:100%;
 }
 
-.d_title{
-	padding-top:56px;
-	font-size:24px;
-	color:#5B5B5B;
-}
 .d_text{
 	padding-top:24px;
 	font-size:16px;
@@ -114,20 +116,271 @@ h2{
 .d_list{
 	display:flex;
 	justify-content: space-between;
+	margin:24px 0px;
 }
 /* 日付・場所 */
 .d_listBox{
 	width:50%;
 }
-.d_day,.d_member{
+.d_Box{
 	display:flex;
 }
-/
+.d_Box p:nth-of-type(1){
+	width:40%;
+}
+.d_Box p:nth-of-type(2){
+	width:60%;
+}
+
 /* 料金 */
 .d_charge{
 	width:20%;
+	display: flex;
+	justify-content:center;
+	align-items: center;	
 }
 
+/* 購入ボタン　*/
+.d_btn{
+	padding:0px 12px;
+	background-color:#ECAB48;
+	border-radius:10px;
+
+	display: flex;
+	align-items: center;
+}
+
+.d_btn a{
+	color:#ffffff;
+}
+
+/* もっと見るボタン */
+.SeeMore{
+	width:100%;
+	height:40px;
+	border:solid 1px #ECAB48;
+	font-size:24px;
+	text-align:center;
+	padding:8px 0px;
+	line-height: 24px;
+
+	margin:40px 0px;
+}
+
+.SeeMore a{
+	display: block;
+	width:100%;
+	color:#ECAB48;
+}
+
+
+/* ==========================
+     講師について
+   ========================== */
+.teacher{
+	width:50%;
+}
+.teacher_box{
+	padding-top:24px;
+
+	display:flex;
+	justify-content: space-between;
+}
+
+/* 顔写真 */
+.t_img{
+	width:40%;
+	text-align: center;
+}
+
+.t_img img{
+	width:180px;
+	height:180px;
+	object-fit: cover;
+	border-radius:50%;
+	border:solid 3px #ECAB48;
+}
+
+.t_img p:nth-of-type(1){
+	margin:32px 0px 24px;
+	font-size:16px;
+	color:#5B5B5B;
+}
+
+.t_img p:nth-of-type(2){
+	padding:4px 16px;
+	margin:0 auto;
+
+	color:#ffffff;
+	background-color:#ECAB48;
+	width:180px;
+	border-radius:10px;
+}
+
+/* 自己紹介文 */
+.t_text{
+	width:55%;
+}
+
+.t_text p{
+	color:#5B5B5B;
+	font-size:16px;
+}
+
+.t_ex{
+	line-height: 16px;
+	margin-top:32px;
+}
+.readmore_btn{
+	text-align: right;
+	display:none;
+}
+.readmore_btn a{
+	color:#ECAB48;
+}
+
+
+/* ==========================
+     講義について
+   ========================== */
+.lecture{
+	width:50%;
+}
+
+.l_title{
+	margin:32px 0px;
+	font-size:16px;
+	color:#5B5B5B;
+}
+.fa-clock,.fa-file-alt{
+	font-size:32px;
+	margin-right:16px;
+}
+.l_ex{
+	margin-left:48px;
+}
+
+/* ==========================
+     レビューについて
+   ========================== */
+.review_list{
+	width:50%;
+	margin-top:64px;
+}
+
+.review_list > p{
+	display:inline;
+	color:#5B5B5B;
+}
+
+.review_list > p:nth-of-type(1){
+	font-size:32px;
+}
+.review_list > p:nth-of-type(2){
+	font-size:24px;
+}
+
+.review_box{
+	display:flex;
+	justify-content: space-between;
+	padding-top:80px;
+}
+
+/* 人画像 */
+.r_people{
+	text-align: center;
+	padding-right:16px;
+}
+.r_people img{
+	width:120px;
+	height:120px;
+	object-fit: cover;
+}
+
+.r_people p{
+	padding-top:16px;
+	font-size:12px;
+}
+
+/* レビューテキスト */
+.r_text{
+	font-size:14px;
+	color:#5B5B5B;
+}
+
+.r_text > p:nth-of-type(2){
+	float:right;
+}
+
+/* ==========================
+     他の授業
+   ========================== */
+.Other_Class{
+	margin:0 auto;
+	margin-bottom:40px;
+	padding-top:80px;
+}
+
+.Other_Class p{
+	font-size:24px;
+	color:#5B5B5B;
+	padding-bottom:56px;
+}
+
+/* ================
+      slider
+ ================ */
+.o_slider{
+	max-width: 100%;
+    color:#F1C076;
+}
+.slick-slide{
+    margin:0px 5px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #F1C076;
+    font-size:40px;
+    opacity:1;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* ドット*/
+.slick-dots li button:before{
+    color: #F1C076;
+    opacity:1;
+    content:'◯';
+    font-size:13px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C076;
+    content:'●';
+    font-size:13px;
+    opacity:1;
+}
+
+.slick-dots li button:before{
+	line-height: 60px;
+}
+
+
+.o_slider img{
+    width:200px;
+    height:150px;
+    object-fit: cover;
+}
+
+.o_slider .slick-prev{
+	left:0px;
+}
+.o_slider .slick-next{
+	right:0px;
+}
 
 /* ==========================
      レスポンシブ対応(タブレット)
