@@ -1,0 +1,149 @@
+/* ========================== 
+		フォームスタイル一覧
+   ========================== */
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ==========
+    タイトル
+   ========== */
+
+.form_box{
+	padding-top:16px;	
+	color:#5B5B5B;
+}
+
+.text{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size:16px;
+}
+
+/* 入力項目　タイトル*/
+.sub{
+	color:#5B5B5B;
+	font-size:16px;
+}
+
+.errMsg{ /* 入力項目　エラー文*/
+	color:#C70303;
+	font-size:12px;
+}
+
+/* プロフィール写真 */
+input[type="file"]{
+	display: none;
+}
+
+.upload{
+	display: inline-block; /* テキストに応じて幅を可変させるため */
+	margin: 8px 0; /* 前後の隙間 */
+	padding: 8px 16px; /* 塗りの余白 */
+	font-size: 16px; /* フォントサイズ */
+	background-color: #F0BF75; /* 背景色 */
+	color: #FFF; /* テキストカラー */
+	border: 0; /* 枠線を消す */
+	font-weight: bold;
+}
+
+/* メール、パスワード、名前、ふりがな、 */
+.mail,.pass,.name,.furigana{
+	width:100%;
+	height:24px;
+	border:solid 2px #F0BF75;
+	margin-top:0px;
+	font-size:24px;
+	padding-left:8px;
+}
+
+/* ＝＝＝＝＝＝
+　　　　性別
+　　＝＝＝＝＝＝ */
+.radio_box{
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+}
+
+.radio_box label{
+	margin-left:4px;
+	margin-right:16px;
+}
+
+.radio_box > div{
+	display: flex;
+	align-items: center;
+}
+
+input[type="radio"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:before{
+	content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 3px;
+    border: solid 2px #F0BF75;
+}
+input[type="radio"]:checked:before{
+	content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color:#F0BF75;
+}
+
+/* 自己紹介*/
+.form_box textarea{
+	resize:none;
+	width:100%;
+	height:160px;
+
+	font-size:10px;
+	background-color:#ffffff;
+	border:solid 2px #F0BF75;
+	padding:9px 12px;
+
+	font-size:16px;
+}
+
+
+select{
+	border:solid 2px #F0BF75;
+}
+
+/* ボタン*/
+.btn{
+	margin-top:40px;
+	padding:16px;
+	width:60%;
+	font-size:16px;
+	background-color:#F0BF75;
+	color:#ffffff;
+	border:none;
+}
+
+.btn:disabled{
+	background-color:#8D8D8D;
+}
+
+
+#genre{
+	white-space: nowrap;
+}
+
+

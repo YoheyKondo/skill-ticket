@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
+	
+	<!--JQuery-->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+	<!-- Font Awesome-->
+	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css">
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+	<script type="text/javascript" src="../js/slick.js"></script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/teacher_style.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="h_logo"><img src="../img/logo.png"></a>
+		<p>学びを、知識を、共有しよう！</p>
+		<div class="h_iconList">
+			<div class="h_icon"><a href="#"><img src="../img/bell.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/chat.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="../img/person.png"></a></div>			
+		</div>
+
+	</header>
+
+	<main>
+		<section id="TeacherList">
+						
+			<!-- パンくずリスト -->
+			<div class="path">
+				<a href="#">Top</a>
+				<p> > </p>
+				<a href="#">検索（すべて）</a>
+				<p> > </p>
+				<a href="#">人物名</a>
+			</div>
+
+			<!-- オレンジボーダー -->
+			<div class="border"></div> 
+
+			<!--  -->
+			<div class="teacher_box">
+				<div class="t_img">
+					<img src="../img/teacher2.jpg">
+					<p>名前</p>
+					<p>本人認証済み</p>
+					<p>評価:<span>★★★★☆</span></p>			
+				</div>
+				<div class="t_text">
+					<img src="../img/voice_training.jpg">
+					<p>自己紹介</p>
+					<p class="t_ex">説明文 500文字<br><br>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、</p>
+						<p class="readmore_btn"><a href="">+続きを読む</a></p>
+				</div>
+					
+			</div>
+
+
+			<div class="Sort">
+				<p>並び順</p>
+					<form action="" method="get" autocomplete="off">
+						<select name="search_sort">
+							<option>オススメ順</option>
+							<option>料金</option>
+							<option>レビュー</option>
+							<option>日付</option>
+						</select>
+					</form>
+					
+				</form>
+			</div>
+
+			<div class="Search_result">
+
+				<div class="result_box">
+					<div class="result_img">
+						<img src="../img/pc_technique.jpg">
+					</div>
+					<div class="result_text">
+						<p class="result_title">タイトル</p>
+						<p class="result_content">説明文：ル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル.</p>
+						<div class="result_detail">
+							<p class="charge">
+								¥10,000 ~
+							</p>
+							<div class="day">
+								<p>2020/07/10 16:00 - 17:00</p>
+								<img src="../img/day_icon.png">
+							</div>
+						</div>
+						<div class="r_review">
+							<div class="review">
+								<p>レビュー</p>
+								<p class="star">☆☆☆☆☆</p>
+							</div>
+							<div class="place">
+								<i class="fas fa-map-marker-alt place_icon"></i>
+								<p>新宿</p>
+							</div>	
+						</div>
+						<div class="r_name">
+							名前
+						</div>
+					</div>
+				</div>
+
+				<div class="result_box">
+					<div class="result_img">
+						<img src="../img/pc_technique.jpg">
+					</div>
+					<div class="result_text">
+						<p class="result_title">タイトル</p>
+						<p class="result_content">説明文：ル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル.</p>
+						<div class="result_detail">
+							<p class="charge">
+								¥10,000 ~
+							</p>
+							<div class="day">
+								<p>2020/07/10 16:00 - 17:00</p>
+								<img src="../img/day_icon.png">
+							</div>
+						</div>
+						<div class="r_review">
+							<div class="review">
+								<p>レビュー</p>
+								<p class="star">☆☆☆☆☆</p>
+							</div>
+							<div class="place">
+								<i class="fas fa-map-marker-alt place_icon"></i>
+								<p>新宿</p>
+							</div>	
+						</div>
+						<div class="r_name">
+							名前
+						</div>
+					</div>					
+				</div>
+
+				<div class="result_box">
+					<div class="result_img">
+						<img src="../img/pc_technique.jpg">
+					</div>
+					<div class="result_text">
+						<p class="result_title">タイトル</p>
+						<p class="result_content">説明文：ル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル、サンプル.</p>
+						<div class="result_detail">
+							<p class="charge">
+								¥10,000 ~
+							</p>
+							<div class="day">
+								<p>2020/07/10 16:00 - 17:00</p>
+								<img src="../img/day_icon.png">
+							</div>
+						</div>
+						<div class="r_review">
+							<div class="review">
+								<p>レビュー</p>
+								<p class="star">☆☆☆☆☆</p>
+							</div>
+							<div class="place">
+								<i class="fas fa-map-marker-alt place_icon"></i>
+								<p>新宿</p>
+							</div>	
+						</div>
+						<div class="r_name">
+							名前
+						</div>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+			<!-- ＝＝＝＝＝＝＝＝＝＝＝＝
+				　　ページネーション
+				　＝＝＝＝＝＝＝＝＝＝＝＝　-->
+			<div class="pageNav">
+
+			  <a class="prev page-numbers" href="#">前の20件</a>
+			  <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">1</a>
+			  <!-- 現在閲覧してるページ -->
+			  <span class="page-numbers current">2</span>
+			  <a class="page-numbers" href="#">3</a>
+			  <span class="page-numbers dots">・</span>
+			  <span class="page-numbers dots">・</span>
+			  <span class="page-numbers dots">・</span>
+			  <a class="page-numbers" href="#">31</a>
+			  <a class="page-numbers" href="#">32</a>
+			  <a class="page-numbers" href="#">33</a>
+			  <a class="next page-numbers" href="#">次の20件</a><!-- 現在の次のページへのリンク -->
+			</div>
+
+			<div class="Other_Class">
+				<p>この講師の他の授業</p>
+				
+
+				<ul class="slider o_slider">
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="Footer_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing">
+						<p>チケットを出品する</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site">
+						<p>サイト情報</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div border_dash">
+					<p>スキルチケットを<br class="tablet_none">もっと知る</p>	
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="../img/sns_twitter.png">
+							<img src="../img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>				
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>	
+	</footer>
+
+</body>
+</html>

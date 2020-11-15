@@ -49,6 +49,37 @@
 				<a href="#">タイトル</a>
 			</div>
 
+			<!-- ===============
+				   予約フォーム
+				 =============== -->
+			<div class="Rsv">
+				<form action="" method="get" autocomplete="off">
+					<label id="date"></label>
+					<input type="date" name="date" id="date">
+
+					<p class="Rsv_title">予約締切日</p>
+					<p class="Rsv_text">6/30(月) 13:00</p>
+
+					<p class="Rsv_title">参加人数</p>
+					<p class="Rsv_text">2/4名</p>
+
+					<div class="place">
+						<p class="Rsv_title">開催場所</p>
+						<div class="place_text">
+							<p clas="Rsv_text">新宿区</p>
+							<div class="googleMap">
+								<i class="fas fa-map-marker-alt"></i>
+								<a href="#">GoogleMap</a>
+							</div>
+						</div>	
+					</div>
+					<p class="Rsv_title">料金</p>
+					<p class="Rsv_text">¥2,000</p>
+
+					<input type="button" value="チケット購入へ" name="button" class="button">
+				</form>				
+			</div>
+
 
 			<!-- ===============
 				   案件情報 
@@ -254,15 +285,79 @@
 							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
 						</p>
 					</li></a>
-					<a href=""><li><img src="../img/acoustic_guitar.JPG"></li></a>
-					<a href=""><li><img src="../img/dancing.JPG"></li></a>
-					<a href=""><li><img src="../img/cooking_bread.JPG"></li></a>
-					<a href=""><li><img src="../img/acoustic_guitar.JPG"></li></a>
-					<a href=""><li><img src="../img/dancing.JPG"></li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
+					<a href=""><li>
+						<img src="../img/cooking_bread.JPG">
+						<p>タイトル</p>
+						<p>説明文<br>
+							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+						</p>
+					</li></a>
 				</ul>
 			</div>
-		</section>
 
+			<div class="Search_Class">
+				<p>お探しの講座が見つかりませんでしたか？</p>
+				<!--　＝＝＝＝＝＝＝＝＝＝
+					　　　　検索BOX
+				　　　 ＝＝＝＝＝＝＝＝＝＝ -->
+				<section id="Search">
+					<div class="Search_Box">
+						<!-- 上段 -->
+						<div class="Box_Up">
+							<!-- フリーワード -->
+							<form action="" method="get" autocomplete="off" class="s_search">
+								<input type="text" name="freeword" placeholder="フリーワード" class="s_freeWord" required>
+								<!-- 虫眼鏡 -->
+								<input type="image" name="searchLogo" class="s_searchLogo" src="../img/searchLogo.png">
+							</form>
+						</div>
+						<!-- 下段 -->
+						<div class="Box_Down frame">
+							<p>人気のキーワード</p>
+							<div class="keyWord">
+								<a href="#">WordPress</a>
+								<a href="#">ロゴデザイン</a>
+								<a href="#">ヨガ</a>
+								<a href="#">ギター初心者</a>
+								<a href="#">作曲</a>
+								<a href="#">写真</a>	
+								<a href="#">Web</a>	
+							</div>
+						</div>
+
+					</div>
+					
+				</section>
+			</div>
+		</section>
 
 	</main>
 

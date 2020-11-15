@@ -14,6 +14,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/form.css">
 	<link rel="stylesheet" type="text/css" href="../css/signup_style.css">
 
 </head>
@@ -63,7 +64,7 @@
 				<!-- 入力 -->
 				<form action="" method="get" autocomplete="off">
 					<!-- メールアドレス -->
-					<div id="email">
+					<div id="email" class="form_box">
 						<div class="text">
 							<p class="sub">メールアドレス</p>
 						</div>
@@ -71,7 +72,7 @@
 					</div>
 
 					<!-- パスワード -->
-					<div id="password">
+					<div id="password" class="form_box">
 						<div class="text">
 							<p class="sub">パスワード</p>
 						</div>
@@ -79,7 +80,7 @@
 					</div>
 
 					<!-- 氏名 -->
-					<div id="name">
+					<div id="name" class="form_box">
 						<div class="text">
 							<p class="sub">氏名</p>
 							<p class="errMsg">入力必須です。</p>
@@ -88,7 +89,7 @@
 					</div>
 
 					<!-- ふりがな -->
-					<div id="furigana">
+					<div id="furigana" class="form_box">
 						<div class="text">
 							<p class="sub">ふりがな</p>
 							<p class="errMsg">入力必須です。</p>
@@ -97,49 +98,46 @@
 					</div>
 
 					<!-- プロフィール写真 -->
-					<div id="photo">
+					<div id="photo" class="form_box">
 						<div class="text">
 							<p class="sub">プロフィール写真</p>
 						</div>
+						<label class="upload" for="photoFile">画像選択</label>
 						<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-						<label class="profile_upload" for="photoFile">
-							<span class="btn_file">画像選択</span>
-							<span class="btn_text">写真をアップロードしてください</span>
-						</label>
+						<label class="file_upload" for="photoFile">写真をアップロードしてください</label>
 					</div>
 
-					<script type="text/javascript">
-						$(window).on('load',()=>{
-							
-
-						});
-
-					</script>
-
 					<!-- 性別 -->
-					<div id="gender">
+					<div id="gender" class="form_box">
 						<div class="text">
 							<p class="sub">性別</p>
 							<p class="errMsg">入力必須です。</p>
 						</div>
-						<div class="gender_box">
-							<input type="radio" name="gender" class="gender" id="man"><label for="man">男性</label>
-							<input type="radio" name="gender" class="gender" id="woman"><label for="woman">女性</label>
-							<input type="radio" name="gender" class="gender" value="その他" id="other"><label for="other">その他</label>
+						<div class="radio_box">
+							<div>
+								<input type="radio" name="gender" class="gender" id="man"><label for="man">男性</label>
+							</div>
+							<div>
+								<input type="radio" name="gender" class="gender" id="woman"><label for="woman">女性</label>								
+							</div>
+							<div>
+								<input type="radio" name="gender" class="gender" value="その他" id="other"><label for="other">その他</label>	
+							</div>
 						</div>
 					</div>
 
 					<!-- 自己紹介 -->
-					<div id="gender">
+					<div class="form_box">
 						<div class="text">
 							<p class="sub">自己紹介</p>
 						</div>
-						<div class="gender_box">
-							<textarea></textarea>
-						</div>
+						<textarea></textarea>
 					</div>
-					<!-- ログインボタン -->
-					<input type="submit" name="submit"value="仮登録へ" class="btn" disabled>
+
+					<!-- 本登録ボタン -->
+					<div class="form_box btn_center">
+						<input type="submit" name="submit"value="本登録へ" class="btn" disabled>					
+					</div>
 					
 				</form>
 			</div>

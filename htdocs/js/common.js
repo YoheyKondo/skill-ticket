@@ -2,7 +2,7 @@ $(function(){
 
 	var textHeight = $('.t_ex').height();/*全文表示時の高さ*/
     var lineHeight = parseFloat($('.t_ex').css('line-height'));
-    var lineNum = 13;
+    var lineNum = 5;
     var textNewHeight = lineHeight * lineNum;
 
 
