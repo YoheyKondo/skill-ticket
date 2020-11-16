@@ -67,7 +67,7 @@
 							<form action="" method="get" autocomplete="off">
 								<!-- プロフィール写真 -->
 								<div class="form_box">
-									<div class="text">
+									<div class="title">
 										<p class="sub">プロフィール写真</p>
 									</div>
 									<label class="upload" for="photoFile">画像選択</label>
@@ -82,24 +82,24 @@
 							<!-- 入力 -->
 							<form action="" method="get" autocomplete="off">
 								<!-- メールアドレス -->
-								<div class="form_box">
-									<div class="text">
+								<div id="email" class="form_box">
+									<div class="title">
 										<p class="sub">メールアドレス</p>
 									</div>
 									<input type="email" name="email" max-length="50" class="mail">
 								</div>
 
 								<!-- パスワード -->
-								<div class="form_box">
-									<div class="text">
+								<div id="password" class="form_box">
+									<div class="title">
 										<p class="sub">パスワード</p>
 									</div>
 									<input type="password" name="password" maxlength="50" class="pass">
 								</div>
 
 								<!-- 氏名 -->
-								<div class="form_box">
-									<div class="text">
+								<div id="name" class="form_box">
+									<div class="title">
 										<p class="sub">氏名</p>
 									</div>
 									<input type="text" name="name" maxlength="50" class="name">
@@ -107,15 +107,15 @@
 
 								<!-- ふりがな -->
 								<div class="form_box">
-									<div class="text">
+									<div class="title">
 										<p class="sub">ふりがな</p>
 									</div>
 									<input type="text" name="furigana" maxlength="50" class="furigana">
 								</div>
 
 								<!-- 性別 -->
-								<div class="form_box">
-									<div class="text">
+								<div id="gender" class="form_box">
+									<div class="title">
 										<p class="sub">性別</p>
 									</div>
 									<div class="radio_box">
@@ -133,7 +133,7 @@
 
 								<!-- 自己紹介 -->
 								<div class="form_box">
-									<div class="text">
+									<div class="title">
 										<p class="sub">自己紹介</p>
 									</div>
 									<textarea></textarea>
@@ -205,16 +205,16 @@
 			    <div class="tab_content" id="entry_content">
 					<form action="" method="get" autocomplete="off">
 						<!-- タイトル -->
-						<div id="title">
-							<div class="text">
+						<div id="title" class="form_box">
+							<div class="title">
 								<p class="sub">タイトル</p>
 							</div>
-							<input type="text" name="title" max-length="50" class="title">
+							<input type="text" name="title" max-length="50" class="text">
 						</div>
 
 						<!-- メイン写真 -->
-						<div class="photo">
-							<div class="text">
+						<div id="photo" class="form_box">
+							<div class="title">
 								<p class="sub">メイン写真</p>
 							</div>
 							<label class="upload" for="photoFile">画像選択</label>
@@ -223,21 +223,25 @@
 						</div>
 
 						<!-- サブ写真 -->
-						<div class="photo">
-							<div class="text">
+						<div id="photo" class="form_box">
+							<div class="title">
 								<p class="sub">サブ写真（2枚まで）</p>
 							</div>
-							<label class="upload" for="photoFile">画像選択</label>
-							<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-							<label class="file_upload" for="photo">写真をアップロードしてください</label>
-							<label class="upload" for="photoFile">画像選択</label>
-							<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-							<label class="file_upload" for="photo">写真をアップロードしてください</label>
+							<div>
+								<label class="upload" for="photoFile">画像選択</label>
+								<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
+								<label class="file_upload" for="photo">写真をアップロードしてください</label>
+							</div>
+							<div>
+								<label class="upload" for="photoFile">画像選択</label>
+								<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
+								<label class="file_upload" for="photo">写真をアップロードしてください</label>
+							</div>
 						</div>
 
 						<!-- ジャンル -->
-						<div id="genre">
-							<div class="text">
+						<div id="genre" class="form_box">
+							<div class="title">
 								<p class="sub">ジャンル</p>
 							</div>
 							<div class="radio_box">
@@ -284,17 +288,17 @@
 						</div>
 
 						<!-- 料金 -->
-						<div id="title">
-							<div class="text">
+						<div id="price" class="form_box">
+							<div class="title">
 								<p class="sub">料金</p>
 							</div>
-							<input type="number" name="title" max-length="50" class="title">
+							<input type="number" name="price" max-length="50" class="text">
 						</div>
 
-						<div class="add">
+						<div id="add" class="form_box">
 							<!-- 開催地域（都道府県） -->
-							<div id="title" class="place">
-								<div class="text">
+							<div id="pref" class="form_box">
+								<div class="title">
 									<p class="sub">開催地域（都道府県）</p>
 								</div>
 								<select name="pref" class="pref">
@@ -350,74 +354,67 @@
 
 
 							<!-- 市区町村 -->
-							<div id="title" class="place">
-								<div class="text">
+							<div id="city" class="form_box">
+								<div class="title">
 									<p class="sub">市区町村（駅名）</p>
 								</div>
-								<input type="text" name="title" max-length="50" class="title">
+								<input type="text" name="city" max-length="50" class="city text">
 							</div>
 
 						</div>
 
 						<!-- GoogleMap -->
-						<div id="title">
-							<div class="text">
+						<div id="map" class="form_box">
+							<div class="title">
 								<p class="sub">Map URL</p>
 							</div>
-							<input type="text" name="title" max-length="50" class="title">
+							<input type="text" name="map" max-length="50" class="text">
 						</div>
 
 						<!-- 見出し -->
-						<div id="title">
-							<div class="text">
+						<div id="head" class="form_box">
+							<div class="title">
 								<p class="sub">見出し</p>
 							</div>
-							<input type="text" name="title" max-length="50" class="title">
+							<input type="text" name="head" max-length="50" class="text">
 						</div>
 
 						<!-- チケット説明 -->
-						<div class="gender">
-							<div class="text">
+						<div id="exp" class="form_box">
+							<div class="title">
 								<p class="sub">チケット説明</p>
 							</div>
-							<div class="gender_box">
-								<textarea>サンプル</textarea>
-							</div>
+							<textarea>サンプル</textarea>
 						</div>
 
 						<!-- 当日必要なもの -->
-						<div id="gender">
-							<div class="text">
+						<div id="need" class="form_box">
+							<div class="title">
 								<p class="sub">当日必要なもの</p>
 							</div>
-							<div class="gender_box">
-								<textarea>サンプル</textarea>
-							</div>
+							<textarea>サンプル</textarea>
 						</div>
 
 						<!-- 授業の目的・目標 -->
-						<div id="gender">
-							<div class="text">
+						<div id="target" class="form_box">
+							<div class="title">
 								<p class="sub">授業の目的・目標</p>
 							</div>
-							<div class="gender_box">
-								<textarea>サンプル</textarea>
-							</div>
+							<textarea>サンプル</textarea>
 						</div>
 
 						<!-- 注意事項 -->
-						<div id="gender">
-							<div class="text">
+						<div id="note" class="form_box">
+							<div class="title">
 								<p class="sub">注意事項</p>
 							</div>
-							<div class="gender_box">
-								<textarea>サンプル</textarea>
-							</div>
+							<textarea>サンプル</textarea>
 						</div>
 
 						<!-- ログインボタン -->
-						<input type="submit" name="submit"value="日付登録へ" class="btn">
-						
+						<div class="form_box btn_center">
+							<input type="submit" name="submit"value="日付登録へ" class="btn">
+						</div>
 					</form>
 				</div>
 

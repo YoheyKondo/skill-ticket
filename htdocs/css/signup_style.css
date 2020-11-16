@@ -81,9 +81,7 @@ h2{
 /* ==========================
      会員登録
    ========================== */
-.title{
-}
-.title h2{
+#title h2{
 	text-align:center;
 	color:#5B5B5B;
 	font-size:40px;
@@ -96,7 +94,7 @@ h2{
 	background-color:#FFD698;
 }
 
-.title > p{
+#title > p{
 	padding:16px 0px;
 	font-size:16px;
 }
@@ -104,15 +102,6 @@ h2{
 #SignUP form{
 	width:60%;
 	margin:0 auto;
-}
-
-.gender_box{
-	display:flex;
-	align-items:center;
-}
-
-.btn_center{
-	text-align: center;
 }
 
 

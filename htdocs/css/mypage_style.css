@@ -102,29 +102,32 @@ input[name="tab_item"] {
 	justify-content: space-around;
 }
 
+/* 左側 */
 .mypage_img{
 	max-width:40%;
 	width:240px;
-
 }
 
-/* プロフィール写真 */
-.mypage_img img{
+.mypage_img img{ /* プロフィール写真 */
 	width:240px;
 	height:240px;
 	object-fit:cover;
 	border-radius: 50%;
 }
 
-/* プロフィール　入力欄　*/
-.mypage_profile form{
+/* 右側 */
+.mypage_profile{
+	width:60%;
+}
+
+.mypage_profile form{ /* プロフィール　入力欄　*/
 	width:100%;
 	margin:0 auto;
 }
 
-/* ============
-　　　購入履歴
-　　============ */
+/* ================
+　　　チケット購入履歴
+　　================ */
 .his_box{
 	display:flex;
 	align-items: center;
@@ -165,15 +168,12 @@ input[name="tab_item"] {
 /* ============
 　　　チケット登録
 　　============ */
-.add{
+#add{
 	display:flex;
 	justify-content: space-between;
 }
 
-.place{
-	max-width: 240px;
-	width:40%;
-}
+
 /* ================
 　　　マイチケット一覧
 　　================ */
