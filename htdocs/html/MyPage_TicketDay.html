@@ -203,218 +203,51 @@
 			    	 　チケット登録　
 			    	 =============== -->
 			    <div class="tab_content" id="entry_content">
-					<h2>チケット登録</h2>
+					<h2>日付登録</h2>
 					<form action="" method="get" autocomplete="off">
 						<!-- タイトル -->
 						<div id="title" class="form_box">
 							<div class="title">
 								<p class="sub">タイトル</p>
 							</div>
-							<input type="text" name="title" max-length="50" class="text">
+							<input type="text" name="title" max-length="50" class="text_title" placeholder="タイトル・・・">
 						</div>
 
-						<!-- メイン写真 -->
-						<div id="photo" class="form_box">
+
+						<div id="date" class="form_box">
 							<div class="title">
-								<p class="sub">メイン写真</p>
+								<p class="sub">日付登録</p>
 							</div>
-							<label class="upload" for="photoFile">画像選択</label>
-							<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-							<label class="file_upload" for="photo">写真をアップロードしてください</label>
-						</div>
+							<label id="date"></label>
+							<input type="date" name="date" class="date">
 
-						<!-- サブ写真 -->
-						<div id="photo" class="form_box">
-							<div class="title">
-								<p class="sub">サブ写真（2枚まで）</p>
-							</div>
-							<div>
-								<label class="upload" for="photoFile">画像選択</label>
-								<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-								<label class="file_upload" for="photo">写真をアップロードしてください</label>
-							</div>
-							<div>
-								<label class="upload" for="photoFile">画像選択</label>
-								<input type="file" name="photo" id="photoFile" accept=".png, .jpeg, .jpg">
-								<label class="file_upload" for="photo">写真をアップロードしてください</label>
-							</div>
-						</div>
-
-						<!-- ジャンル -->
-						<div id="genre" class="form_box">
-							<div class="title">
-								<p class="sub">ジャンル</p>
-							</div>
-							<div class="radio_box">
-								<div>
-									<input type="radio" name="genre" class="genre" id="fitness"><label for="fitness">フィットネス・ヨガ</label>	
+							<div class="time_capa">
+								<div id="time_list">
+									<div class="time">
+										<p>開始時刻</p>
+										<input type="time" name="time" class="s_time">
+									</div>
+									<div class="time">
+										<p>終了時刻</p>
+										<input type="time" name="time" class="e_time">
+									</div>
 								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="program"><label for="program">プログラミング</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="design"><label for="design">デザイン・イラスト</label>		
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="nail"><label for="nail">ネイル・メイク</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="music"><label for="music">音楽</label>
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="business"><label for="business">ビジネス</label>
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="language"><label for="language">語学</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="diy"><label for="diy">ものづくり</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="hobby"><label for="hobby">趣味・ライフハック</label>
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="sports"><label for="sports">スポーツ</label>		
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="language"><label for="language">語学</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="cooking"><label for="cooking">料理</label>	
-								</div>
-								<div>
-									<input type="radio" name="genre" class="genre" id="other"><label for="other">その他</label>		
+								<div id="capa">
+									<p>定員</p>
+									<input type="number" name="capa" class="capa">
 								</div>
 							</div>
 						</div>
 
-						<!-- 料金 -->
-						<div id="price" class="form_box">
-							<div class="title">
-								<p class="sub">料金</p>
-							</div>
-							<input type="number" name="price" max-length="50" class="text" placeholder="¥">
+						<!-- 追加ボタン -->
+						<div class="form_box">
+							<input type="submit" name="submit_add" value="" class="btn_Add" id="btn_Add">
+							<label for="btn_Add">日付を追加</label>
 						</div>
 
-						<div id="add" class="form_box">
-							<!-- 開催地域（都道府県） -->
-							<div id="pref" class="form_box">
-								<div class="title">
-									<p class="sub">開催地域（都道府県）</p>
-								</div>
-								<select name="pref" class="pref">
-									<option value="Hokkaido">北海道</option>
-									<option value="Aomori">青森</option>
-									<option value="Iwate">岩手</option>
-									<option value="Miyagi">宮城</option>
-									<option value="Akita">秋田</option>
-									<option value="Yamagata">山形</option>
-									<option value="Hukushima">福島</option>
-									<option value="Ibaraki">茨城</option>
-									<option value="Tochigi">栃木</option>
-									<option value="Gunma">群馬</option>
-									<option value="Saitama">埼玉</option>
-									<option value="Chiba">千葉</option>
-									<option value="Tokyo">東京</option>
-									<option value="Kanagawa">神奈川</option>
-									<option value="Niigata">新潟</option>
-									<option value="Toyama">富山</option>
-									<option value="Ishikawa">石川</option>
-									<option value="Hukui">福井</option>
-									<option value="Yamanashi">山梨</option>
-									<option value="Nagano">長野</option>
-									<option value="Gihu">岐阜</option>
-									<option value="Shizuoka">静岡</option>
-									<option value="Aichi">愛知</option>
-									<option value="Mie">三重</option>
-									<option value="Shiga">滋賀</option>
-									<option value="Kyoto">京都</option>
-									<option value="Osaka">大阪</option>
-									<option value="Hyogo">兵庫</option>
-									<option value="Nara">奈良</option>
-									<option value="Wakayama">和歌山</option>
-									<option value="Tottori">鳥取</option>
-									<option value="Shimane">島根</option>
-									<option value="Okayama">岡山</option>
-									<option value="Hiroshima">広島</option>
-									<option value="Yamaguchi">山口</option>
-									<option value="Tokushima">徳島</option>
-									<option value="Kagawa">香川</option>
-									<option value="Ehime">愛媛</option>
-									<option value="Kochi">高知</option>
-									<option value="Hukuoka">福岡</option>
-									<option value="Saga">佐賀</option>
-									<option value="Nagasaki">長崎</option>
-									<option value="Kumamoto">熊本</option>
-									<option value="Oita">大分</option>
-									<option value="Miyazaki">宮崎</option>
-									<option value="Kagoshima">鹿児島</option>
-									<option value="Okinawa">沖縄</option>
-								</select>
-							</div>
-
-
-							<!-- 市区町村 -->
-							<div id="city" class="form_box">
-								<div class="title">
-									<p class="sub">市区町村（駅名）</p>
-								</div>
-								<input type="text" name="city" max-length="50" class="city text">
-							</div>
-
-						</div>
-
-						<!-- GoogleMap -->
-						<div id="map" class="form_box">
-							<div class="title">
-								<p class="sub">Map URL</p>
-							</div>
-							<input type="text" name="map" max-length="50" class="text">
-						</div>
-
-						<!-- 見出し -->
-						<div id="head" class="form_box">
-							<div class="title">
-								<p class="sub">見出し</p>
-							</div>
-							<input type="text" name="head" max-length="50" class="text">
-						</div>
-
-						<!-- チケット説明 -->
-						<div id="exp" class="form_box">
-							<div class="title">
-								<p class="sub">チケット説明</p>
-							</div>
-							<textarea></textarea>
-						</div>
-
-						<!-- 当日必要なもの -->
-						<div id="need" class="form_box">
-							<div class="title">
-								<p class="sub">当日必要なもの</p>
-							</div>
-							<textarea></textarea>
-						</div>
-
-						<!-- 授業の目的・目標 -->
-						<div id="target" class="form_box">
-							<div class="title">
-								<p class="sub">授業の目的・目標</p>
-							</div>
-							<textarea></textarea>
-						</div>
-
-						<!-- 注意事項 -->
-						<div id="note" class="form_box">
-							<div class="title">
-								<p class="sub">注意事項</p>
-							</div>
-							<textarea></textarea>
-						</div>
-
-						<!-- ログインボタン -->
+						<!-- 登録ボタン -->
 						<div class="form_box btn_center">
-							<input type="submit" name="submit"value="日付登録へ" class="btn">
+							<input type="submit" name="submit"value="チケットの登録" class="btn">
 						</div>
 					</form>
 				</div>
