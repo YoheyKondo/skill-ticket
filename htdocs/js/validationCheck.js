@@ -1,4 +1,24 @@
 $(function(){
+     
+     // パスワード表示・非表示
+    $('.field_icon').click(function(){
+        //iconの切り替え
+        var check=$(this).children().hasClass("fa-eye")
+
+        console.log(check);
+        if(check){
+            $(this).children().removeClass("fa-eye");
+            $(this).children().addClass("fa-eye-slash");   
+            $(this).prev('input').attr("type","text");
+
+        }else{
+            $(this).children().removeClass("fa-eye-slash");   
+            $(this).children().addClass("fa-eye");
+            $(this).prev('input').attr("type","password");
+        }
+
+    });
+
     //バリデーションチェック
     $('input').on('blur',function(){
         var val  =$(this).val(); //値を取得
