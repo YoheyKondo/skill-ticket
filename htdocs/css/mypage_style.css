@@ -115,6 +115,11 @@ input[name="tab_item"] {
 	border-radius: 50%;
 }
 
+.photo_title{
+	justify-content: center;
+	font-weight: bold;
+}
+
 /* 右側 */
 .mypage_profile{
 	width:60%;
@@ -317,6 +322,28 @@ input[id="btn_Add"] +label:after{
      レスポンシブ対応(タブレット)
    ========================== */
 @media screen and (max-width: 1023px){
+	/* ============
+	　　　マイページ 
+	　　============ */
+	/* プロフィール　サイズ　*/
+	.mypage_box{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* 右側 */
+	.mypage_profile{
+		width:100%;
+	}
+
+	.btn{
+		text-align: center;
+	}
+
+	#mypage_profile form{
+		text-align: center;
+	}
+
 
 }
 

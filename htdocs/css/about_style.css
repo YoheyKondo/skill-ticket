@@ -15,9 +15,22 @@ h2{
 
 
 #About{
+	position:relative;
+
+}
+
+.maxwidth_set{
+	margin:0 auto;
 	max-width: 960px;
 	width:80%;
+}
+
+/* ボーダー */
+.border{
+	width:90%;
+	border-top:solid 1px #707070;
 	margin:0 auto;
+	margin:24px 0px;
 }
 
 /* ==========================
@@ -25,21 +38,30 @@ h2{
    ========================== */
 .Rsv{
 	position:fixed;
-	top:178px;
-	right:210px;
+	top:240px;
+	right:calc(100vw*0.1);
 	width:280px;
-	height:550px;
+	height:500px;
 
 	border:solid 1px #5B5B5B;
-	padding:32px 12px;
-
-
+	padding:24px 8px;
+	background-color:#ffffff;
 }
 
 .Rsv_title{
 	color:#5B5B5B;
 	font-size:16px;
-	padding:32px 0px 16px;
+	padding:24px 0px 8px;
+}
+
+
+.date{
+	width:100%;
+	background-color:#ffffff;
+	color:#ECAB48;
+	height:56px;
+	padding:16px;
+	border:solid 1px #ECAB48;
 }
 
 .Rsv_text{
@@ -79,6 +101,10 @@ h2{
    ========================== */
 .Info{
 	width:50%;
+}
+
+.Info h2{
+	font-size:40px;
 }
 
 .Info > p{
@@ -135,26 +161,19 @@ h2{
 	margin-top:8px;
 }
 
-.title{
-	padding-top:56px;
-	font-size:24px;
-	color:#5B5B5B;
-}
+
 
 /* ================
     詳細説明文
  ================ */
  .details{
  	width:50%;
- 	position:relative;
  }
 
-/* ボーダー */
-.border{
-	width:120%;
-	border-top:solid 1px #707070;
-	position:absolute;
-	left:-100px;
+.a_title{
+	padding-top:56px;
+	font-size:24px;
+	color:#5B5B5B;
 }
 
 .d_box{

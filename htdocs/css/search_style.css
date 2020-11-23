@@ -20,7 +20,7 @@ h2{
 	background-image:url(../img/acoustic_guitar.jpg);
 	background-size: cover;
 	background-position: center;
-	height:calc(100vw * 0.56);
+	height:92vh;
 	position:relative;
 }
 
@@ -30,11 +30,10 @@ h2{
 	top:40%;
 	left:50%;
 	transform:translate(-50%,-50%);
-
 	text-align:center;
 }
 .tp_logo img{
-	width:80%;
+	width:60%;
 }
 .tp_logo p{
 	font-size:32px;
@@ -47,7 +46,6 @@ h2{
 .Search_Box{
 	width:80%;
 	max-width:960px;
-	height:35%;
 	border:solid 8px #F1C076;
 	background-color:#ffffff;
 	color:#ECAB48;
@@ -85,6 +83,8 @@ h2{
 	border:none;
 	outline: none;
 	font-size:20px;
+
+	width:80%;
 }
 .Search_Box input::placeholder,.Search_Box a{
 	color: #ECAB48;
@@ -106,36 +106,66 @@ h2{
 	display:flex;
 }
 /* 人気のキーワード */
-.Box_Down p{
+
+.Box_Down_Genre{
+	display:flex;
+	width:80%;
+}
+
+.Box_Down_Genre >p{
 	width:15%;
-	font-size: 24px;
+	white-space: nowrap;
+	font-size: 20px;
 	padding-left:16px;
-	padding-right:8px;
+	padding-right:16px;
+	margin-top:8px;
 }
 /* キーワードリスト */
 .keyWord{
-	width:80%;
-	padding-right:16px;
 	display:flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: flex-start;
 }
-
-.keyWord div{
-	height:100%;
-	display:flex;
-	flex-direction: column;	
-	align-content:space-between;
-}
-.keyWord div a{
-	font-size:11px;
+.keyWord a{
+	font-size:16px;
 	border:solid 0.5px #ECAB48;
 	border-radius:100px;
 	padding:5px 10px;
 	margin:8px;
 }
-.frame{
-	border:solid 0.5px #ECAB48;
+
+.search_count{
+	width:21%;
+	background-color:#ECAB48;
+	color:#ffffff;
+	text-align: center;
+	margin:0 auto;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+	align-items: center;
+}
+
+.search_count p{
+	font-size:24px;
+}
+.search_count p > span{
+	font-size:40px;
+	font-weight: bold;
+}
+
+.clear_btn{
+	background-color:#ffffff;
+	color:#ECAB48;
+	font-size:16px;
+	font-weight: bold;
+	padding:8px;
+
+	border-radius:10px;
+	box-shadow: 1px 1px #000000;
+
 }
 
 /* ==========================
@@ -202,7 +232,6 @@ select{
 	border-radius:5px;
 	padding:24px;
 	margin:32px;
-
 }
 
 .result_img{
@@ -347,6 +376,146 @@ select{
      レスポンシブ対応(タブレット)
    ========================== */
 @media screen and (max-width: 1023px){
+	/* ==========================
+	     TOP（ピックアップ画像）
+	   ========================== */
+	/* ロゴ配置 */
+	.tp_logo{
+		top:20%;
+	}
+	.tp_logo img{
+		width:50%;
+	}
+	.tp_logo p{
+		font-size:24px;
+	}
+
+	/* ==========================
+	     TOP（検索機能）
+	   ========================== */
+	.Search_Box{
+		border:solid 4px #F1C076;
+		position:absolute;
+		top:60%;
+	}
+	/* ===上段=== */
+	.Box_Up{
+		height:56px;
+	}
+	.Search_Box input::placeholder,.Search_Box a{
+		font-size:16px;
+	}
+
+	/* ===下段=== */
+	.Box_Down{
+		height:auto;
+	}
+	/* 人気のキーワード */
+	.Box_Down_Genre{
+		display:block;
+		padding:16px;
+	}
+
+	.Box_Down_Genre >p{
+		width:100%;
+		font-size: 16px;
+		padding:0px;
+	}
+	.keyWord a{
+		font-size:12px;
+		border:solid 0.5px #ECAB48;
+		border-radius:100px;
+		padding:5px 10px;
+		margin:8px 8px 0px 0px;
+	}
+	.search_count p{
+		font-size:16px;
+	}
+	.search_count p > span{
+		font-size:32px;
+	}
+
+	/* ==========================
+	     並び順(ソート) 
+	   ========================== */
+	.Sort p{
+		font-size:12px;
+	}
+	select{
+		font-size:12px;
+	}
+
+	/* ==========================
+	     検索結果 
+	   ========================== */
+	.Search_result{
+		padding:32px 0px;
+	}
+
+	/*　画像　*/
+	.result_box{
+		display:block;
+		padding:16px;
+		margin:0px 0px 16px;
+	}
+
+	.result_img{
+		margin-right:0px;
+	}
+	.result_img img{
+		width:100%;
+		height: auto;
+	}
+
+	/*　テキスト　*/
+	.result_title{
+		font-size:24px;
+	}
+
+	.result_title::before{
+		font-size:16px;
+		width:36px;
+		height:36px;
+	}
+
+	.result_content{
+		font-size:16px;
+	}
+
+	.charge{
+		font-size:24px;
+	}
+
+	.day{
+		display: flex;
+		align-items: center;
+		font-size:16px;
+		color:#5B5B5B;
+	}
+	.day img{
+		padding-left:16px;
+	}
+
+	.r_review{
+		font-size:16px;
+	}
+
+
+	/* 名前　*/
+	.r_name{
+		height:40px;
+		font-size:24px;
+		position:relative;
+		padding-left:50px;
+	}
+
+	.r_name:before{
+		width:34px;
+		height:34px;
+		position:absolute;
+		top:0;
+		left:-1px;
+	}
 
 }
 
@@ -354,5 +523,90 @@ select{
      レスポンシブ対応(スマホ)
    ======================= */
 @media screen and (max-width: 749px){
+	/* ==========================
+	     TOP（ピックアップ画像）
+	   ========================== */
+	/* ロゴ配置 */
+	.tp_logo img{
+		width:40%;
+	}
+	.tp_logo p{
+		font-size:16px;
+	}
+
+	/* ==========================
+	     TOP（検索機能）
+	   ========================== */
+	.Search_Box{
+		border:solid 4px #F1C076;
+		position:absolute;
+	}
+	/* ===上段=== */
+	.Box_Up{
+		height:32px;
+	}
+	/* ===下段=== */
+	.Box_Down{
+		display:block;
+	}
+	/* 人気のキーワード */
+	.Box_Down_Genre{
+		display:block;
+		width:100%;
+		padding:16px;
+	}
+
+	.Box_Down_Genre >p{
+		width:100%;
+		font-size: 16px;
+		padding:0px;
+	}
+	.keyWord a{
+		font-size:12px;
+		border:solid 0.5px #ECAB48;
+		border-radius:100px;
+		padding:5px 10px;
+		margin:8px 8px 0px 0px;
+	}
+
+	.search_count{
+		width:100%;
+	}
+	.search_count p{
+
+		font-size:16px;
+	}
+	.search_count p > span{
+		font-size:24px;
+	}
+
+	/* =============
+	     説明
+	   ============= */
+
+	.result_detail{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.day{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.day img{
+		padding-left:0px;
+	}
+
+	.r_review{
+		flex-direction:column;
+		align-items: flex-start;
+		font-size:16px;
+	}
+
+	.review,.place{
+		width:100%;
+	}
+
+
 
 }

@@ -61,6 +61,7 @@ function slick(){
         slidesToScroll:1
     }); 
 
+    /* Teacher */
     $('.o_slider').slick({
         dots: true,
         infinite: true,

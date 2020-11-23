@@ -209,7 +209,7 @@ textarea:-moz-placeholder{
      パンくずリスト
    ========================== */
 .path{
-	margin:32px 0px 50px;
+	margin:32px 0px 24px;
 	font-size:16px;
 }
 .path p{ /* 横並び */
@@ -271,6 +271,9 @@ textarea:-moz-placeholder{
 	.border_solid{
 		border-right:none;
 	}
+	.Ticket_box > div{
+		padding-left: 0px;
+	}
 
 	.border_dash{
 		border-right:none;
@@ -283,7 +286,7 @@ textarea:-moz-placeholder{
 		padding-top:0px;
 	}
 	.Ticket_link{
-		padding:16px 8px;
+		padding:16px 0px;
 	}
 
 	.Ticket_contact{
@@ -304,4 +307,51 @@ textarea:-moz-placeholder{
 
 /* スマホ*/
 @media screen and (max-width: 749px){
+	/*heder*/
+	header{
+		height:24px;
+		font-size:8px;
+	}
+
+	.h_icon{
+		width:24px;
+	}
+
+	.h_logo{
+		width:40px;
+		margin-left:8px;
+		position:relative;
+	}
+
+	/* フッター */
+	footer h2{
+		font-size:16px;
+	}
+
+	.t_div{
+		font-size:16px;
+	}
+
+	.Ticket_link p{
+		font-size:12px;
+	}
+
+	/* お問い合わせボタン*/
+	.contact_btn{
+		width:50%;
+		height:32px;
+		margin:16px auto;
+		font-size:16px;
+	}
+
+	textarea{
+		resize:none;
+		width:100%;
+		height:170px;
+	}
+
+	.phone_none{
+		display:none;
+	}
+
 }

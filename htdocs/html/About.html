@@ -38,324 +38,335 @@
 
 	<main>
 		<section id="About">
-			<!-- ===============
-				   パンくずリスト 
-				 =============== -->
-			<div class="path">
-				<a href="#">Top</a>
-				<a href="#">検索（すべて）</a>
-				<a href="#">地域</a>
-				<a href="#">ジャンル</a>
-				<a href="#">タイトル</a>
-			</div>
-
-			<!-- ===============
-				   予約フォーム
-				 =============== -->
-			<div class="Rsv">
-				<form action="" method="get" autocomplete="off">
-					<label id="date"></label>
-					<input type="date" name="date" id="date">
-
-					<p class="Rsv_title">予約締切日</p>
-					<p class="Rsv_text">6/30(月) 13:00</p>
-
-					<p class="Rsv_title">参加人数</p>
-					<p class="Rsv_text">2/4名</p>
-
-					<div class="place">
-						<p class="Rsv_title">開催場所</p>
-						<div class="place_text">
-							<p clas="Rsv_text">新宿区</p>
-							<div class="googleMap">
-								<i class="fas fa-map-marker-alt"></i>
-								<a href="#">GoogleMap</a>
-							</div>
-						</div>	
-					</div>
-					<p class="Rsv_title">料金</p>
-					<p class="Rsv_text">¥2,000</p>
-
-					<input type="button" value="チケット購入へ" name="button" class="button">
-				</form>				
-			</div>
-
-
-			<!-- ===============
-				   案件情報 
-				 =============== -->
-			<div class="Info">
-				<h2>タイトル</h2>
-				<p class="icon">ジャンル</p>
-				<p class="text">見出し説明文MAX５０文字</p>
-				<div class="review">
-					<p>レビュー<span>☆☆☆☆☆</span></p>
-					<p><i class="fas fa-user"></i>開催回数</p>
-					<p><span>300</span>回</p>
+			<div class="maxwidth_set">
+				<!-- ===============
+					   パンくずリスト 
+					 =============== -->
+				<div class="path">
+					<a href="#">Top</a>
+					<p> > </p>
+					<a href="#">検索（すべて）</a>
+					<p> > </p>
+					<a href="#">地域</a>
+					<p> > </p>
+					<a href="#">ジャンル</a>
+					<p> > </p>
+					<a href="#">タイトル</a>
 				</div>
 
-				<!-- Slider -->
-				<ul class="slider i_slider">
-					<li><img src="../img/cooking_bread.JPG"></li>
-					<li><img src="../img/acoustic_guitar.JPG"></li>
-					<li><img src="../img/dancing.JPG"></li>
-				</ul>
-				<ul class="thumb">
-					<li><img src="../img/cooking_bread.JPG"></li>
-					<li><img src="../img/acoustic_guitar.JPG"></li>
-					<li><img src="../img/dancing.JPG"></li>
-				</ul>
+				<!-- ===============
+					   予約フォーム
+					 =============== -->
+				<div class="Rsv">
+					<form action="" method="get" autocomplete="off">
+						<label for="date"></label>
+						<input type="date" name="date" id="date" class="date">
+
+						<p class="Rsv_title">予約締切日</p>
+						<p class="Rsv_text">6/30(月) 13:00</p>
+
+						<p class="Rsv_title">参加人数</p>
+						<p class="Rsv_text">2/4名</p>
+
+						<div class="place">
+							<p class="Rsv_title">開催場所</p>
+							<div class="place_text">
+								<p clas="Rsv_text">新宿区</p>
+								<div class="googleMap">
+									<i class="fas fa-map-marker-alt"></i>
+									<a href="#">GoogleMap</a>
+								</div>
+							</div>	
+						</div>
+						<p class="Rsv_title">料金</p>
+						<p class="Rsv_text">¥2,000</p>
+
+						<input type="button" value="チケット購入へ" name="button" class="button">
+					</form>				
+				</div>
+
+
+				<!-- ===============
+					   案件情報 
+					 =============== -->
+				<div class="Info">
+					<h2>タイトル</h2>
+					<p class="icon">ジャンル</p>
+					<p class="text">見出し説明文MAX５０文字</p>
+					<div class="review">
+						<p>レビュー<span>☆☆☆☆☆</span></p>
+						<p><i class="fas fa-user"></i>開催回数</p>
+						<p><span>300</span>回</p>
+					</div>
+
+					<!-- Slider -->
+					<ul class="slider i_slider">
+						<li><img src="../img/cooking_bread.JPG"></li>
+						<li><img src="../img/acoustic_guitar.JPG"></li>
+						<li><img src="../img/dancing.JPG"></li>
+					</ul>
+					<ul class="thumb">
+						<li><img src="../img/cooking_bread.JPG"></li>
+						<li><img src="../img/acoustic_guitar.JPG"></li>
+						<li><img src="../img/dancing.JPG"></li>
+					</ul>
+				</div>
+
 			</div>
 
-			<!-- ===============
-				   詳細説明文
-				 =============== -->
-			<div class="details">
-				<div class="border"></div>
+			<div class="border"></div>
 
-				<div class="d_box">
-					<!-- 詳細説明 -->
-					<p class="title">詳細説明</p>
-					<p class="d_text">説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、</p>
+			<div class="maxwidth_set">
 
-					<!-- 受講日程 -->
-					<p class="title">受講日程</p>
-					<div class="d_list">
-						<!-- 日付・場所 -->
-						<div class="d_listBox">
-							<div class="d_Box">	
-								<p>7/1(水)</p>
-								<p>13:00-15:00</p>
+				<!-- ===============
+					   詳細説明文
+					 =============== -->
+				<div class="details">
+
+					<div class="d_box">
+						<!-- 詳細説明 -->
+						<p class="a_title">詳細説明</p>
+						<p class="d_text">説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、説明文MAX５００文字、</p>
+
+						<!-- 受講日程 -->
+						<p class="a_title">受講日程</p>
+						<div class="d_list">
+							<!-- 日付・場所 -->
+							<div class="d_listBox">
+								<div class="d_Box">	
+									<p>7/1(水)</p>
+									<p>13:00-15:00</p>
+								</div>
+								<div class="d_Box">
+									<p>参加人数</p>
+									<p>2/4名</p>
+								</div>
 							</div>
-							<div class="d_Box">
-								<p>参加人数</p>
-								<p>2/4名</p>
+							<!-- 料金 -->
+							<p class="d_charge">¥2,000</p>
+
+							<!-- ボタン -->
+							<div class="d_btn">
+								<a href="#" >チケット購入</a>
 							</div>
-						</div>
-						<!-- 料金 -->
-						<p class="d_charge">¥2,000</p>
 
-						<!-- ボタン -->
-						<div class="d_btn">
-							<a href="#" >チケット購入</a>
 						</div>
+						<div class="d_list">
+							<!-- 日付・場所 -->
+							<div class="d_listBox">
+								<div class="d_Box">	
+									<p>7/1(水)</p>
+									<p>13:00-15:00</p>
+								</div>
+								<div class="d_Box">
+									<p>参加人数</p>
+									<p>2/4名</p>
+								</div>
+							</div>
+							<!-- 料金 -->
+							<p class="d_charge">¥2,000</p>
 
+							<!-- ボタン -->
+							<div class="d_btn">
+								<a href="#" >チケット購入</a>
+							</div>
+
+						</div>
+						<div class="d_list">
+							<!-- 日付・場所 -->
+							<div class="d_listBox">
+								<div class="d_Box">	
+									<p>7/1(水)</p>
+									<p>13:00-15:00</p>
+								</div>
+								<div class="d_Box">
+									<p>参加人数</p>
+									<p>2/4名</p>
+								</div>
+							</div>
+							<!-- 料金 -->
+							<p class="d_charge">¥2,000</p>
+
+							<!-- ボタン -->
+							<div class="d_btn">
+								<a href="#" >チケット購入</a>
+							</div>
+
+						</div>
 					</div>
-					<div class="d_list">
-						<!-- 日付・場所 -->
-						<div class="d_listBox">
-							<div class="d_Box">	
-								<p>7/1(水)</p>
-								<p>13:00-15:00</p>
-							</div>
-							<div class="d_Box">
-								<p>参加人数</p>
-								<p>2/4名</p>
-							</div>
-						</div>
-						<!-- 料金 -->
-						<p class="d_charge">¥2,000</p>
 
-						<!-- ボタン -->
-						<div class="d_btn">
-							<a href="#" >チケット購入</a>
-						</div>
-
-					</div>
-					<div class="d_list">
-						<!-- 日付・場所 -->
-						<div class="d_listBox">
-							<div class="d_Box">	
-								<p>7/1(水)</p>
-								<p>13:00-15:00</p>
-							</div>
-							<div class="d_Box">
-								<p>参加人数</p>
-								<p>2/4名</p>
-							</div>
-						</div>
-						<!-- 料金 -->
-						<p class="d_charge">¥2,000</p>
-
-						<!-- ボタン -->
-						<div class="d_btn">
-							<a href="#" >チケット購入</a>
-						</div>
-
+					<div class="SeeMore">
+						<a href="#">もっと見る</a>
 					</div>
 				</div>
 
-				<div class="SeeMore">
-					<a href="#">もっと見る</a>
+				<!-- ===============
+					   講師について
+					 =============== -->
+				<div class="teacher">
+					<p class="a_title">この講座の講師について</p>
+					<div class="teacher_box">
+						<div class="t_img">
+							<img src="../img/teacher2.jpg">
+							<p>名前</p>
+							<p>本人認証済み</p>		
+						</div>
+						<div class="t_text">
+							<p>自己紹介</p>
+							<p class="t_ex">説明文 500文字<br><br>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、</p>
+							<p class="readmore_btn"><a href="">+続きを読む</a></p>
+						</div>
+						
+					</div>
+				</div>
+				<!-- ===============
+					   講義について
+					 =============== -->
+				<div class="lecture">
+					<p class="l_title"><i class="far fa-clock"></i>当日必要なもの・流れ</p>
+
+					<p class="l_ex">
+						説明文 500文字（全表示<br><br>
+
+						サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
+					</p>
+
+					<p class="l_title"><i class="far fa-file-alt"></i>授業の目標・目的</p>
+					<p class="l_ex">
+						説明文 500文字（全表示<br><br>
+
+						サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
+					</p>
+
+
+					<p class="l_title"><i class="far fa-file-alt"></i>注意事項</p>
+					<p class="l_ex">
+						説明文 500文字（全表示<br><br>
+
+						サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
+					</p>
+				</div>
+				<!-- ===============
+					   レビュー
+					 =============== -->
+				<div class="review_list">
+					<p>レビュー</p>
+					<p>300件</p>
+					<div class="review_box">
+						<div class="r_people">
+							<img src="../img/man_icon.png">
+							<p>20代　男性</p>
+						</div>
+						<div class="r_text">
+							<p>レビュー 100文字以内（全表示<br><br>
+								サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
+							</p>
+							<p>2020年7月</p>
+						</div>
+					</div>
+					<div class="review_box">
+						<div class="r_people">
+							<img src="../img/girl_icon.png">
+							<p>20代　女性</p>
+						</div>
+						<div class="r_text">
+							<p>レビュー 100文字以内（全表示<br><br>
+								サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
+							</p>
+							<p>2020年7月</p>
+						</div>
+					</div>
+					<div class="SeeMore">
+						<a href="#">もっと見る</a>	
+					</div>
 				</div>
 			</div>
+			<div class="border"></div>
 
-			<!-- ===============
-				   講師について
-				 =============== -->
-			<div class="teacher">
-				<p class="title">この講座の講師について</p>
-				<div class="teacher_box">
-					<div class="t_img">
-						<img src="../img/teacher2.jpg">
-						<p>名前</p>
-						<p>本人認証済み</p>		
-					</div>
-					<div class="t_text">
-						<p>自己紹介</p>
-						<p class="t_ex">説明文 500文字<br><br>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、</p>
-						<p class="readmore_btn"><a href="">+続きを読む</a></p>
-					</div>
+			<div class="maxwidth_set">
+				<div class="Other_Class">
+					<p>この講師の他の授業</p>
 					
+
+					<ul class="slider o_slider">
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+						<a href=""><li>
+							<img src="../img/cooking_bread.JPG">
+							<p>タイトル</p>
+							<p>説明文<br>
+								サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
+							</p>
+						</li></a>
+					</ul>
 				</div>
-			</div>
-			<!-- ===============
-				   講義について
-				 =============== -->
-			<div class="lecture">
-				<p class="l_title"><i class="far fa-clock"></i>当日必要なもの・流れ</p>
 
-				<p class="l_ex">
-					説明文 500文字（全表示<br><br>
-
-					サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
-				</p>
-
-				<p class="l_title"><i class="far fa-file-alt"></i>授業の目標・目的</p>
-				<p class="l_ex">
-					説明文 500文字（全表示<br><br>
-
-					サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
-				</p>
-
-
-				<p class="l_title"><i class="far fa-file-alt"></i>注意事項</p>
-				<p class="l_ex">
-					説明文 500文字（全表示<br><br>
-
-					サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
-				</p>
-			</div>
-			<!-- ===============
-				   レビュー
-				 =============== -->
-			<div class="review_list">
-				<p>レビュー</p>
-				<p>300件</p>
-				<div class="review_box">
-					<div class="r_people">
-						<img src="../img/man_icon.png">
-						<p>20代　男性</p>
-					</div>
-					<div class="r_text">
-						<p>レビュー 100文字以内（全表示<br><br>
-							サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
-						</p>
-						<p>2020年7月</p>
-					</div>
-				</div>
-				<div class="review_box">
-					<div class="r_people">
-						<img src="../img/girl_icon.png">
-						<p>20代　女性</p>
-					</div>
-					<div class="r_text">
-						<p>レビュー 100文字以内（全表示<br><br>
-							サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、プルテキスト、サンプルテキスト、
-						</p>
-						<p>2020年7月</p>
-					</div>
-				</div>
-				<div class="SeeMore">
-					<a href="#">もっと見る</a>		
-				</div>
-			
-				<div class="border"></div>
-			</div>
-
-			<div class="Other_Class">
-				<p>この講師の他の授業</p>
-				
-
-				<ul class="slider o_slider">
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-					<a href=""><li>
-						<img src="../img/cooking_bread.JPG">
-						<p>タイトル</p>
-						<p>説明文<br>
-							サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト、サンプル、テキスト
-						</p>
-					</li></a>
-				</ul>
-			</div>
-
-			<div class="Search_Class">
-				<p>お探しの講座が見つかりませんでしたか？</p>
-				<!--　＝＝＝＝＝＝＝＝＝＝
-					　　　　検索BOX
-				　　　 ＝＝＝＝＝＝＝＝＝＝ -->
-				<section id="Search">
-					<div class="Search_Box">
-						<!-- 上段 -->
-						<div class="Box_Up">
-							<!-- フリーワード -->
-							<form action="" method="get" autocomplete="off" class="s_search">
-								<input type="text" name="freeword" placeholder="フリーワード" class="s_freeWord" required>
-								<!-- 虫眼鏡 -->
-								<input type="image" name="searchLogo" class="s_searchLogo" src="../img/searchLogo.png">
-							</form>
-						</div>
-						<!-- 下段 -->
-						<div class="Box_Down frame">
-							<p>人気のキーワード</p>
-							<div class="keyWord">
-								<a href="#">WordPress</a>
-								<a href="#">ロゴデザイン</a>
-								<a href="#">ヨガ</a>
-								<a href="#">ギター初心者</a>
-								<a href="#">作曲</a>
-								<a href="#">写真</a>	
-								<a href="#">Web</a>	
+				<div class="Search_Class">
+					<p>お探しの講座が見つかりませんでしたか？</p>
+					<!--　＝＝＝＝＝＝＝＝＝＝
+						　　　　検索BOX
+					　　　 ＝＝＝＝＝＝＝＝＝＝ -->
+					<section id="Search">
+						<div class="Search_Box">
+							<!-- 上段 -->
+							<div class="Box_Up">
+								<!-- フリーワード -->
+								<form action="" method="get" autocomplete="off" class="s_search">
+									<input type="text" name="freeword" placeholder="フリーワード" class="s_freeWord" required>
+									<!-- 虫眼鏡 -->
+									<input type="image" name="searchLogo" class="s_searchLogo" src="../img/searchLogo.png">
+								</form>
 							</div>
-						</div>
+							<!-- 下段 -->
+							<div class="Box_Down frame">
+								<p>人気のキーワード</p>
+								<div class="keyWord">
+									<a href="#">WordPress</a>
+									<a href="#">ロゴデザイン</a>
+									<a href="#">ヨガ</a>
+									<a href="#">ギター初心者</a>
+									<a href="#">作曲</a>
+									<a href="#">写真</a>	
+									<a href="#">Web</a>	
+								</div>
+							</div>
 
+						</div>
 					</div>
-					
-				</section>
+				</div>
 			</div>
 		</section>
 
