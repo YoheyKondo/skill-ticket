@@ -15,6 +15,17 @@ ul, ol, li{
 	list-style: none;
 }
 
+/* 文字大きさ統一 */
+h2{
+	font-size:28px;
+}
+
+p,a,input,select{
+	font-size:16px;
+}
+.path a,.path p{
+	font-size:16px;
+}
 /* ============== 
       header
    ============== */
@@ -226,6 +237,15 @@ textarea:-moz-placeholder{
 
 /* タブレット*/
 @media screen and (max-width: 1023px){
+	/* 文字大きさ統一 */
+	h2{
+		font-size:20px;
+	}
+
+	p,a,input{
+		font-size:16px;
+	}
+
 	.tablet_none{
 		display:none;
 	}
@@ -307,6 +327,16 @@ textarea:-moz-placeholder{
 
 /* スマホ*/
 @media screen and (max-width: 749px){
+	/* 文字大きさ統一 */
+	h2{
+		font-size:18px;
+	}
+
+	p,a,input{
+		font-size:12px;
+	}
+
+
 	/*heder*/
 	header{
 		height:24px;
