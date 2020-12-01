@@ -25,39 +25,22 @@ $(function(){
 
 
 	// ページネーション
-	if(window.matchMedia("(max-width:749px)").matches){
-		var pagePrev = $('.prev').text();
-		var pageNext = $('.next').text();
-
-		resultPrev = pagePrev.replace("前の20件","<");
-		resultNext = pageNext.replace("次の20件",">");
-
-		$('.prev').text(resultPrev);
-		$('.next').text(resultNext);
-	}
+	Pagination();
 	$(window).resize(function(){
-		var w = $(window).width();
-		if(w <= 749){
-			var pagePrev = $('.prev').text();
-			var pageNext = $('.next').text();
-
-			resultPrev = pagePrev.replace("前の20件","<");
-			resultNext = pageNext.replace("次の20件",">");
-
-			$('.prev').text(resultPrev);
-			$('.next').text(resultNext);
-		}else{
-			var pagePrev = $('.prev').text();
-			var pageNext = $('.next').text();
-
-			resultPrev = pagePrev.replace("<","前の20件");
-			resultNext = pageNext.replace(">","次の20件");
-
-			$('.prev').text(resultPrev);
-			$('.next').text(resultNext);			
-		}
+		Pagination();
 	});
 
-
 });
+
+//ページネーション
+function Pagination(){
+	var w = $(window).width();
+	if(w <= 749){
+		$('.prev').text("<");
+		$('.next').text(">");
+	}else{
+		$('.prev').text("◀︎ 前の20件");
+		$('.next').text("次の20件 ▶︎");			
+	}
+}
 
