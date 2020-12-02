@@ -6,7 +6,7 @@ section{
 
 h2{
 	padding-top:32px;
-	padding-bottom:24px;
+	padding-bottom:12px;
 }
 
 *:focus{
@@ -29,28 +29,41 @@ h2{
 .border{
 	width:90%;
 	border-top:solid 1px #707070;
-	margin:0 auto;
-	margin:24px 0px;
+	margin:24px auto;
 }
 
 /* ==========================
      予約フォーム
    ========================== */
+.test_bottom{
+	position:absolute;
+}
 .Rsv{
 	position:fixed;
-	top:240px;
+	top:184px;
 	right:calc(100vw*0.1);
 	width:280px;
-	height:500px;
 
 	border:solid 1px #5B5B5B;
 	padding:24px 8px;
 	background-color:#ffffff;
 }
 
+.fixed_none{
+	position:absolute;
+	bottom:0px;
+	right:calc(100vw*0.1);
+	width:280px;
+	height:530px;
+
+	border:solid 1px #5B5B5B;
+	padding:24px 8px;
+	background-color:#ffffff;
+}
+
+
 .Rsv_title{
 	color:#5B5B5B;
-	font-size:16px;
 	padding:24px 0px 8px;
 }
 
@@ -66,7 +79,6 @@ h2{
 
 .Rsv_text{
 	color:#ECAB48;
-	font-size:16px;
 }
 
 .place_text,.googleMap{
@@ -85,7 +97,6 @@ h2{
 .button{
 	width:260px;
 	color:#ffffff;
-	font-size:16px;
 	padding:16px;
 	background-color:#ECAB48;
 	border-radius:15px;
@@ -103,10 +114,6 @@ h2{
 	width:50%;
 }
 
-.Info h2{
-	font-size:40px;
-}
-
 .Info > p{
 	padding-top:24px;
 }
@@ -114,24 +121,25 @@ h2{
 .Info > .icon{
 	display:inline-block;
 	color:#ECAB48;
-	font-size:16px;
 	border:solid 1px #ECAB48;
 	border-radius:30px;
 	padding:2px 4px;
 }
 
 .Info > .text{
-	font-size:16px;
 	font-weight: bold;
+	margin-bottom:12px;
 }
 
 .review{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size:24px;
 }
 
+.review p{
+	font-size:20px;
+}
 .review span{
 	color:#ECAB48;
 	font-weight: bold;
@@ -182,7 +190,6 @@ h2{
 
 .d_text{
 	padding-top:24px;
-	font-size:16px;
 	color:#5B5B5B;	
 }
 
@@ -237,7 +244,7 @@ h2{
 	padding:8px 0px;
 	line-height: 24px;
 
-	margin:40px 0px;
+	margin-top:40px;
 }
 
 .SeeMore a{
@@ -276,7 +283,6 @@ h2{
 
 .t_img p:nth-of-type(1){
 	margin:32px 0px 24px;
-	font-size:16px;
 	color:#5B5B5B;
 }
 
@@ -297,7 +303,6 @@ h2{
 
 .t_text p{
 	color:#5B5B5B;
-	font-size:16px;
 }
 
 .t_ex{
@@ -322,7 +327,6 @@ h2{
 
 .l_title{
 	margin:32px 0px;
-	font-size:16px;
 	color:#5B5B5B;
 }
 .fa-clock,.fa-file-alt{
@@ -462,7 +466,6 @@ h2{
 }
 
 .o_slider p:nth-of-type(1){
-	font-size:16px;
 	padding:8px 0px 16px;
 }
 
@@ -474,7 +477,8 @@ h2{
        検索Box
  ================ */
 #Search{
-	height:146px;
+	height:auto;
+	margin:16px 0px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -482,10 +486,10 @@ h2{
 }
 
 .Search_Box{
-	width:100%;
+	width:80%;
 	max-width:960px;
+	border:solid 8px #F1C076;
 	height:90%;
-	border:solid 4px #F1C076;
 }
 .Box_Up,.Box_Down{
 	border:solid 1px #ECAB48;
@@ -514,7 +518,6 @@ h2{
 	/* フォント */
 	border:none;
 	outline: none;
-	font-size:20px;
 }
 #Search input::placeholder,#Search a{
 	color: #ECAB48;
@@ -534,29 +537,30 @@ h2{
 .Box_Down{
 	height:40%;
 	display:flex;
-	align-items: center;
+/*	align-items: center;*/
+	padding:8px 0px;
 }
 /* 人気のキーワード */
 .Box_Down p{
-	width:20%;
-	font-size: 16px;
+	white-space: nowrap;
+
 	padding-left:16px;
 	padding-right:8px;
 }
 /* キーワードリスト */
 .keyWord{
-	width:80%;
-	padding-right:16px;
 	display:flex;
+	flex-wrap:wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .keyWord a{
-	font-size:11px;
+	font-size:16px;
 	border:solid 0.5px #ECAB48;
 	border-radius:100px;
 	padding:5px 10px;
+	margin:0px 8px 8px 0px;
 }
 .frame{
 	border:solid 0.5px #ECAB48;
@@ -581,12 +585,280 @@ h2{
      レスポンシブ対応(タブレット)
    ========================== */
 @media screen and (max-width: 1023px){
+	.Rsv{
+		display:none;
+	}
 
+	.Info,.details,.teacher,.lecture,.review_list{
+		width:100%;
+
+	}
+
+	.review{
+		justify-content: flex-start;
+	}
+
+	.review_list > p:nth-of-type(1){
+		font-size:20px;
+	}
+	.review_list > p:nth-of-type(2){
+		font-size:16px;
+	}
+
+	.review p{
+		font-size:20px;
+	}
+	.review p:nth-of-type(1){
+		width:60%;
+	}
+	.review p:nth-of-type(2){
+		width:20%;
+	}
+	.review p:nth-of-type(3){
+		width:20%;
+		text-align: right;
+	}
+
+	.review span{
+		color:#ECAB48;
+		font-weight: bold;
+	}
+
+	.a_title{
+		padding-top:48px;
+		font-size:20px;
+	}
+
+	/* ==========================
+	     他の授業
+	   ========================== */
+	.Other_Class{
+		margin-bottom:80px;
+		padding-top:24px;
+	}
+
+	.Other_Class > p{
+		font-size:20px;
+		color:#5B5B5B;
+		padding-bottom:40px;
+	}
+
+	/* ================
+	       検索Box
+	 ================ */
+	#Search{
+		height:auto;
+		min-height:160px;
+	}
+	/* ===下段=== */
+	.Box_Up{
+		height:56px;
+	}
+
+	/* ===下段=== */
+	.Box_Down{
+		height:auto;
+		flex-direction: column;
+		padding:16px;
+	}
+	/* 人気のキーワード */
+	.Box_Down p{
+		padding:0px;
+	}
+	/* キーワードリスト */
+	.keyWord{
+		flex-flow:wrap;
+		justify-content: flex-start;
+	}
+
+	.keyWord a{
+		font-size:12px;
+		margin:8px 8px 0px 0px;
+	}
+
+	/* ==========================
+	     お探しの講座が見つかりませんでしたか？
+	   ========================== */
+	.Search_Class{
+		margin-bottom:80px;
+		padding-top:48px;	
+	}
+	.Search_Class > p{
+		color:#5B5B5B;
+		padding-bottom:40px;
+	}
 }
 
 /* =======================
      レスポンシブ対応(スマホ)
    ======================= */
 @media screen and (max-width: 749px){
+	/* ==========================
+	     案件情報
+	   ========================== */
+	.Info > p{
+		padding-top:16px;
+	}
+
+	.Info > .text{
+		margin-bottom:12px;
+	}
+
+	.review{
+		display: flex;
+/*		flex-direction: column;*/
+		flex-wrap:wrap;
+		align-items: flex-start;
+	}
+
+	.review p:nth-of-type(1){
+		width:100%;
+		font-size:16px;
+	}
+	.review p:nth-of-type(2),.review p:nth-of-type(3){
+		width:50%;
+		font-size:16px;
+		text-align:left;
+	}
+
+	/* ==========================
+	     受講日程について
+	   ========================== */
+	.d_list{
+/*		justify-content: space-between;*/
+		flex-wrap: wrap;
+		margin:16px 0px;
+	}
+	/* 日付・場所 */
+	.d_listBox{
+		width:100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.d_Box{
+		display:flex;
+		justify-content: flex-end;
+		width: 50%;
+	}
+	.d_Box p:nth-of-type(n){
+		width:auto;
+	}
+	.d_Box p:nth-of-type(1){
+		margin-right:8px;
+	}
+
+
+	/* 料金 */
+	.d_charge{
+		width:20%;
+		display: flex;
+		justify-content:center;
+		align-items: center;	
+	}
+
+	/* 購入ボタン　*/
+	.d_btn{
+		padding:0px 12px;
+		background-color:#ECAB48;
+		border-radius:10px;
+
+		display: flex;
+		align-items: center;
+	}
+
+	.d_btn a{
+		color:#ffffff;
+	}
+
+	/* ==========================
+	     講師について
+	   ========================== */
+	.teacher_box{
+		display:flex;
+		flex-direction: column;
+	}
+
+	/* 顔写真 */
+	.t_img{
+		width:100%;
+	}
+
+	.t_img img{
+		width:160px;
+		height:160px;
+	}
+
+	.t_img p:nth-of-type(1){
+		margin:16px 0px 8px;
+	}
+
+	.t_img p:nth-of-type(2){
+		width:160px;
+	}
+
+	/* 自己紹介文 */
+	.t_text{
+		width:100%;
+	}
+
+	.t_ex{
+		line-height: 16px;
+		margin-top:16px;
+	}
+	.readmore_btn{
+		text-align: right;
+		display:none;
+	}
+	.readmore_btn a{
+		color:#ECAB48;
+	}
+	.l_ex{
+		margin-left:0px;
+	}
+
+
+	.review_box{
+		flex-direction: column;
+		padding-top:24px;
+	}
+
+	/* 人画像 */
+	.r_people{
+		padding-right:0px;
+	}
+	.r_people img{
+		width:160px;
+		height:160px;
+	}
+
+	.r_people p{
+		padding-top:16px;
+		font-size:12px;
+	}
+
+	/* レビューテキスト */
+	.r_text{
+		font-size:14px;
+		color:#5B5B5B;
+	}
+
+	.r_text > p:nth-of-type(2){
+		float:right;
+	}
+
+	/* ================
+	       検索Box
+	 ================ */
+
+	/* ===下段=== */
+	.Box_Up{
+		height:48px;
+	}
+	/* ===下段=== */
+	/* 人気のキーワード */
+	.keyWord a{
+		font-size:12px;
+	}
+
 
 }

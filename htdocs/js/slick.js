@@ -70,9 +70,12 @@ function slick(){
         responsive:[{
             breakpoint:1024,
             settings:{
-                slidesToShow: 1,
-            }
-        }]
+                slidesToShow: 2
+            }},{
+            breakpoint:750,
+            settings:{
+                slidesToShow: 1
+            }}]
     });
 
 }

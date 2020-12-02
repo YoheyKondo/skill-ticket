@@ -23,9 +23,21 @@ h2{
 p,a,input,select{
 	font-size:16px;
 }
+
+/* ==========================
+     パンくずリスト
+   ========================== */
+.path{
+	margin:32px 0px 24px;
+}
+.path p{ /* 横並び */
+	display:inline-block;
+}
 .path a,.path p{
+	color:#ECAB48;
 	font-size:16px;
 }
+
 /* ============== 
       header
    ============== */
@@ -216,19 +228,6 @@ textarea:-moz-placeholder{
 	align-items:center;
 }
 
-/* ==========================
-     パンくずリスト
-   ========================== */
-.path{
-	margin:32px 0px 24px;
-	font-size:16px;
-}
-.path p{ /* 横並び */
-	display:inline-block;
-}
-.path p,.path a{ /* 文字色 */
-	color:#ECAB48;
-}
 
 
 /* =================
@@ -239,11 +238,15 @@ textarea:-moz-placeholder{
 @media screen and (max-width: 1023px){
 	/* 文字大きさ統一 */
 	h2{
-		font-size:20px;
+		font-size:24px;
 	}
 
 	p,a,input{
-		font-size:16px;
+		font-size:14px;
+	}
+
+	.path a,.path p{
+		font-size:12px;
 	}
 
 	.tablet_none{
@@ -334,6 +337,10 @@ textarea:-moz-placeholder{
 
 	p,a,input{
 		font-size:12px;
+	}
+
+	.path a,.path p{
+		font-size:10px;
 	}
 
 
