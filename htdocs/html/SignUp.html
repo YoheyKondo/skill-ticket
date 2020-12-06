@@ -14,6 +14,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/form.css">
 	<link rel="stylesheet" type="text/css" href="../css/signup_style.css">
 
 </head>
@@ -56,15 +57,15 @@
 			</div>
 
 
-			<div class="title">
+			<div class="s_title">
 				<h2>会員登録</h2>
 				<div class="border"></div>
 
 				<!-- 入力 -->
 				<form action="" method="get" autocomplete="off">
 					<!-- メールアドレス -->
-					<div id="email">
-						<div class="text">
+					<div id="email" class="form_box">
+						<div class="title">
 							<p class="sub">メールアドレス</p>
 							<p class="errMsg">入力必須です。</p>
 						</div>
@@ -72,17 +73,19 @@
 					</div>
 
 					<!-- パスワード -->
-					<div id="password">
-						<div class="text">
+					<div id="password" class="form_box">
+						<div class="title">
 							<p class="sub">パスワード</p>
 							<p class="errMsg">入力必須です。</p>
 						</div>
-						<input type="password" name="password" maxlength="50" class="pass">
+						<input type="password" name="password" max-length="50" class="pass">
 					</div>
 
+
 					<!-- ログインボタン -->
-					<input type="submit" name="submit"value="仮登録へ" class="btn" disabled>
-					
+					<div class="form_box btn_center">
+						<input type="submit" name="submit"value="仮登録へ" class="btn" disabled>
+					</div>
 				</form>
 			</div>
 	

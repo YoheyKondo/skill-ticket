@@ -15,6 +15,7 @@
 .form_box{
 	padding-top:16px;	
 	color:#5B5B5B;
+	text-align: left;
 }
 
 .title{
@@ -74,6 +75,7 @@ select{
 	margin-top:0px;
 	font-size:16px;
 	padding-left:8px;
+	background-color: #ffffff;
 }
 
 /*.date{

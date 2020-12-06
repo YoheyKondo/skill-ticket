@@ -16,23 +16,10 @@ h2{
 #SignUP{
 	max-width:960px;
 	width:80%;
-	min-height:960px;
 	margin:0 auto;
+	padding-bottom:160px;
 }
 
-/* ==========================
-     パンくずリスト
-   ========================== */
-.path{
-	margin:32px 0px 50px;
-	font-size:16px;
-}
-.path p{ /* 横並び */
-	display:inline-block;
-}
-.path p,.path a{ /* 文字色 */
-	color:#ECAB48;
-}
 
 /* ==========================
      ステータスリスト
@@ -40,23 +27,21 @@ h2{
 .status{
 	display:flex;
 	align-items: flex-end;
-	font-size:14px;
 }
 .step{
 	display:flex;
 	align-items: center;
-	font-size:14px;
 }
 
 .circle{
 /*	display: inline-block;*/
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border:solid 2px #5B5B5B;
   border-radius: 50%;
   background: #ffffff;
   text-align:center;
-  line-height: 26px;
+  line-height: 23px;
   color:#5B5B5B;
   font-weight: bold;
   margin-right:4px;
@@ -81,10 +66,12 @@ h2{
 /* ==========================
      会員登録
    ========================== */
-#title h2{
+.s_title h2{
 	text-align:center;
 	color:#5B5B5B;
-	font-size:40px;
+}
+.s_title{
+	text-align: center;
 }
 .border{ /* 下線　*/
 	width:100%;
@@ -94,12 +81,11 @@ h2{
 	background-color:#FFD698;
 }
 
-#title > p{
+.s_title > p{
 	padding:16px 0px;
-	font-size:16px;
 }
 /* ====== 入力欄 ====== */
-#SignUP form{
+.s_title form{
 	width:60%;
 	margin:0 auto;
 }
@@ -118,35 +104,20 @@ h2{
 	.st_border{
 		display:none;
 	}
-	#SignUP{
-		height:720px;
-	}
-
 	.status{
 		align-items:stretch;
 		flex-direction: column;
-		font-size:12px;
 	}
 	.step{
 		margin:2px 0px;
 	}
 
 	.circle{
-	  width: 25px;
-	  height: 25px;
-	  line-height: 21px;
-	}
-	.title h2{
-		font-size:24px;
-		padding-top:24px;
-		padding-bottom:16px;
-	}
-	.text{ /* 横並び */
-		display:block;
-		text-align: left;
+	  width: 18px;
+	  height: 18px;
+	  line-height: 14px;
 	}
 	#SignUP form{
 		width:80%;
-		margin:0 auto;
 	}
 }

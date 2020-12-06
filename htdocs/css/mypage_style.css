@@ -21,20 +21,10 @@ h2{
 	min-height:960px;
 	margin:0 auto;
 }
-/* ==========================
-     パンくずリスト
-   ========================== */
-.path{
-	margin:32px 0px 50px;
-	font-size:16px;
-}
-.path p{ /* 横並び */
-	display:inline-block;
-}
-.path p,.path a{ /* 文字色 */
-	color:#ECAB48;
-}
 
+.phone_view{
+	display:none;
+}
 /* ==========================
      Tab
    ========================== */
@@ -474,4 +464,9 @@ input[id="btn_Add"] +label:after{
 		justify-content: space-between;
 		padding-top:8px;	
 	}
+
+	.phone_view{
+		display:inline;
+	}
+
 }
