@@ -20,6 +20,7 @@ h2{
 	width:80%;
 	min-height:960px;
 	margin:0 auto;
+
 }
 
 .phone_view{
@@ -34,11 +35,17 @@ h2{
   padding-bottom: 40px;
   background-color: #fff;
   width: 100%;
-  margin: 0 auto;}
+  margin: 0 auto;
+
+  overflow-x:scroll;
+  -webkit-overflow-scrolling:touch;
+
+}
 
 /*タブのスタイル*/
 .tab_item {
   width: calc(100%/5);
+  min-width: 120px;
   height: 32px;
   border: 1px solid #ECAB48;
   border-radius: 8px 8px 0px 0px;
@@ -51,6 +58,8 @@ h2{
   float: left;
   text-align: center;
   font-weight: bold;
+
+/*  position:relative;*/
 }
 
 /*ラジオボタンを全て消す*/
@@ -65,6 +74,8 @@ input[name="tab_item"] {
   padding-top: 40px;
   clear: both;
   overflow: hidden;
+/*
+	position:absolute;*/
 }
 
 /*選択されているタブのコンテンツのみを表示*/
@@ -74,6 +85,8 @@ input[name="tab_item"] {
 #myticket:checked ~ #myticket_content,
 #chat:checked ~ #chat_content{
   display: block;
+
+
 }
 
 /*選択されているタブのスタイルを変える*/
@@ -374,8 +387,6 @@ input[id="btn_Add"] +label:after{
 	.t_price{
 		width:30%;
 	}
-
-
 }
 
 /* =======================
