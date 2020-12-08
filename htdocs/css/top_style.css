@@ -25,7 +25,6 @@ h2{
 	position:relative;
 }
 
-
 #Top div{
 	color:#ffffff;
 	position:absolute;
@@ -209,50 +208,6 @@ h2{
 /* ================
       slider
  ================ */
-.slider{
-	max-width: 100%;
-    margin: 0 auto;
-    color:#F1C076;
-}
-.slick-slide{
-    margin:0px 5px;
-}
-
-.slider img{
-    height: auto;
-    margin:0 auto;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: #F1C076;
-/*    font-size:40px;*/
-    opacity:1;
-
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-
-/* ドット*/
-.slick-dots li button:before{
-    color: #F1C076;
-    opacity:1;
-    content:'◯';
-/*    font-size:13px;*/
-}
-
-.slick-dots li.slick-active button:before {
-    color: #F1C076;
-    content:'●';
-/*    font-size:13px;*/
-    opacity:1;
-}
-
-.slick-dots li button:before{
-	line-height: 60px;
-}
 
 #Review .slick-dots{
 	bottom:30px;
@@ -263,32 +218,28 @@ h2{
       TOPICS
  ================ */
 #Topics{
-	height:auto;
+	color:#F1C076;
 	margin:0px auto;	
 }
 
 .tp_box{
 	max-width:960px;
-	width:90%;
+	width:80%;
 	margin:0 auto;
-	color:#F1C076;
-/*	font-size:15px;*/
-}
-
-
-.tp_box > h2{
-/*	padding-left:5.5%;*/
 }
 
 .t_slider img{
-    width:80%;
+    width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
-.t_slider .slick-prev{
-	left:-27.5px;
+#Topics .slick-active img{
+	padding-left:16px;
 }
-.t_slider .slick-next{
-	right:-27.5px;
+#Topics .slick-current.slick-active img{
+	padding-right:16px;
+	padding-left:0px;
 }
 
 /* ================
@@ -303,31 +254,23 @@ h2{
 	max-width:960px;
 	width:80%;
 	margin:0 auto;
-/*	font-size:15px;*/
 }
 
 /*スライド*/
 .c_slider{
-	padding:50px 0px;
+	padding:40px 0px;
 	background-color:#F1C076;	
 }
 .c_slider img{
-	width:75%;
-	height:190px;
+	width:80%;
+	height:240px;
 	object-fit:cover;
 	border-radius:15px;
 }
 
-#Course .slick-prev{
-	left:-60px;
-}
-#Course .slick-next{
-	right:-60px;
-}
-
 /*カテゴリ別*/
 .c_list{
-	width:90%;
+	width:80%;
 	margin:0 auto;
 	display:flex;
 	justify-content: space-between;
@@ -348,9 +291,8 @@ h2{
       人気の講座
  ================ */
 #Popular{
-	height:auto;
 	color:#F1C076;
-
+	height:auto;
 	margin:70px auto;
 }
 
@@ -358,26 +300,18 @@ h2{
 	max-width:960px;
 	width:80%;
 	margin:0 auto;
-/*	font-size:15px;*/
 }
 /*スライド*/
 .p_slider{
-	padding:50px 0px;
+	padding:40px 0px;
 	background-color:#F1C076;	
 	border-radius:15px;
 }
 .p_slider img{
-	width:75%;
-	height:190px;
+	width:80%;
+	height:240px;
 	object-fit:cover;
 	border-radius:15px;
-}
-
-#Popular .slick-prev{
-	left:-60px;
-}
-#Popular .slick-next{
-	right:-60px;
 }
 
 /* ================
@@ -633,13 +567,13 @@ h2{
 }
 
 /* 矢印 */
-#Review .slick-prev{
+/*#Review .slick-prev{
 	left:25px;
 }
 
 #Review .slick-next{
 	right:25px;
-}
+}*/
 
 #Review .slick-prev:before, #Review .slick-next:before{
 	color:#ffffff;
@@ -729,18 +663,37 @@ h2{
 
 
 	/* ================
-	      slider共通
-	 ================ */
-	.slick-slide img{
-	    width:100%;
-
-	}
-	/* ================
 	      TOPICS
 	 ================ */
-
 	.tp_box{
+		width:70%;
+	}
 
+	.t_slider img{
+	    width:100%;
+	    height:200px;
+	    object-fit:cover;
+	}
+	#Topics .slick-current.slick-active img{
+		padding-right:0px;
+	}
+
+	/* ================
+	      講座を探す
+	 ================ */
+	.c_box{
+		width:70%;
+	}
+	/*カテゴリ別*/
+	.c_list{
+		flex-wrap: wrap;
+	}
+
+	/* ================
+	      人気の口座
+	 ================ */
+	.p_box{
+		width:70%;
 	}
 
 }

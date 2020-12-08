@@ -38,6 +38,63 @@ p,a,input,select{
 	font-size:16px;
 }
 
+/* ================
+      slider
+ ================ */
+.slider{
+	max-width: 100%;
+    margin: 0 auto;
+    color:#F1C076;
+}
+.slick-slide{
+    margin:0px 5px;
+}
+
+.slider img{
+    height: auto;
+    margin:0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #F1C076;
+    font-size:40px;
+    opacity:1;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+/* ドット*/
+.slick-dots li button:before{
+    color: #F1C076;
+    opacity:1;
+    content:'◯';
+    font-size:13px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C076;
+    content:'●';
+    font-size:13px;
+    opacity:1;
+}
+
+.slick-dots li button:before{
+	line-height: 60px;
+}
+
+
+.slick-prev{
+	left:-60px;
+}
+.slick-next{
+	right:-60px;
+}
+
+
 /* ============== 
       header
    ============== */
