@@ -153,12 +153,12 @@ h2{
 .countBox{
 	width: 20%;
 }
-#Count p{
+.countBox p,.countBox a{
 	font-size:24px;
 	padding:5px 0px;
 }
 
-#Count a{
+.countBox a{
 	font-size:24px;
 	border:solid 0px #ffffff;
 	background-color:#ffffff;
@@ -172,7 +172,7 @@ h2{
 #History{
 	width:100%;
 	height:auto;
-	margin:70px auto;
+	padding:32px 0px;
 }
 
 .h_box{
@@ -180,7 +180,6 @@ h2{
 	width:80%;
 	margin:0 auto;
 	color:#F1C076;
-/*	font-size:15px;*/
 }
 
 /* 閲覧リスト*/
@@ -198,19 +197,9 @@ h2{
 .h_more{
 	text-align:right;
 	padding-top:16px;
-/*	font-size:15px;*/
 }
 .h_more a{
 	color:#F1C076;
-}
-
-
-/* ================
-      slider
- ================ */
-
-#Review .slick-dots{
-	bottom:30px;
 }
 
 
@@ -219,13 +208,13 @@ h2{
  ================ */
 #Topics{
 	color:#F1C076;
-	margin:0px auto;	
+	padding:32px 0px;
 }
 
 .tp_box{
 	max-width:960px;
 	width:80%;
-	margin:0 auto;
+	margin:0px auto;
 }
 
 .t_slider img{
@@ -248,7 +237,7 @@ h2{
 #Course{
 	color:#F1C076;
 	height:auto;
-	margin:70px auto;	
+	padding:32px 0px;
 }
 .c_box{
 	max-width:960px;
@@ -293,7 +282,7 @@ h2{
 #Popular{
 	color:#F1C076;
 	height:auto;
-	margin:70px auto;
+	padding:32px 0px;
 }
 
 .p_box{
@@ -317,20 +306,16 @@ h2{
 /* ================
       人気の講座
  ================ */
-
 #Teacher{
 	min-height:475px;
 	text-align:center;
-/*	margin-bottom:140px;
-*/
-	margin:70px auto 140px;
+	padding:32px 0px 64px;
 }
 .tc_box{
 	max-width:960px;
 	width:80%;
 	margin:0 auto;
 	color:#F1C076;
-/*	font-size:15px;*/
 }
 /* 下線　*/
 .t_border{
@@ -339,102 +324,119 @@ h2{
 	border:solid 1px #FFD698;
 	background-color:#FFD698;
 }
+.t_list{
+	display:flex;
+	justify-content: space-between;
+}
 
-/*　先生 */
+
+/*　各先生紹介 */
 .t_teacher{
 	width:233px;
 	height:400px;
 	border:3px solid #ECAD4E;
 	position:relative;
-}
-
-/* 先生No.1 */
-.t_first{
-	background-image:url("../img/teacher1.jpg");
 	background-size:cover;
 	background-position:center -50px;
 }
 
+/* 先生No.1 写真*/
+.t_first{
+	background-image:url("../img/teacher1.jpg");
+}
 /* 先生No.2 */
 .t_second{
 	background-image:url("../img/teacher2.jpg");
-	background-size:cover;
-	background-position:center -50px;
 }
-
 /* 先生No.3 */
 .t_third{
 	background-image:url("../img/teacher3.jpg");
-	background-size:cover;
-	background-position:center -50px;
 }
 
+/*先生　名前*/
 .t_name{
 	background-color:#ECAD4E;
 	width:80%;
 	height:35px;
 	color:#ffffff;
 	position:absolute;
-	top:140px;
+	top:35%;
 	padding-left:10px;
-/*	font-size:24px;*/
 	display:flex;
 	justify-content: left;
 	align-items: center;
 }
 
+/*先生　テキスト部分*/
 .t_text{
 	position:absolute;
-	top:60%;
+	bottom:0;
 	height:40%;
 	background-color:#ffffff;
 	margin:0 auto;
 }
-
+/*ツノの部分*/
 .t_text::before{
 	content:"";
 	position:absolute;
-	top:-50px;
+	bottom:100%;
 	right:0px;
-	width:0;
-	height:0;
-	border-bottom:25px solid #ffffff;
-	border-right:114px solid #ffffff;
-	border-left:114px solid transparent;
-	border-top:25px solid transparent;
+	border-bottom:solid 25px #ffffff;
+	border-right:solid 114px #ffffff;
+	border-left:solid 113px transparent;
+	border-top:solid 25px transparent;
 }
 
 .t_intro{
-	padding:4px;
-/*	font-size:16px;*/
+	position:absolute;
+	top:-3px;
+	left:50%;
+	transform:translate(-50%,-50%);
 	color:#F1C076;
 }
 
 .t_desc{
-/*	font-size:10px;*/
-	color:#F1C076;
-	margin:0px 24px;
+	margin:16px 24px;
 	text-align:left;
+}
+
+.t_desc p{
+	color:#F1C076;
+	font-size:14px;
 }
 
 .t_link{
 	position:absolute;
-	top:80%;
+	bottom:0;
 	width:100%;
-	height:20%;
+	height:32px;
 	background-color:#ECAD4E;
+
+	padding-top:3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 
+.t_link a{
+	color:#ffffff;
+	text-align: center;
+}
 
+/*矢印　棒*/
 .t_link::before{
 	content:'';
 	width: 40px;
   	height: 0px;
   	border-top: solid 1px #ffffff;
+
+  	/*中央*/
 	position:absolute;
 	top:50%;
-	right:10%;
+	right:15px;
 }
+/*矢印　矢*/
 .t_link::after{
 	content:'';
 	width: 8px;
@@ -447,24 +449,10 @@ h2{
 	transform: rotate(45deg);
 
 	position:absolute;
-	top:35%;
-	right:10%;
+	top:38%;
+	right:15px;
 }
 
-.t_link a{
-	width:100%;
-	height:100%;
-	color:#ffffff;
-
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.t_list{
-	display:flex;
-	justify-content: space-between;
-}
 
 /* ================
       レビュー
@@ -480,10 +468,13 @@ h2{
 #Review h2{
 	text-shadow:1px 2px 1px #707070;
 }
+#Review .slick-dots{
+	bottom:30px;
+}
 
 .rv_box{
 	width:80%;
-	margin:0 auto;
+	margin:24px auto 32px;
 	color:#F1C076;
 /*	font-size:15px;*/
 }
@@ -528,10 +519,8 @@ h2{
 
 .r_title{
 	padding-top:5%;
-/*	font-size:24px;*/
 }
 .r_text{
-/*	font-size:16px;*/
 	padding:40px 0px;
 }
 
@@ -566,18 +555,9 @@ h2{
 	color:#ffffff;
 }
 
-/* 矢印 */
-/*#Review .slick-prev{
-	left:25px;
-}
-
-#Review .slick-next{
-	right:25px;
-}*/
 
 #Review .slick-prev:before, #Review .slick-next:before{
 	color:#ffffff;
-/*    font-size:56px;*/
 }
 
 
@@ -614,6 +594,9 @@ h2{
 	/* ================
 	       Top画像
 	 ================ */
+	#Top{
+		height:calc(100vw * 0.5);
+	}
 	#Top img{
 		width:120px;
 	}
@@ -652,13 +635,19 @@ h2{
 	}
 
 	/* ================
+	      登録人数
+	 ================ */
+	.countBox p,.countBox a{
+		font-size:20px;
+	}
+
+	/* ================
 	      閲覧履歴
 	 ================ */
 	.h_box{
-		width:80%;
+		width:70%;
 		margin:0 auto;
 		color:#F1C076;
-/*		font-size:15px;*/
 	}
 
 
@@ -667,15 +656,6 @@ h2{
 	 ================ */
 	.tp_box{
 		width:70%;
-	}
-
-	.t_slider img{
-	    width:100%;
-	    height:200px;
-	    object-fit:cover;
-	}
-	#Topics .slick-current.slick-active img{
-		padding-right:0px;
 	}
 
 	/* ================
@@ -696,12 +676,92 @@ h2{
 		width:70%;
 	}
 
+	/* ================
+	      人気の講座
+	 ================ */
+
+	/*　各先生紹介 */
+	.t_teacher{
+		width:180px;
+		height:350px;
+	}
+
+	/*先生　名前*/
+	.t_name{
+		height:24px;
+	}
+
+	/*ツノの部分*/
+	.t_text::before{
+		border-right:solid 87px #ffffff;
+		border-left:solid 87px transparent;
+	}
+
+	.t_desc p{
+		color:#F1C076;
+		font-size:12px;
+	}
+
+	.t_link{
+		height:24px;
+	}
+
+	/*矢印　矢*/
+	.t_link::after{
+		top:36%;
+	}
+
+	/* ================
+	      レビュー
+	 ================ */
+	#Review{
+		min-height: 100%;
+		padding-bottom:32px;
+	}
+
+	.rv_box{
+		width:70%;
+		margin:0 auto;
+		color:#F1C076;
+	}
+
+	.r_box{
+		width:100%;
+		height:240px;
+	}
+
+	.r_text{
+		padding:24px 0px;
+	}
+	.r_link a{
+		padding:16px 24px;
+	}
+	/* ================
+	      地域・エリア
+	 ================ */
+
+	#Area{
+		padding-top:32px;
+		padding-bottom:32px;
+	}
+
 }
 
 /* =======================
      レスポンシブ対応(スマホ)
    ======================= */
 @media screen and (max-width: 749px){
+	/* ================
+	       Top画像
+	 ================ */
+	#Top{
+		height:calc(100vw * 0.6);
+	}
+	#Top img{
+		width:80px;
+	}
+
+
 	/* ================
 	       検索Box
 	 ================ */
@@ -727,13 +787,100 @@ h2{
 		width: 100%;
 		margin:8px 0px;
 	}
-	#Count p{
+	.countBox p{
+		font-size:18px;
 		padding:0px;
 	}
-	#Count a{
+
+	.countBox a{
+		font-size:18px;
 		padding:8px;
+	}
+	
+	/* ================
+	      TOPICS
+	 ================ */
+	.t_slider img{
+	    width:100%;
+	    height:200px;
+	    object-fit:cover;
+	}
+	#Topics .slick-current.slick-active img{
+		padding-right:0px;
 	}
 
 
+	/* ================
+	      人気の講座
+	 ================ */
+	.t_list{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*　各先生紹介 */
+	.t_teacher{
+		width:240px;
+		height:320px;
+		margin:16px;
+	}
+
+	/*先生　テキスト部分*/
+	.t_text{
+		height:35%;
+	}
+
+	/*ツノの部分*/
+	.t_text::before{
+		border-right:solid 118px #ffffff;
+		border-left:solid 117px transparent;
+	}
+
+	.t_desc p{
+		font-size:10px;
+	}
+
+	/*矢印　矢*/
+	.t_link::after{
+		top:34%;
+	}
+
+	/* ================
+	      レビュー
+	 ================ */
+	.r_box{
+		width:100%;
+		height:auto;
+	}
+
+	.r_box1,.r_box2{
+		height:auto;
+	}
+
+	.r_box2{
+		flex-direction: column;
+		padding-bottom:32px;
+	}
+
+	.r_kouza{
+		width:100%;
+		text-align:center;
+		padding:16px 0px 8px;
+	}
+	.r_link{
+		width:80%;
+		text-align: center;
+		padding:8px 0px 16px;
+	}
+
+	.r_link a{
+		padding:12px 16px;
+	}
+	/* ================
+	      地域・エリア
+	 ================ */
+	.Area_list{
+		width:70%;
+	}
 
 }
