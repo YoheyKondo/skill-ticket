@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+#SignUP{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+	padding-bottom:160px;
+}
+
+
+/* ==========================
+     ステータスリスト
+   ========================== */
+.status{
+	display:flex;
+	align-items: flex-end;
+}
+.step{
+	display:flex;
+	align-items: center;
+}
+
+.circle{
+/*	display: inline-block;*/
+  width: 24px;
+  height: 24px;
+  border:solid 2px #5B5B5B;
+  border-radius: 50%;
+  background: #ffffff;
+  text-align:center;
+  line-height: 23px;
+  color:#5B5B5B;
+  font-weight: bold;
+  margin-right:4px;
+}
+
+/* Active */
+.active{
+  color:#ECAB48;
+}
+.active > .circle{
+  color:#ECAB48;
+  border:solid 2px #ECAB48;
+}
+
+.st_border{
+	margin:0px 8px;
+	width:32px;
+	height:15px;
+	border-top:solid 1px #5B5B5B;
+}
+
+/* ==========================
+     会員登録
+   ========================== */
+.s_title h2{
+	text-align:center;
+	color:#5B5B5B;
+}
+.s_title{
+	text-align: center;
+}
+.border{ /* 下線　*/
+	width:100%;
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+}
+
+.s_title > p{
+	padding:16px 0px;
+}
+/* ====== 入力欄 ====== */
+.s_title form{
+	width:60%;
+	margin:0 auto;
+}
+
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	.st_border{
+		display:none;
+	}
+	.status{
+		align-items:stretch;
+		flex-direction: column;
+	}
+	.step{
+		margin:2px 0px;
+	}
+
+	.circle{
+	  width: 18px;
+	  height: 18px;
+	  line-height: 14px;
+	}
+	#SignUP form{
+		width:80%;
+	}
+}

@@ -1,0 +1,574 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+/* ==========================
+     Teacherリスト
+   ========================== */
+#TeacherList{
+	max-width: 960px;
+	width:80%;
+	margin:0 auto;
+}
+
+/* =================
+     オレンジボーダー
+   ================= */
+
+.border{
+	width:100%;
+	border:solid 1px #ECAB48;
+	border-radius:5px;
+	margin-bottom:24px;
+}
+
+
+/* ==========================
+     講師について
+   ========================== */
+.teacher_box{
+	padding:24px 0px 16px;
+	height:auto;
+	display:flex;
+	justify-content: space-between;
+}
+
+/* 顔写真 */
+.t_img{
+	width:40%;
+	text-align: center;
+}
+
+.t_img img{
+	width:180px;
+	height:180px;
+	object-fit: cover;
+	border-radius:50%;
+	border:solid 3px #ECAB48;
+}
+
+.t_img p:nth-of-type(1){
+	margin:32px 0px 24px;
+	color:#5B5B5B;
+}
+
+.t_img p:nth-of-type(2){
+	padding:4px 16px;
+	margin:0 auto;
+
+	color:#ffffff;
+	background-color:#ECAB48;
+	width:180px;
+	border-radius:10px;
+}
+
+/* 自己紹介文 */
+.t_text{
+	width:55%;
+}
+
+.t_text p{
+	color:#5B5B5B;
+}
+
+.t_ex{
+	line-height: 16px;
+	margin-top:32px;
+}
+.readmore_btn{
+	text-align: right;
+	display:none;
+}
+.readmore_btn a{
+	color:#ECAB48;
+}
+
+.t_text img{
+	width:100%;
+	height:240px;
+	object-fit: cover;
+}
+
+/* ==========================
+     並び順(ソート) 
+   ========================== */
+.Sort{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	color:#ECAB48;
+}
+
+.Sort p{
+	padding-right:16px;
+	font-weight: bold;
+}
+select{
+	border:solid 1px #ECAB48;
+	background-color:#ffffff;
+	color:#ECAB48;
+	font-weight: bold;
+	padding:1px 12px 1px 1px;
+}
+
+
+
+/* ==========================
+     検索結果 
+   ========================== */
+/*　画像　*/
+.result_box{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+
+	border:solid 1px #ECAB48;
+	border-radius:5px;
+	padding:24px;
+	margin:32px;
+}
+
+.result_img{
+	margin-right:16px;
+}
+.result_img img{
+	width:350px;
+	height:300px;
+	object-fit: cover;
+}
+/*　テキスト　*/
+.result_text{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:auto;
+}
+.result_title{
+	width:100%;
+	color:#ECAB48;
+	font-size:28px;
+	border:solid 1px #ECAB48;
+	border-radius:30px;
+	position:relative;
+
+	display: flex;
+	align-items: center;
+}
+
+.result_title::before{
+	content:"";
+	background-color:#ECAB48;
+	width:42px;
+	height:42px;
+	display: inline-block;
+	border-radius:50%;
+	vertical-align: middle;
+}
+.result_content{
+	width:100%;
+	margin-top:16px;
+}
+.result_detail{
+	width:100%;
+	margin-top:8px;
+
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.charge{
+	font-size:24px;
+	color:#ECAB48;
+}
+.day{
+	display: flex;
+	align-items: center;
+	color:#5B5B5B;
+}
+.day img{
+	padding-left:16px;
+}
+.r_review{
+	width:100%;
+	margin-top:8px;
+	display:flex;
+	align-items: center;
+}
+.review,.place{
+	display:flex;
+	align-items: center;
+}
+.review{
+	width:70%;
+}
+
+.review p,.place p{
+	font-size:20px;
+}
+.place_icon,.star{
+	color:#ECAB48;
+	font-size:20px;
+	margin-right:8px;
+}
+
+/* 名前　*/
+.r_name{
+	width:100%;
+	margin-top:8px;
+	color:#ECAB48;
+	font-size:24px;
+	border:solid 1px #ECAB48;
+	border-radius:50px;
+
+	display: flex;
+	align-items: center;
+}
+
+.r_name:before{
+	content:"";
+	background-image: url(../img/teacher1.jpg);
+	width:38px;
+	height:38px;
+	display: inline-block;
+	background-size: cover;
+	border:solid 3px #ECAB48;
+	border-radius:50%;
+	vertical-align: middle;
+}
+
+/* ==========================
+     ページネーション
+   ========================== */
+
+.pageNav{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	margin:32px 0px;
+}
+.page-numbers{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.page-numbers{
+	color:#ECAB48;
+}
+
+.current{
+	border:solid 2px #707070;
+	border-radius:5px;
+	color:#707070;
+	line-height:38px;
+}
+
+.prev,.next{
+	width:100px;
+}
+
+
+
+/* ==========================
+     他の授業
+   ========================== */
+.Other_Class{
+	margin:0 auto;
+	margin-bottom:160px;
+	padding-top:80px;
+}
+
+.Other_Class > p{
+	font-size:24px;
+	color:#5B5B5B;
+	padding-bottom:56px;
+}
+
+/* ================
+      slider
+ ================ */
+.slider img{
+    height: auto;
+    margin:0 auto;
+}
+
+.o_slider{
+	max-width: 100%;
+    color:#F1C076;
+}
+.slick-slide{
+    margin:0px 5px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #F1C076;
+    font-size:40px;
+    opacity:1;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* ドット*/
+.slick-dots li button:before{
+    color: #F1C076;
+    opacity:1;
+    content:'◯';
+    font-size:13px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C076;
+    content:'●';
+    font-size:13px;
+    opacity:1;
+}
+
+.slick-dots li button:before{
+	line-height: 60px;
+}
+
+
+.o_slider img{
+    width:200px;
+    height:150px;
+    object-fit: cover;
+}
+
+.o_slider .slick-prev{
+	left:0px;
+}
+.o_slider .slick-next{
+	right:0px;
+}
+
+.o_slider p{
+	width:200px;
+	color:#5B5B5B;
+	margin:0 auto;
+}
+
+.o_slider p:nth-of-type(1){
+	padding:8px 0px 16px;
+}
+
+.o_slider p:nth-of-type(2){
+	font-size:12px;
+}
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+
+	/* ==========================
+	     検索結果 
+	   ========================== */
+	/*　画像　*/
+	.result_box{
+		display:block;
+		padding:16px;
+		margin:16px 0px;
+	}
+	.result_img{
+		margin-right:0px;
+	}
+	.result_img img{
+		width:100%;
+		height: auto;
+	}
+
+	/*　テキスト　*/
+	.result_text{
+		height:auto;
+	}
+	.result_title{
+		font-size:24px;
+	}
+
+	.result_title::before{
+		width:40px;
+		height:40px;
+	}
+
+	/* 名前　*/
+	.r_name{
+		position:relative;
+		font-size:16px;
+	}
+
+	.r_name:before{
+		width:42px;
+		height:42px;
+	}
+
+	/* ==========================
+	     他の授業
+	   ========================== */
+	.Other_Class{
+		margin-bottom:80px;
+		padding-top:24px;
+	}
+
+	.Other_Class > p{
+		font-size:20px;
+		color:#5B5B5B;
+		padding-bottom:40px;
+	}
+
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	/*先生紹介*/
+	.teacher_box{
+		flex-direction:column;
+		align-items:center;
+
+	}
+
+	/* 顔写真 */
+	.t_img{
+		width:100%;
+		display:flex;
+		justify-content:space-around;
+	}
+
+	.t_img img{
+		width:120px;
+		height:120px;
+		object-fit: cover;
+	}
+
+	.t_img p:nth-of-type(1){
+		margin:12px 0px 16px;
+	}
+
+	.t_img p:nth-of-type(2){
+		padding:4px 16px;
+	}
+	.t_name{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom:32px;
+	}
+
+	.t_name p:nth-of-type(1){
+		margin-bottom:16px;
+	}
+
+	.t_name p:nth-of-type(2){
+		width:auto;
+		padding:4px 16px;
+		margin:8px 0px;
+	}
+
+	/* 自己紹介文 */
+	.t_text{
+		width:100%;
+	}
+
+	.t_text p{
+		color:#5B5B5B;
+	}
+
+	.t_ex{
+		line-height: 16px;
+		margin-top:16px;
+	}
+	.readmore_btn{
+		text-align: right;
+		display:none;
+	}
+
+	.readmore_btn a{
+		color:#ECAB48;
+	}
+
+	.t_text img{
+		width:100%;
+		height:240px;
+		object-fit: cover;
+	}
+
+	/* =============
+	     説明
+	   ============= */
+	/*　テキスト　*/
+	.result_title{
+		font-size:16px;
+	}
+
+	.result_title::before{
+		width:32px;
+		height:32px;
+	}
+
+	.charge{
+		font-size:16px;
+		color:#ECAB48;
+	}
+
+	.result_detail{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.day{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.day img{
+		padding-left:0px;
+		height:16px;
+	}
+
+	.r_review{
+		flex-direction:column;
+		align-items: flex-start;
+	}
+	.review,.place{
+		width:100%;
+	}
+	.review p,.place p{
+		font-size:12px;
+	}
+	.r_name:before{
+		width:32px;
+		height:32px;
+	}
+
+	/* ==========================
+	     ページネーション
+	   ========================== */
+	.page-numbers{
+		width:32px;
+		height:32px;
+		line-height:32px;
+	}
+
+	.current{
+		font-size:12px;
+		line-height:29px;
+	}
+
+
+}

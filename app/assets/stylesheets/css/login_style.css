@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+#Login{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+	padding-bottom:160px;
+}
+
+/* ==========================
+     ログイン
+   ========================== */
+.s_title h2{
+	text-align:center;
+	color:#5B5B5B;
+}
+.s_title{
+	text-align: center;
+}
+
+.border{ /* 下線　*/
+	width:100%;
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+}
+
+.s_title > p{
+	padding:16px 0px;
+}
+/* ====== 入力欄 ====== */
+.s_title form{
+	width:60%;
+	margin:0 auto;
+}
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	#Login{
+		height:720px;
+	}
+	.title h2{
+		padding-top:24px;
+		padding-bottom:16px;
+	}
+
+	.text{ /* 横並び */
+		display:block;
+		text-align: left;
+	}
+	#Login form{
+		width:80%;
+		margin:0 auto;
+	}
+}

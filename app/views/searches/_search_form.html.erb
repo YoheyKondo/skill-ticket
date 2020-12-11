@@ -1,0 +1,7 @@
+<%= search_form_for @q, url:search_path do |f| %>
+  <p>
+  <%= f.label :title_cont, '探す' %>
+  <%= f.search_field :title_cont  %>
+  </p>
+  <%= f.submit %>
+<% end %>

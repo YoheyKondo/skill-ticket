@@ -1,0 +1,237 @@
+/* ========================== 
+		フォームスタイル一覧
+   ========================== */
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ==========
+    タイトル
+   ========== */
+
+.form_box{
+	padding-top:16px;	
+	color:#5B5B5B;
+	text-align: left;
+}
+
+.title{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+/* 入力項目　タイトル*/
+.sub{
+	color:#5B5B5B;
+	font-size:16px;
+}
+
+.errMsg{ /* 入力項目　エラー文*/
+	color:#C70303;
+	font-size:12px;
+}
+
+input{
+	margin-top:8px;
+}
+/* プロフィール写真 */
+input[type="file"]{
+	display: none;
+}
+
+/* 画像選択 */
+.upload,.file_upload{
+	font-size:16px;
+	white-space: wrap;
+}
+
+.upload{
+	display: inline-block; /* テキストに応じて幅を可変させるため */
+	margin: 8px 0; /* 前後の隙間 */
+	padding: 8px 16px; /* 塗りの余白 */
+	font-size: 16px; /* フォントサイズ */
+	background-color: #F0BF75; /* 背景色 */
+	color: #FFF; /* テキストカラー */
+	border: 0; /* 枠線を消す */
+	font-weight: bold;
+}
+
+/* メール、パスワード、名前、ふりがな、テキスト */
+/*.mail,.pass,.name,.furigana,.text,.pref,.capa{*/
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select{
+	width:100%;
+	height:32px;
+	border:solid 2px #F0BF75;
+	margin-top:0px;
+	font-size:16px;
+	padding-left:8px;
+	background-color: #ffffff;
+}
+
+/*.date{
+	width:50%;
+	height:32px;
+	border:solid 2px #F0BF75;
+}
+*/
+/* ＝＝＝＝＝＝＝＝＝＝
+　　　　ラジオボックス
+　　＝＝＝＝＝＝＝＝＝＝ */
+.radio_box{
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	white-space: nowrap;
+}
+
+.radio_box label{
+	margin-left:4px;
+	margin-right:16px;
+	font-size:16px;
+}
+
+.radio_box > div{
+	display: flex;
+	align-items: center;
+}
+
+input[type="radio"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:before{
+	content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 3px;
+    border: solid 2px #F0BF75;
+}
+input[type="radio"]:checked:before{
+	content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color:#F0BF75;
+}
+
+/* テキストボックス */
+.form_box textarea{
+	resize:none;
+	width:100%;
+	height:160px;
+	background-color:#ffffff;
+	border:solid 2px #F0BF75;
+	padding:9px 12px;
+
+	font-size:16px;
+}
+
+
+/* (住所)*/
+select{
+	border:solid 2px #F0BF75;
+	height:32px;
+}
+
+#pref{
+	max-width: 240px;
+	width:40%;
+}
+
+#city{
+	width:40%;
+}
+
+
+/* ボタン*/
+.btn{
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:16px;
+	width:60%;
+	font-size:16px;
+	background-color:#F0BF75;
+	color:#ffffff;
+	border:none;
+}
+
+.btn:disabled{
+	background-color:#8D8D8D;
+}
+
+.btn_center{
+	text-align: center;
+}
+
+
+/* パスワード*/
+
+/* パスワード　アイコン*/
+.field_icon{
+	position:relative;
+}
+
+.toggle-password{
+	position:absolute;
+	top:0px;
+	right:0px;
+	transform:translateX(-50%);
+	z-index:100;
+}
+
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	/* 入力項目　タイトル*/
+	.sub{
+		font-size:14px;
+	}
+
+	.errMsg{ /* 入力項目　エラー文*/
+		font-size:10px;
+	}
+	/* 画像選択 */
+	.upload,.file_upload{
+		font-size:14px;
+	}
+
+	input[type="email"],
+	input[type="password"],
+	input[type="text"],
+	input[type="number"],
+	select{
+		font-size:14px;
+	}
+
+
+	.radio_box label{
+		font-size:14px;
+	}
+
+	/* 自己紹介*/
+	.form_box textarea{
+		font-size:14px;
+	}
+
+}
+

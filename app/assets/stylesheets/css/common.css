@@ -1,0 +1,394 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	/*font-family: "";*/
+}
+a{
+	text-decoration: none;
+}
+ul, ol, li{
+	list-style: none;
+}
+
+/* 文字大きさ統一 */
+h2{
+	font-size:28px;
+}
+
+p,a,input,select{
+	font-size:16px;
+}
+
+/* ==========================
+     パンくずリスト
+   ========================== */
+.path{
+	margin:32px 0px 24px;
+}
+.path p{ /* 横並び */
+	display:inline-block;
+}
+.path a,.path p{
+	color:#ECAB48;
+	font-size:16px;
+}
+
+/* ============== 
+      header
+   ============== */
+header{
+	background-color:#787982;
+	height:72px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+
+	color:#ffffff;
+	font-size:34px;
+}
+
+.h_logo{
+	width:146px;
+	margin-left:30px;
+	position:relative;
+}
+.h_logo img{
+	width:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.h_iconList{
+	display:flex;
+	height:100%;
+}
+
+.h_icon{
+	width:71px;
+	background-color:#ffffff;
+	border:solid 1px #F9DEB4;
+}
+
+.h_icon a{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.h_icon img{
+	width:60%;
+}
+
+/* ============== 
+      footer
+   ============== */
+footer{
+	background-color:#2D2D2D;
+}
+
+footer h2{
+	padding:48px 0px 96px;
+	color:#ffffff;
+}
+
+.Footer_List{
+	width:80%; /* サイド余白*/
+	margin:0 auto;
+	padding-bottom:65px;
+}
+
+.Ticket_box{
+	display:flex;
+	justify-content: space-between;
+	align-items: stretch; /*上下余白なし*/
+}
+.Ticket_box > div{
+	padding-left: 30px;
+	width: 100%;
+}
+.t_div{
+	color:#FFBA43;
+	font-size:18px;
+}
+
+/*サイト情報*/
+.Ticket_site p{
+	padding-top:34px;
+}
+
+/* リンクリスト*/
+.Ticket_link{
+	color:#ffffff;
+	padding-top:34px;
+}
+.Ticket_link p{
+	padding-top:0px;
+	padding-bottom:8px;
+	font-size:16px;
+}
+.Ticket_link p,.Ticket_link a{
+	color:#ffffff;
+}
+
+/* 右ライン */
+.border_solid{
+	border-right:solid 1px rgba(255,255,255,0.6);
+}
+
+.border_dash{
+	border-right:dashed 1px rgba(255,255,255,0.6);
+}
+
+
+/* 問合せ */
+.Ticket_contact{
+	color:#ffffff;
+	text-align:center;
+}
+
+.contact_btn{
+	background:linear-gradient(to top,#C97D06,#FBBB5B);
+	height:48px;
+	margin:54px auto;
+	border-radius: 5px;
+	font-size:24px;
+	max-width: 240px;
+}
+
+.contact_btn a{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	width:100%;
+	height:100%;
+	color:#ffffff;
+}
+
+footer form{
+	padding-top:24px;
+}
+textarea{
+	resize:none;
+	width:240px;
+	height:170px;
+
+	font-size:10px;
+	background-color:#FBECD6;
+	padding:9px 12px;
+}
+
+textarea::placeholder{
+	font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif;
+	color:#ece6dc;
+	font-size: 12px;
+}
+textarea::-webkit-input-placeholder{
+    font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif;
+}
+textarea:-moz-placeholder{
+    font-family: 'メイリオ',Meiryo,'Meiryo',YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ ゴシック',sans-serif;
+}
+
+.sns{
+	color:#FFBA43;
+	font-size:16px;
+	padding-top:52px;
+}
+
+.sns_icon{
+	display:flex;
+	justify-content:center;
+	padding-top:20px;
+}
+
+.sns_icon img{
+	width:32px;
+	margin:0px 10px;
+}
+
+.copyright{
+	height:72px;
+	background-color:#ffffff;
+	color:#979797;
+	font-size:16px;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+/* =================
+     レスポンシブ対応
+   ================= */
+
+/* タブレット*/
+@media screen and (max-width: 1023px){
+	/* 文字大きさ統一 */
+	h2{
+		font-size:24px;
+	}
+
+	p,a,input,select{
+		font-size:14px;
+	}
+
+	.path a,.path p{
+		font-size:12px;
+	}
+
+	.tablet_none{
+		display:none;
+	}
+
+	/*heder*/
+	header{
+		height:64px;
+		font-size:24px;
+	}
+
+	.h_logo{
+		width:80px;
+		margin-left:15px;
+		position:relative;
+	}
+	.h_logo img{
+		width:100%;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+
+
+	/*Footer*/
+	footer h2{
+		padding:32px 0px 40px;
+		color:#ffffff;
+	}
+	.Ticket_box{
+		display:block;
+	}
+	.Ticket_link{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.Ticket_link p{
+		padding-bottom:8px;
+		padding-right:16px;
+		font-size:16px;
+	}
+
+	.border_solid{
+		border-right:none;
+	}
+	.Ticket_box > div{
+		padding-left: 0px;
+	}
+
+	.border_dash{
+		border-right:none;
+		border-bottom:dashed 1px rgba(255,255,255,0.6);
+
+	}
+
+	/*サイト情報*/
+	.Ticket_site p{
+		padding-top:0px;
+	}
+	.Ticket_link{
+		padding:16px 0px;
+	}
+
+	.Ticket_contact{
+		padding-top:32px;
+	}
+
+	.contact_btn{
+		width:50%;
+		margin:24px auto;
+	}
+	textarea{
+		resize:none;
+		width:50%;
+		height:170px;
+	}
+}
+
+
+/* スマホ*/
+@media screen and (max-width: 749px){
+	/* 文字大きさ統一 */
+	h2{
+		font-size:18px;
+	}
+
+	p,a,input,select{
+		font-size:12px;
+	}
+
+	.path a,.path p{
+		font-size:10px;
+	}
+
+
+	/*heder*/
+	header{
+		height:24px;
+		font-size:8px;
+	}
+
+	.h_icon{
+		width:24px;
+	}
+
+	.h_logo{
+		width:40px;
+		margin-left:8px;
+		position:relative;
+	}
+
+	/* フッター */
+	footer h2{
+		font-size:16px;
+	}
+
+	.t_div{
+		font-size:16px;
+	}
+
+	.Ticket_link p{
+		font-size:12px;
+	}
+
+	/* お問い合わせボタン*/
+	.contact_btn{
+		width:50%;
+		height:32px;
+		margin:16px auto;
+		font-size:16px;
+	}
+
+	textarea{
+		resize:none;
+		width:100%;
+		height:170px;
+	}
+
+	.phone_none{
+		display:none;
+	}
+
+}

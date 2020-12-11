@@ -1,0 +1,786 @@
+@charset "UTF-8";
+
+section{
+	width:100%;
+}
+
+h2{
+	padding-top:32px;
+	padding-bottom:24px;
+}
+
+*:focus{
+	outline: none!important;
+}
+
+
+/* ================
+       Top画像
+ ================ */
+#Top{
+	background-image:url(../img/acoustic_guitar.jpg);
+	background-size: cover;
+	background-position: center;
+	height:calc(100vw * 0.33);
+	position:relative;
+}
+
+
+#Top div{
+	color:#ffffff;
+	position:absolute;
+	bottom:0%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+
+#Top img{
+	width:146px;
+}
+
+/* ================
+       検索Box
+ ================ */
+#Search{
+	height:auto;
+	margin:16px 0px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#ECAB48;
+}
+
+.Search_Box{
+	width:80%;
+	max-width:960px;
+	border:solid 8px #F1C076;
+	height:90%;
+}
+.Box_Up,.Box_Down{
+	border:solid 1px #ECAB48;
+}
+
+/* ===上段=== */
+.Box_Up{
+	height:60%;
+	display:flex;
+	justify-content:space-between;
+}
+
+.s_search{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+/* フリーワード*/
+.s_freeWord{
+	/* 位置設定 */
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	padding-left:15px;
+	/* フォント */
+	border:none;
+	outline: none;
+
+	width:80%;
+}
+#Search input::placeholder,#Search a{
+	color: #ECAB48;
+	font-weight:bold;
+}
+
+/* 虫眼鏡 */
+.s_searchLogo{
+	padding:10px;
+	float:right;
+	height:100%;
+	background-size:cover;
+	background-color:#ECAB48;
+}
+
+/* ===下段=== */
+.Box_Down{
+	height:40%;
+	display:flex;
+/*	align-items: center;*/
+	padding:8px 0px;
+}
+/* 人気のキーワード */
+.Box_Down p{
+	white-space: nowrap;
+
+	padding-left:16px;
+	padding-right:8px;
+}
+/* キーワードリスト */
+.keyWord{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.keyWord a{
+	font-size:16px;
+	border:solid 0.5px #ECAB48;
+	border-radius:100px;
+	padding:5px 10px;
+	margin:0px 8px 8px 0px;
+}
+.frame{
+	border:solid 0.5px #ECAB48;
+}
+
+
+/* ================
+      登録件数
+ ================ */
+#Count{
+	height:auto;
+	padding:24px 0px;
+
+	background-color:#ECAB48;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	color:#ffffff;
+	font-weight: bold;
+
+	text-align: center;
+}
+.countBox{
+	width: 20%;
+}
+#Count p{
+	font-size:24px;
+	padding:5px 0px;
+}
+
+#Count a{
+	font-size:24px;
+	border:solid 0px #ffffff;
+	background-color:#ffffff;
+	padding:15px 11px;
+	color:#ECAB48;
+}
+
+/* ================
+      閲覧履歴
+ ================ */
+#History{
+	width:100%;
+	height:auto;
+	margin:70px auto;
+}
+
+.h_box{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+	color:#F1C076;
+/*	font-size:15px;*/
+}
+
+/* 閲覧リスト*/
+.h_list{
+	display:flex;
+	justify-content: space-between;
+}
+.h_list a{
+	width:18%;
+}
+.h_list img{
+	width:100%;
+}
+/*さらに表示*/
+.h_more{
+	text-align:right;
+	padding-top:16px;
+/*	font-size:15px;*/
+}
+.h_more a{
+	color:#F1C076;
+}
+
+
+/* ================
+      slider
+ ================ */
+.slider{
+	max-width: 100%;
+    margin: 0 auto;
+    color:#F1C076;
+}
+.slick-slide{
+    margin:0px 5px;
+}
+
+.slider img{
+    height: auto;
+    margin:0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #F1C076;
+/*    font-size:40px;*/
+    opacity:1;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+/* ドット*/
+.slick-dots li button:before{
+    color: #F1C076;
+    opacity:1;
+    content:'◯';
+/*    font-size:13px;*/
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C076;
+    content:'●';
+/*    font-size:13px;*/
+    opacity:1;
+}
+
+.slick-dots li button:before{
+	line-height: 60px;
+}
+
+#Review .slick-dots{
+	bottom:30px;
+}
+
+
+/* ================
+      TOPICS
+ ================ */
+#Topics{
+	height:auto;
+	margin:0px auto;	
+}
+
+.tp_box{
+	max-width:960px;
+	width:90%;
+	margin:0 auto;
+	color:#F1C076;
+/*	font-size:15px;*/
+}
+
+
+.tp_box > h2{
+/*	padding-left:5.5%;*/
+}
+
+.t_slider img{
+    width:80%;
+}
+
+.t_slider .slick-prev{
+	left:-27.5px;
+}
+.t_slider .slick-next{
+	right:-27.5px;
+}
+
+/* ================
+      講座を探す
+ ================ */
+#Course{
+	color:#F1C076;
+	height:auto;
+	margin:70px auto;	
+}
+.c_box{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+/*	font-size:15px;*/
+}
+
+/*スライド*/
+.c_slider{
+	padding:50px 0px;
+	background-color:#F1C076;	
+}
+.c_slider img{
+	width:75%;
+	height:190px;
+	object-fit:cover;
+	border-radius:15px;
+}
+
+#Course .slick-prev{
+	left:-60px;
+}
+#Course .slick-next{
+	right:-60px;
+}
+
+/*カテゴリ別*/
+.c_list{
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-between;
+/*	font-size: 16px;*/
+}
+
+.c_category{
+	margin:40px 0px 20px;
+}
+
+.c_title{
+/*	font-size:20px;*/
+	font-weight: bold;
+	margin-bottom:20px;
+}
+
+/* ================
+      人気の講座
+ ================ */
+#Popular{
+	height:auto;
+	color:#F1C076;
+
+	margin:70px auto;
+}
+
+.p_box{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+/*	font-size:15px;*/
+}
+/*スライド*/
+.p_slider{
+	padding:50px 0px;
+	background-color:#F1C076;	
+	border-radius:15px;
+}
+.p_slider img{
+	width:75%;
+	height:190px;
+	object-fit:cover;
+	border-radius:15px;
+}
+
+#Popular .slick-prev{
+	left:-60px;
+}
+#Popular .slick-next{
+	right:-60px;
+}
+
+/* ================
+      人気の講座
+ ================ */
+
+#Teacher{
+	min-height:475px;
+	text-align:center;
+/*	margin-bottom:140px;
+*/
+	margin:70px auto 140px;
+}
+.tc_box{
+	max-width:960px;
+	width:80%;
+	margin:0 auto;
+	color:#F1C076;
+/*	font-size:15px;*/
+}
+/* 下線　*/
+.t_border{
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+}
+
+/*　先生 */
+.t_teacher{
+	width:233px;
+	height:400px;
+	border:3px solid #ECAD4E;
+	position:relative;
+}
+
+/* 先生No.1 */
+.t_first{
+	background-image:url("../img/teacher1.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+/* 先生No.2 */
+.t_second{
+	background-image:url("../img/teacher2.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+/* 先生No.3 */
+.t_third{
+	background-image:url("../img/teacher3.jpg");
+	background-size:cover;
+	background-position:center -50px;
+}
+
+.t_name{
+	background-color:#ECAD4E;
+	width:80%;
+	height:35px;
+	color:#ffffff;
+	position:absolute;
+	top:140px;
+	padding-left:10px;
+/*	font-size:24px;*/
+	display:flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.t_text{
+	position:absolute;
+	top:60%;
+	height:40%;
+	background-color:#ffffff;
+	margin:0 auto;
+}
+
+.t_text::before{
+	content:"";
+	position:absolute;
+	top:-50px;
+	right:0px;
+	width:0;
+	height:0;
+	border-bottom:25px solid #ffffff;
+	border-right:114px solid #ffffff;
+	border-left:114px solid transparent;
+	border-top:25px solid transparent;
+}
+
+.t_intro{
+	padding:4px;
+/*	font-size:16px;*/
+	color:#F1C076;
+}
+
+.t_desc{
+/*	font-size:10px;*/
+	color:#F1C076;
+	margin:0px 24px;
+	text-align:left;
+}
+
+.t_link{
+	position:absolute;
+	top:80%;
+	width:100%;
+	height:20%;
+	background-color:#ECAD4E;
+}
+
+
+.t_link::before{
+	content:'';
+	width: 40px;
+  	height: 0px;
+  	border-top: solid 1px #ffffff;
+	position:absolute;
+	top:50%;
+	right:10%;
+}
+.t_link::after{
+	content:'';
+	width: 8px;
+  	height: 8px;
+  	border: 0px;
+	border-top: solid 1px #ffffff;
+	border-right: solid 1px #ffffff;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+	position:absolute;
+	top:35%;
+	right:10%;
+}
+
+.t_link a{
+	width:100%;
+	height:100%;
+	color:#ffffff;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.t_list{
+	display:flex;
+	justify-content: space-between;
+}
+
+/* ================
+      レビュー
+ ================ */
+#Review{
+	min-height:720px;
+	text-align:center;
+	color:#FFD698;
+	background-image:url(../img/Review.jpg);
+	position:relative;
+}
+
+#Review h2{
+	text-shadow:1px 2px 1px #707070;
+}
+
+.rv_box{
+	width:80%;
+	margin:0 auto;
+	color:#F1C076;
+/*	font-size:15px;*/
+}
+/* 下線　*/
+.r_border{
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFD698;
+	background-color:#FFD698;
+	filter:drop-shadow(1px 2px 1px #707070);
+}
+
+.Long{
+	max-width:300px;
+	width:80%;
+}
+.Middle{
+	max-width:150px;
+	width:40%;
+}
+.Short{
+	max-width:75px;
+	width:25%;
+}
+
+.r_box{
+	width:80%;
+	max-width:650px;
+	height:330px;
+	border-radius:15px;
+	border:solid 5px #F1C076;
+
+	color:white;
+	margin:0 auto;
+}
+.r_box1{
+	background-color:#F1C076;
+	height:60%;
+	text-align:left;
+	padding:0 5%;
+}
+
+.r_title{
+	padding-top:5%;
+/*	font-size:24px;*/
+}
+.r_text{
+/*	font-size:16px;*/
+	padding:40px 0px;
+}
+
+.r_box2{
+	background-color:#ffffff;
+	height:40%;
+	color:#F1C076;
+	padding:0 5%;
+	border-radius:0px 0px 15px 15px;
+
+	display:flex;
+	align-items: center;
+}
+.r_kouza{
+	width:65%;
+	flex-direction:column;
+/*	font-size:16px;*/
+	text-align:left;
+}
+.r_link{
+	width:35%;
+/*	font-size:16px;*/
+	text-align:right;
+}
+
+.r_link a{
+	width:80%;
+	height:60%;
+	background-color:#F1C076;
+	padding:16px 48px;
+	border-radius:15px;
+	color:#ffffff;
+}
+
+/* 矢印 */
+#Review .slick-prev{
+	left:25px;
+}
+
+#Review .slick-next{
+	right:25px;
+}
+
+#Review .slick-prev:before, #Review .slick-next:before{
+	color:#ffffff;
+/*    font-size:56px;*/
+}
+
+
+/* ================
+      地域・エリア
+ ================ */
+
+#Area{
+	background:linear-gradient(to top,#C97D06,#FBBB5B);
+	color:#ffffff;
+	padding-top:64px;
+	padding-bottom:72px;
+
+}
+
+.Area_list{
+	width:50%;
+	margin:0 auto;
+}
+
+.Area_box{
+	padding:24px 0px;
+}
+.Area_box a{
+	color:#ffffff;
+}
+
+
+/* ==========================
+     レスポンシブ対応(タブレット)
+   ========================== */
+@media screen and (max-width: 1023px){
+
+	/* ================
+	       Top画像
+	 ================ */
+	#Top img{
+		width:120px;
+	}
+
+	/* ================
+	       検索Box
+	 ================ */
+	#Search{
+		height:auto;
+		min-height:160px;
+	}
+	/* ===下段=== */
+	.Box_Up{
+		height:56px;
+	}
+
+	/* ===下段=== */
+	.Box_Down{
+		height:auto;
+		flex-direction: column;
+		padding:16px;
+	}
+	/* 人気のキーワード */
+	.Box_Down p{
+		padding:0px;
+	}
+	/* キーワードリスト */
+	.keyWord{
+		flex-flow:wrap;
+		justify-content: flex-start;
+	}
+
+	.keyWord a{
+		font-size:12px;
+		margin:8px 8px 0px 0px;
+	}
+
+	/* ================
+	      閲覧履歴
+	 ================ */
+	.h_box{
+		width:80%;
+		margin:0 auto;
+		color:#F1C076;
+/*		font-size:15px;*/
+	}
+
+
+	/* ================
+	      slider共通
+	 ================ */
+	.slick-slide img{
+	    width:100%;
+
+	}
+	/* ================
+	      TOPICS
+	 ================ */
+
+	.tp_box{
+
+	}
+
+}
+
+/* =======================
+     レスポンシブ対応(スマホ)
+   ======================= */
+@media screen and (max-width: 749px){
+	/* ================
+	       検索Box
+	 ================ */
+
+	/* ===下段=== */
+	.Box_Up{
+		height:48px;
+	}
+	/* ===下段=== */
+	/* 人気のキーワード */
+	.keyWord a{
+		font-size:12px;
+	}
+
+	/* ================
+	       登録件数
+	 ================ */
+	#Count{
+		padding:24px 0px;
+		flex-direction: column;
+	}
+	.countBox{
+		width: 100%;
+		margin:8px 0px;
+	}
+	#Count p{
+		padding:0px;
+	}
+	#Count a{
+		padding:8px;
+	}
+
+
+
+}
