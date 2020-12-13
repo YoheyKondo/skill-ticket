@@ -394,7 +394,7 @@ h2{
    ========================== */
 .Other_Class{
 	margin:0 auto;
-	margin-bottom:160px;
+	margin-bottom:80px;
 	padding-top:80px;
 }
 
@@ -410,39 +410,6 @@ h2{
 .o_slider{
 	max-width: 100%;
     color:#F1C076;
-}
-.slick-slide{
-    margin:0px 5px;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: #F1C076;
-    font-size:40px;
-    opacity:1;
-
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-/* ドット*/
-.slick-dots li button:before{
-    color: #F1C076;
-    opacity:1;
-    content:'◯';
-    font-size:13px;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #F1C076;
-    content:'●';
-    font-size:13px;
-    opacity:1;
-}
-
-.slick-dots li button:before{
-	line-height: 60px;
 }
 
 
@@ -633,7 +600,6 @@ h2{
 	     他の授業
 	   ========================== */
 	.Other_Class{
-		margin-bottom:80px;
 		padding-top:24px;
 	}
 
@@ -675,6 +641,26 @@ h2{
 		font-size:12px;
 		margin:8px 8px 0px 0px;
 	}
+
+	/* ================
+	      slider
+	 ================ */
+	.o_slider img{
+	    width:70%;
+	}
+
+	.o_slider p{
+		width:70%;
+	}
+
+	.o_slider p:nth-of-type(1){
+		padding:8px 0px 16px;
+	}
+
+	.o_slider p:nth-of-type(2){
+		font-size:12px;
+	}
+
 
 	/* ==========================
 	     お探しの講座が見つかりませんでしたか？

@@ -25,6 +25,9 @@ h2{
 	position:relative;
 }
 
+#Top p{
+	font-size:24px;
+}
 #Top div{
 	color:#ffffff;
 	position:absolute;
@@ -259,11 +262,11 @@ h2{
 
 /*カテゴリ別*/
 .c_list{
+	max-width:1050px;
 	width:80%;
 	margin:0 auto;
 	display:flex;
 	justify-content: space-between;
-/*	font-size: 16px;*/
 }
 
 .c_category{
@@ -271,9 +274,11 @@ h2{
 }
 
 .c_title{
-/*	font-size:20px;*/
 	font-weight: bold;
 	margin-bottom:20px;
+}
+.c_title a{
+	font-size:18px;
 }
 
 /* ================
@@ -583,6 +588,14 @@ h2{
 }
 .Area_box a{
 	color:#ffffff;
+	white-space: nowrap;
+}
+
+/* 下線　*/
+.border{
+	margin:0 auto;
+	margin-bottom:16px;
+	border:solid 1px #FFFFFF;
 }
 
 
@@ -597,6 +610,10 @@ h2{
 	#Top{
 		height:calc(100vw * 0.5);
 	}
+	#Top p{
+		font-size:20px;
+	}
+
 	#Top img{
 		width:120px;
 	}
@@ -757,6 +774,9 @@ h2{
 	#Top{
 		height:calc(100vw * 0.6);
 	}
+	#Top p{
+		font-size:16px;
+	}
 	#Top img{
 		width:80px;
 	}
@@ -880,7 +900,7 @@ h2{
 	      地域・エリア
 	 ================ */
 	.Area_list{
-		width:70%;
+		width:80%;
 	}
 
 }

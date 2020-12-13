@@ -6,7 +6,7 @@
 }
 html, body{
 	width: 100%;
-	/*font-family: "";*/
+	font-family: Verdana,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
 a{
 	text-decoration: none;
@@ -66,13 +66,13 @@ p,a,input,select{
     transform:translate(-50%,-50%);
 }
 
-
 /* ドット*/
 .slick-dots li button:before{
     color: #F1C076;
     opacity:1;
     content:'◯';
     font-size:13px;
+	line-height: 60px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -80,10 +80,6 @@ p,a,input,select{
     content:'●';
     font-size:13px;
     opacity:1;
-}
-
-.slick-dots li button:before{
-	line-height: 60px;
 }
 
 .slick-prev{
@@ -103,13 +99,15 @@ header{
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
-
 	color:#ffffff;
-	font-size:34px;
+}
+header p{
+	font-size:24px;
+	font-family:"BIZ UDGothic";
 }
 
 .h_logo{
-	width:146px;
+	width:140px;
 	margin-left:30px;
 	position:relative;
 }
@@ -174,7 +172,10 @@ footer h2{
 }
 .t_div{
 	color:#FFBA43;
-	font-size:18px;
+}
+.t_div p{
+	color:#FFBA43;
+	font-size:20px;
 }
 
 /*サイト情報*/
@@ -190,7 +191,6 @@ footer h2{
 .Ticket_link p{
 	padding-top:0px;
 	padding-bottom:8px;
-	font-size:16px;
 }
 .Ticket_link p,.Ticket_link a{
 	color:#ffffff;
@@ -258,8 +258,11 @@ textarea:-moz-placeholder{
 
 .sns{
 	color:#FFBA43;
-	font-size:16px;
 	padding-top:52px;
+}
+
+.sns p{
+	font-size:20px;
 }
 
 .sns_icon{
@@ -312,7 +315,11 @@ textarea:-moz-placeholder{
 	/*heder*/
 	header{
 		height:64px;
-		font-size:24px;
+	}
+
+	/*heder*/
+	header p{
+		font-size:20px;
 	}
 
 	.h_logo{
@@ -320,14 +327,6 @@ textarea:-moz-placeholder{
 		margin-left:15px;
 		position:relative;
 	}
-	.h_logo img{
-		width:100%;
-		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translate(-50%,-50%);
-	}
-
 
 	/*Footer*/
 	footer h2{
@@ -415,8 +414,10 @@ textarea:-moz-placeholder{
 
 	/*heder*/
 	header{
-		height:24px;
-		font-size:8px;
+		height:32px;
+	}
+	header p{
+		font-size:12px;
 	}
 
 	.h_icon{
@@ -424,7 +425,7 @@ textarea:-moz-placeholder{
 	}
 
 	.h_logo{
-		width:40px;
+		width:50px;
 		margin-left:8px;
 		position:relative;
 	}
