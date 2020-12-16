@@ -73,7 +73,6 @@ input[name="tab_item"] {
   padding-top: 40px;
   clear: both;
   overflow: hidden;
-  text-align: center;
 }
 
 /*選択されているタブのコンテンツのみを表示*/
@@ -351,6 +350,10 @@ input[id="btn_Add"] +label:after{
 	}
 
 	.mypage_profile form{
+		text-align: center;
+	}
+
+	.mypage_profile .form_box{
 		text-align: center;
 	}
 
