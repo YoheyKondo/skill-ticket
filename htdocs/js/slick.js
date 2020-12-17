@@ -9,7 +9,7 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	responsive:[{
-    		breakpoint:1024,
+    		breakpoint:750,
     		settings:{
     			slidesToShow: 1,
     		}
@@ -21,7 +21,7 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	responsive:[{
-    		breakpoint:1024,
+    		breakpoint:750,
     		settings:{
     			slidesToShow: 1,
     		}
@@ -33,7 +33,7 @@ function slick(){
     	slidesToShow: 2,
     	slidesToScroll: 1,
     	responsive:[{
-    		breakpoint:1024,
+    		breakpoint:750,
     		settings:{
     			slidesToShow: 1,
     		}
