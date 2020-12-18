@@ -26,6 +26,7 @@ var about = {
                 $('.Rsv').removeClass('hidden');
                 $('.modal_bg_w').addClass('active');
            }
+           return false;
         });
     },
     selectMethods(w, mode=null){
