@@ -1,10 +1,9 @@
 $(function(){
     about.init();
 });
-
 var about = {
     windowWidth:0,
-    breakpoint:749,
+    breakpoint:1023,
     init(){
         this.methods();
     },
@@ -29,43 +28,46 @@ var about = {
            return false;
         });
     },
-    selectMethods(w, mode=null){
-        if(about.windowWidth<about.breakpoint){
-            about.modal();
-        }else{
-            about.fixed();
-        }
-    },
+    // selectMethods(w, mode=null){
+    //     if(about.windowWidth<about.breakpoint){
+    //         about.modal();
+    //     }else{
+    //         about.fixed();
+    //     }
+    // },
     resizeMethods(){
-        if(about.windowWidth<about.breakpoint){
-            $('.Rsv').removeClass('show');
-            $('.Rsv').addClass('hidden');
+        //モーダル表示していた場合、閉じる
+        if(about.windowWidth>about.breakpoint){
+            if($('.Rsv').hasClass('show')){
+                $('.Rsv').removeClass('show');
+                $('.Rsv').addClass('hidden');
+                $('.modal_bg_w').removeClass('active');
+            }
         }
     },
     fixed(){
         //現在地の取得（Topからscrollした距離）
         var cur_pos = $(window).scrollTop();
-        //予約画面高さ
-        var height = $('.maxwidth_set').eq(0).outerHeight(true)
-                        - $('.path').eq(0).outerHeight(true);
+        //header + path + Infoの高さ
+        var offset = $('.path').eq(0).outerHeight(true)
+                      + $('.Info').eq(0).outerHeight(true)
+                      + $('header').outerHeight(true);
 
         //固定解除
         var stop = $('.maxwidth_set').eq(2).outerHeight(true)
                     + $('.border').eq(1).outerHeight(true);
-        //現在地
+
+        //review_listのbottomの位置
         var top = $('.review_list').offset().top;
         var bottom = top + $('.review_list').outerHeight();
-        var offset = 714;
-        if(cur_pos + offset >= bottom){
+
+
+        if(cur_pos+offset >= bottom){
             $('.Rsv').css('position','absolute');
-            $('.Rsv').css('top','auto');
             $('.Rsv').css('bottom',stop);
-            $('.Rsv').css('height',height);
         }else{
             $('.Rsv').css('position','fixed');
-            $('.Rsv').css('top',184);
             $('.Rsv').css('bottom','auto');
-            $('.Rsv').css('height',height);
         }
     },
     modal(){

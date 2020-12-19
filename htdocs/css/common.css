@@ -28,7 +28,8 @@ p,a,input,select{
      パンくずリスト
    ========================== */
 .path{
-	margin:32px 0px 24px;
+/*	margin:32px 0px 24px;*/
+	margin-top:32px;
 }
 .path p{ /* 横並び */
 	display:inline-block;

@@ -35,14 +35,12 @@ h2{
 /* ==========================
      予約フォーム
    ========================== */
-.test_bottom{
-    position:absolute;
-}
 .Rsv{
     position:fixed;
-    top:184px;
+    margin-top:32px;
     right:calc(100vw*0.1);
     width:280px;
+    height:480px;
 
     border:solid 1px #5B5B5B;
     padding:24px 8px;
@@ -51,24 +49,11 @@ h2{
 .modal,.modal_bg_w{
     display: none;
 }
-.fixed_none{
-    position:absolute;
-    bottom:0px;
-    right:calc(100vw*0.1);
-    width:280px;
-    height:530px;
-
-    border:solid 1px #5B5B5B;
-    padding:24px 8px;
-    background-color:#ffffff;
-}
-
 
 .Rsv_title{
     color:#5B5B5B;
     padding:24px 0px 8px;
 }
-
 
 .date{
     width:100%;
@@ -554,6 +539,10 @@ h2{
      レスポンシブ対応(タブレット)
    ========================== */
 @media screen and (max-width: 1023px){
+    /* ==========================
+         予約フォーム
+       ========================== */
+
     .Rsv{
         z-index: 9999;
     }
@@ -565,10 +554,39 @@ h2{
         transition: all .3s ease;
     }
     .Rsv.show{
-        height: 100vh;
-        width: 100%;
+        height: auto;
+        width: 80%;
         opacity: 1;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:24px;
     }
+
+    .Rsv_title{
+        font-size:20px;
+    }
+
+    .date{
+        font-size:18px;
+    }
+
+    .Rsv_text{
+        font-size:18px;
+    }
+
+    .place_text p,.googleMap a,.fa-map-marker-alt{
+        font-size:18px;
+    }
+    .Rsv .button{
+        position:static;
+        width:100%;
+        margin-top:24px;
+    }
+
+    /* ==========================
+         モーダルボタン
+       ========================== */
     .modal{
         display: flex;
         flex-flow: column;
