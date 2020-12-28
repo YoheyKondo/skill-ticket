@@ -1,34 +1,205 @@
-<h2>Sign up</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+	<!--JQuery-->
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+	<script type="text/javascript" src="/assets/js/validationCheck.js"></script>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :name %> <br />
-    <%= f.text_field :name %>
-  </div>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/form.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/signup_style.css">
+  </head>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+  <body>
+    <header>
+      <%= link_to image_tag("/assets/img/logo.png", class: "h_logo img"), "/" %>
+      <p>学びを、知識を、共有しよう！</p>
+      <div class="h_iconList">
+        <div class="h_icon">
+          <%= link_to image_tag("/assets/img/bell.png"), "/" %>
+        </div>
+        <div class="h_icon">
+          <%= link_to image_tag("/assets/img/chat.png"), "/" %>
+        </div>
+        <div class="h_icon">
+          <%= link_to image_tag("/assets/img/person.png"), "/" %>
+        </div>
+      </div>
+    </header>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <main>
+      <section id="SignUP">
+      <!-- パンくずリスト -->
+        <div class="path">
+          <%= link_to 'Top', '/' %>
+            <p> > </p>
+          <%= link_to '会員登録', '/users/sign_up' %>
+	</div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+			<!-- ステータスリスト -->
+			<div class="status">
+				<div class="step active">
+					<p class="circle">1</p>
+					<p>仮登録手続き</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step">
+					<p class="circle">2</p>
+					<p>メールアドレスの確認</p>
+				</div>
+				<div class="st_border"></div>
+				<div class="step">
+					<p class="circle">3</p>
+					<p>本登録</p>
+				</div>
+			</div>
 
-<%= render "devise/shared/links" %>
+
+			<div class="s_title">
+				<h2>会員登録</h2>
+				<div class="border"></div>
+
+                                <!-- 入力 -->
+                                <%= form_for(resource, as: resource_name, url: registration_path(resource_name), method: "get", autocomplete: "off", action: "" ) do |f| %>
+                                  <%= render "devise/shared/error_messages", resource: resource %>
+                                  <div id="email" class="form_box">
+                                    <div class="title">
+                                      <%= f.label :email, "メールアドレス", {class: "sub"} %>
+                                      <%= f.label :errMsg, "入力必須です。", {class: "errMsg"} %>
+                                    </div>
+                                    <%= f.email_field :email, {type: "email", name: "email", class: "email"}  %>
+                                  </div>
+
+                                  <div id="password" class="form_box">
+                                    <div class="title">
+                                      <%= f.label :password, "パスワード", {class: "sub"} %>
+                                      <%= f.label :errMsg, "入力必須です。", {class: "errMsg"} %>
+                                    </div>
+                                    <%= f.password_field :password, {type: "password", name: "password", class: "pass"}  %>
+                                  </div>
+
+                                  <div class="form_box btn_center">
+                                    <%= f.submit :submit, {type: "submit", name: "submit", class: "btn", value: "仮登録へ"} %>
+                                  </div>
+                                <% end %>
+                                <%= render "devise/shared/links" %>
+			</div>
+
+
+	</main>
+
+	<footer>
+		<div class="Footer_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing">
+						<p>チケットを出品する</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site">
+						<p>サイト情報</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div border_dash">
+					<p>スキルチケットを<br class="tablet_none">もっと知る</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="/assets/img/sns_twitter.png">
+							<img src="/assets/img/sns_Instagram.png">
+							<img src="/assets/img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>
+	</footer>
+
+</body>
+</html>

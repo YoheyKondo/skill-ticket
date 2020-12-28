@@ -24,3 +24,187 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スキチケ（Skill Ticket） | スキルチケット（技術・知識）を売買する、Webマッチングサービス</title>
+
+	<!--JQuery-->
+	<script src="/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+	<script type="text/javascript" src="/assets/js/validationCheck.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/form.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/login_style.css">
+
+</head>
+<body>
+	<header>
+		<a href="#" class="h_logo"><img src="/assets/img/logo.png"></a>
+		<p>学びを、知識を、共有しよう！</p>
+		<div class="h_iconList">
+			<div class="h_icon"><a href="#"><img src="/assets/img/bell.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="/assets/img/chat.png"></a></div>
+			<div class="h_icon"><a href="#"><img src="/assets/img/person.png"></a></div>
+		</div>
+
+	</header>
+
+	<main>
+		<section id="Login">
+			<!-- パンくずリスト -->
+			<div class="path">
+				<a href="#">Top</a>
+				<p> > </p>
+				<a href="#">ログイン</a>
+			</div>
+
+			<div class="s_title">
+				<h2>ログイン</h2>
+				<div class="border"></div>
+
+				<!-- 入力 -->
+				<form action="" method="get" autocomplete="off">
+					<!-- メールアドレス -->
+					<div id="email" class="form_box">
+						<div class="title">
+							<p class="sub">メールアドレス</p>
+							<p class="errMsg">入力必須です。</p>
+						</div>
+						<input type="email" name="email" max-length="50" class="mail">
+					</div>
+
+					<!-- パスワード -->
+					<div id="password" class="form_box">
+						<div class="title">
+							<p class="sub">パスワード</p>
+							<p class="errMsg">入力必須です。</p>
+						</div>
+						<input type="password" name="password" maxlength="50" class="pass">
+					</div>
+
+					<!-- ログインボタン -->
+					<div class="form_box btn_center">
+						<input type="submit" name="submit"value="ログイン" class="btn" disabled>
+					</div>
+
+				</form>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="Footer_List">
+			<h2>Skill-Ticket(スキルチケット)</h2>
+			<div class="Ticket_box">
+				<!-- チケットを見つける -->
+				<div class="t_div border_solid">
+					<p>チケットを見つける</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<div class="t_div border_solid">
+					<!-- チケットを出品する -->
+					<div class="Ticket_listing">
+						<p>チケットを出品する</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">出品方法</a></p>
+							<p class="t_dots">・<a href="#">出品のコツ</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+					<!-- サイト情報 -->
+					<div class="Ticket_site">
+						<p>サイト情報</p>
+						<div class="Ticket_link">
+							<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+							<p class="t_dots">・<a href="#">ジャンル</a></p>
+						</div>
+					</div>
+				</div>
+				<!-- スキルチケットをもっと知る -->
+				<div class="t_div border_dash">
+					<p>スキルチケットを<br class="tablet_none">もっと知る</p>
+					<div class="Ticket_link">
+						<p class="t_dots">・<a href="#">ご利用ガイド</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+						<p class="t_dots">・<a href="#">ジャンル</a></p>
+					</div>
+				</div>
+				<!-- お問い合わせ -->
+				<div class="Ticket_contact">
+					<p>サポートへの問い合わせはこちら</p>
+					<div class="contact_btn">
+						<a href="#">お問い合わせ</a>
+					</div>
+					<p>スキルチケットへの</br>ご意見・ご要望はこちら</p>
+
+					<form action="" method="get" autocomplete="off">
+						<textarea placeholder="サービスへのご意見・ご要望をお聞かせください。
+ご意見・ご要望に返信できないことをあらかじめご了承ください。"></textarea>
+					</form>
+
+					<div class="sns">
+						<p>SNS共有</p>
+						<div class="sns_icon">
+							<img src="/assets/img/sns_twitter.png">
+							<img src="/assets/img/sns_facebook.png">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>@ 2020 Skill-Ticket | Riding Co.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
